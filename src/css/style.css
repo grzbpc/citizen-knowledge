@@ -1,0 +1,105 @@
+:root{
+  --paper:#F7F5F0;
+  --ink:#141412;
+  --body-ink:#242320;
+  --ledger:#7A2222;
+  --ledger-bg:#F1E3E0;
+  --rule:#B8B2A2;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--body-ink);
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.5;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px;}
+
+header.masthead{border-bottom:4px solid var(--ink);padding:48px 0 24px;}
+.eyebrow{
+  font-family:"Courier New",monospace;font-size:13px;font-weight:700;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--ledger);margin:0 0 12px;
+}
+h1.title{margin:0;font-size:46px;font-weight:700;letter-spacing:-0.01em;color:var(--ink);}
+.strapline{margin:14px 0 0;color:var(--body-ink);font-size:18px;max-width:56ch;}
+.meta-row{
+  display:flex;gap:18px;margin-top:24px;font-family:"Courier New",monospace;
+  font-size:13px;font-weight:700;color:var(--ink);
+}
+
+nav.toc{padding:22px 0;border-bottom:1px solid var(--rule);}
+nav.toc a{
+  font-family:"Courier New",monospace;font-size:13px;font-weight:700;letter-spacing:0.06em;
+  text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);
+  margin-right:20px;
+}
+nav.toc a:hover{color:var(--ledger);border-color:var(--ledger);}
+
+main{padding:36px 0 80px;}
+
+.entry{padding:28px 0;border-bottom:1px solid var(--rule);}
+.entry:first-of-type{padding-top:0;}
+
+.stamp{
+  display:block;background:var(--ledger);color:var(--paper);font-family:"Courier New",monospace;
+  font-size:13px;font-weight:700;letter-spacing:0.03em;padding:10px 14px;margin-bottom:14px;line-height:1.5;
+}
+.stamp .label{display:block;font-size:10px;letter-spacing:0.16em;opacity:0.85;margin-bottom:3px;}
+
+.entry h2{margin:0 0 8px;font-size:25px;font-weight:700;color:var(--ink);}
+.entry h2 a{color:var(--ink);text-decoration:none;}
+.entry h2 a:hover{color:var(--ledger);}
+
+.source-line{font-size:14px;color:var(--ink);font-style:italic;font-weight:600;margin:0 0 12px;}
+.dek{margin:0;font-size:17px;}
+
+footer{
+  border-top:4px solid var(--ink);padding:28px 0 60px;font-family:"Courier New",monospace;
+  font-size:13px;color:var(--ink);
+}
+footer a{color:var(--ledger);}
+footer p{font-family:Georgia,serif;font-size:15px;line-height:1.5;}
+
+/* single post page */
+.backlink{
+  display:block;padding:20px 0;font-family:"Courier New",monospace;font-size:13px;
+  font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink);text-decoration:none;
+}
+.backlink:hover{color:var(--ledger);}
+.post-header{border-bottom:4px solid var(--ink);padding-bottom:0;margin-bottom:32px;}
+.mapping-bar{
+  background:var(--ledger);color:var(--paper);padding:14px 18px;margin-bottom:22px;
+  font-family:"Courier New",monospace;font-size:14px;font-weight:700;letter-spacing:0.03em;line-height:1.5;
+}
+.mapping-bar .label{display:block;font-size:10px;letter-spacing:0.16em;opacity:0.85;margin-bottom:4px;}
+.post-header h1{font-size:32px;margin:0 0 10px;font-weight:700;letter-spacing:-0.01em;color:var(--ink);padding-bottom:20px;}
+article h3{
+  font-family:"Courier New",monospace;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--ledger);margin:36px 0 14px;font-weight:700;border-bottom:2px solid var(--ledger);padding-bottom:6px;
+}
+article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);}
+.mapping-citation{
+  background:var(--ledger-bg);border-left:5px solid var(--ledger);padding:16px 20px;margin:40px 0 20px;font-size:15px;
+}
+.mapping-citation .label{
+  display:block;font-family:"Courier New",monospace;font-size:11px;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--ledger);font-weight:700;margin-bottom:8px;
+}
+.mapping-citation strong{color:var(--ink);}
+
+/* chapter index page */
+.chapter-group{margin-bottom:36px;}
+.chapter-group h2{
+  font-family:"Courier New",monospace;font-size:16px;text-transform:uppercase;letter-spacing:0.06em;
+  color:var(--ledger);border-bottom:2px solid var(--ledger);padding-bottom:8px;margin-bottom:16px;
+}
+.chapter-group ul{list-style:none;padding:0;margin:0;}
+.chapter-group li{margin-bottom:10px;}
+.chapter-group a{color:var(--ink);font-size:17px;text-decoration:none;}
+.chapter-group a:hover{color:var(--ledger);}
+
+@media (max-width:600px){
+  h1.title{font-size:34px;}
+  .wrap{padding:0 18px;}
+}

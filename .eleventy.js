@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/citizen-knowledge/",
     dir: {
       input: "src",
       output: "_site",

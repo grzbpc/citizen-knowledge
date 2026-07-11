@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Citizen Knowledge</title>
 <meta name="description" content="A daily record of ordinary news stories mapped against The Performance of Obedience.">
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
 
@@ -22,8 +22,8 @@
 
 <nav class="toc">
   <div class="wrap">
-    <a href="/chapters/">Browse by chapter</a>
-    <a href="/about/">About this record</a>
+    <a href="{{ '/chapters/' | url }}">Browse by chapter</a>
+    <a href="{{ '/about/' | url }}">About this record</a>
   </div>
 </nav>
 
@@ -35,7 +35,7 @@
         <span class="label">Maps to The Performance of Obedience</span>
         Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}
       </span>
-      <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+      <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
       <p class="source-line">{{ post.data.source }}</p>
       <p class="dek">{{ post.data.description }}</p>
     </article>

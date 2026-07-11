@@ -103,3 +103,19 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);}
   h1.title{font-size:34px;}
   .wrap{padding:0 18px;}
 }
+
+/* deep-read posts */
+.deep-read-badge{
+  display:inline-block;font-family:"Courier New",monospace;font-size:11px;font-weight:700;
+  letter-spacing:0.14em;text-transform:uppercase;color:var(--ledger);border:1px solid var(--ledger);
+  padding:4px 10px;margin-bottom:16px;
+}
+blockquote.manuscript{
+  margin:24px 0;padding:18px 22px;border-left:5px solid var(--ink);background:#EFEDE6;
+  font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:18px;
+  color:var(--ink);line-height:1.6;
+}
+blockquote.manuscript .cite{
+  display:block;margin-top:10px;font-family:"Courier New",monospace;font-style:normal;
+  font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ledger);font-weight:700;
+}

@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
-
 <header class="masthead">
   <div class="wrap">
     <p class="eyebrow">A companion record to The Performance of Obedience</p>
@@ -19,14 +18,12 @@
     </div>
   </div>
 </header>
-
 <nav class="toc">
   <div class="wrap">
     <a href="{{ '/chapters/' | url }}">Browse by chapter</a>
     <a href="{{ '/about/' | url }}">About this record</a>
   </div>
 </nav>
-
 <main>
   <div class="wrap">
     {% for post in collections.posts %}
@@ -40,9 +37,26 @@
       <p class="dek">{{ post.data.description }}</p>
     </article>
     {% endfor %}
+
+    <div class="signup-block">
+      <p class="eyebrow">Follow by email</p>
+      <form
+        action="https://buttondown.com/api/emails/embed-subscribe/citizenknowledge"
+        method="post"
+        class="embeddable-buttondown-form"
+      >
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="you@example.com" />
+        <input type="hidden" value="1" name="embed" />
+        <input type="submit" value="Subscribe" />
+        <p class="signup-note">
+          <a href="https://buttondown.com" target="_blank">Powered by Buttondown.</a>
+        </p>
+      </form>
+    </div>
+
   </div>
 </main>
-
 <footer>
   <div class="wrap">
     <p><strong>ABOUT THIS RECORD</strong></p>
@@ -50,6 +64,5 @@
     <p>&copy; Greg Lewis 2026</p>
   </div>
 </footer>
-
 </body>
 </html>

@@ -119,3 +119,11 @@ blockquote.manuscript .cite{
   display:block;margin-top:10px;font-family:"Courier New",monospace;font-style:normal;
   font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ledger);font-weight:700;
 }
+
+/* email signup */
+.signup-block{border-top:4px solid var(--ink);padding:28px 0;margin-top:20px;}
+.signup-block label{display:none;}
+.signup-block input[type="email"]{font-family:Georgia,serif;font-size:16px;padding:8px 12px;border:1px solid var(--ink);width:60%;max-width:340px;margin-right:10px;}
+.signup-block input[type="submit"]{font-family:"Courier New",monospace;font-weight:700;background:var(--ledger);color:var(--paper);border:none;padding:9px 16px;text-transform:uppercase;letter-spacing:0.06em;cursor:pointer;}
+.signup-note{font-size:12px;margin-top:10px;}
+.signup-note a{color:var(--ink);}

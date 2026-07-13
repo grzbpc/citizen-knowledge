@@ -9,6 +9,8 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: Cost Without Resolution
 description: "The sample was taken in 1990. The match came 36 years later."
+book_reference: "This entry shows enforcement capability existing in dormant, underfunded form for decades, illustrating that a tool's eventual use does not make its long absence morally neutral."
+deep_read: false
 ---
 
 ### The story

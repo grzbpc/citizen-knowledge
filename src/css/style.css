@@ -127,3 +127,87 @@ blockquote.manuscript .cite{
 .signup-block input[type="submit"]{font-family:"Courier New",monospace;font-weight:700;background:var(--ledger);color:var(--paper);border:none;padding:9px 16px;text-transform:uppercase;letter-spacing:0.06em;cursor:pointer;}
 .signup-note{font-size:12px;margin-top:10px;}
 .signup-note a{color:var(--ink);}
+/* --- Index page: reuse of entry/stamp styling, minor spacing --- */
+.index-entry{padding:24px 0;}
+.chapter-group .entry h3{margin:0 0 8px;font-size:22px;font-weight:700;color:var(--ink);}
+.chapter-group .entry h3 a{color:var(--ink);text-decoration:none;}
+.chapter-group .entry h3 a:hover{color:var(--ledger);}
+
+/* --- Deep Read badge --- */
+.deep-read-badge{
+  display:inline-block;
+  background:var(--ledger);
+  color:var(--paper);
+  font-family:"Courier New",monospace;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  padding:4px 8px;
+  margin:0 10px 6px 0;
+  vertical-align:middle;
+}
+.post-header .deep-read-badge{display:block;width:fit-content;margin:0 0 14px;}
+
+/* --- Dek emphasis (homepage, index, post dek text) --- */
+.dek{
+  font-style:italic;
+  font-size:18px;
+}
+
+/* --- Buttondown signup: native "case file" styling, off-white/mono --- */
+.signup-block{
+  border-top:4px solid var(--ink);
+  padding:28px 0;
+  margin-top:20px;
+  background:var(--paper);
+}
+.signup-block .eyebrow{margin-bottom:14px;}
+.signup-block label{display:none;}
+.signup-block form{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px;
+}
+.signup-block input[type="email"]{
+  font-family:"Courier New",monospace;
+  font-size:15px;
+  padding:10px 12px;
+  border:1px solid var(--ink);
+  background:var(--paper);
+  color:var(--ink);
+  width:60%;
+  max-width:340px;
+}
+.signup-block input[type="email"]::placeholder{
+  color:var(--body-ink);
+  opacity:0.6;
+}
+.signup-block input[type="submit"]{
+  font-family:"Courier New",monospace;
+  font-weight:700;
+  font-size:13px;
+  background:var(--ledger);
+  color:var(--paper);
+  border:none;
+  padding:11px 18px;
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+  cursor:pointer;
+}
+.signup-block input[type="submit"]:hover{
+  background:var(--ink);
+}
+.signup-note{
+  flex-basis:100%;
+  font-family:"Courier New",monospace;
+  font-size:11px;
+  margin-top:6px;
+  color:var(--body-ink);
+}
+.signup-note a{color:var(--ink);}
+
+@media (max-width:600px){
+  .signup-block input[type="email"]{width:100%;max-width:none;}
+}

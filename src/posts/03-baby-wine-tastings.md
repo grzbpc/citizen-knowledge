@@ -9,6 +9,8 @@ chapter: 8
 chapterTitle: Work as Virtue, Poverty as Failure
 subheading: Proximity and Moral Exemption
 description: "The same behaviour, differently packaged, moves from concern to lifestyle product."
+book_reference: "This entry shows how proximity to a socially legible identity converts a behaviour that would otherwise draw concern into a marketed lifestyle product."
+deep_read: false
 ---
 
 ### The story

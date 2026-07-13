@@ -9,6 +9,7 @@ chapter: 1
 chapterTitle: The Illusion of Law
 subheading: Driving as the Soft Test
 description: "A posted speed limit and an enforced one are not the same thing, and everyone quietly knows it."
+book_reference: "This entry shows calibration in action: a posted limit that everyone, including enforcers, treats as a threshold with built-in tolerance rather than an absolute rule."
 deep_read: false
 ---
 

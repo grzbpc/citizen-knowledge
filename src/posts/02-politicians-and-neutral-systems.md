@@ -9,6 +9,8 @@ chapter: 14
 chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: Selective Enforcement and Visible Equality
 description: "A phone call reversed a ban a panel had already issued. The panel didn't hide it happened."
+book_reference: "This entry shows a supposedly neutral disciplinary process visibly reversed by informal political pressure, then re-asserted after the fact to preserve the appearance that the process still means something."
+deep_read: false
 ---
 
 ### The story

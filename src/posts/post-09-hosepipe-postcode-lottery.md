@@ -9,6 +9,8 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: The Cost of Enforcement
 description: "Whether watering your garden is a crime this week depends entirely on which company owns the pipe under your road."
+book_reference: "This entry shows a criminal offence whose actual application depends not on conduct but on an accident of infrastructure ownership, the same rule producing entirely different legal exposure depending on which water company happens to serve your street."
+deep_read: false
 ---
 
 ### The story

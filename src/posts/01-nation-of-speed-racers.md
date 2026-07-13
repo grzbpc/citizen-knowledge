@@ -9,6 +9,7 @@ chapter: 1
 chapterTitle: The Illusion of Law
 subheading: Driving as the Soft Test
 description: "A posted speed limit and an enforced one are not the same thing, and everyone quietly knows it."
+deep_read: false
 ---
 
 ### The story

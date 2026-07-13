@@ -9,6 +9,8 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: The Cost of Enforcement
 description: "A mother's cooler clothes for her son sat undelivered because it was 'too hot for the sniffer dogs to work.'"
+book_reference: "This entry shows discretion resolving itself the same way by default: a clear, specific welfare rule gets followed without difficulty, while a vaguer duty of care to people in custody quietly gives way, with no single decision or deliberate cruelty required."
+deep_read: false
 ---
 
 ### The story

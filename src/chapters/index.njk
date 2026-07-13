@@ -29,13 +29,22 @@ permalink: /chapters/index.html
     {% for num in chapterNums | sort %}
       <div class="chapter-group">
         <h2>Chapter {{ num }}</h2>
-        <ul>
         {% for post in posts %}
           {% if post.data.chapter == num %}
-          <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+          <article class="entry index-entry">
+            <span class="stamp">
+              <span class="label">Maps to The Performance of Obedience</span>
+              Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}
+            </span>
+            <h3>
+              {% if post.data.deep_read %}<span class="deep-read-badge">Deep Read &mdash; With Manuscript</span>{% endif %}
+              <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+            </h3>
+            <p class="source-line">{{ post.data.source }}</p>
+            <p class="dek">{{ post.data.description }}</p>
+          </article>
           {% endif %}
         {% endfor %}
-        </ul>
       </div>
     {% endfor %}
   </main>

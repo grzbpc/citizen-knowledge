@@ -9,6 +9,7 @@ chapter: 14
 chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: Selective Enforcement and Visible Equality
 description: "The same rule, applied identically on paper, producing entirely different outcomes depending on who it lands on."
+book_reference: "This entry shows a body insisting its rules are neutral and universal while their actual application depends on a judgement call made by the same body that benefits from appearing consistent."
 deep_read: true
 
 ---

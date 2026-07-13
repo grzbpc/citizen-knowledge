@@ -15,8 +15,7 @@
       <span class="label">Maps to The Performance of Obedience</span>
       Part {{ part }}: {{ partTitle }} &rarr; Chapter {{ chapter }}: {{ chapterTitle }}{% if subheading %} &rarr; {{ subheading }}{% endif %}
     </div>
-{% if deep_read %}<span class="deep-read-badge">Deep Read &mdash; With Manuscript</span>{% endif %}
-    <span class="deep-read-badge">Deep Read &mdash; With Manuscript</span>
+    {% if deep_read %}<span class="deep-read-badge">Deep Read &mdash; With Manuscript</span>{% endif %}
     <h1>{{ title }}</h1>
     <p class="source-line">{{ source }}</p>
   </header>

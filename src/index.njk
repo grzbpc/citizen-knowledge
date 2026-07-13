@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
+
 <header class="masthead">
   <div class="wrap">
     <p class="eyebrow">A companion record to The Performance of Obedience</p>
@@ -18,12 +19,14 @@
     </div>
   </div>
 </header>
+
 <nav class="toc">
   <div class="wrap">
     <a href="{{ '/chapters/' | url }}">Browse by chapter</a>
     <a href="{{ '/about/' | url }}">About this record</a>
   </div>
 </nav>
+
 <main>
   <div class="wrap">
     {% for post in collections.posts %}
@@ -32,14 +35,17 @@
         <span class="label">Maps to The Performance of Obedience</span>
         Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}
       </span>
-      <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+      <h2>
+        {% if post.data.deep_read %}<span class="deep-read-badge">Deep Read &mdash; With Manuscript</span>{% endif %}
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </h2>
       <p class="source-line">{{ post.data.source }}</p>
       <p class="dek">{{ post.data.description }}</p>
     </article>
     {% endfor %}
 
     <div class="signup-block">
-      <p class="eyebrow">Follow by email</p>
+      <p class="eyebrow">Receive new ledger entries by email</p>
       <form
         action="https://buttondown.com/api/emails/embed-subscribe/citizenknowledge"
         method="post"
@@ -54,15 +60,17 @@
         </p>
       </form>
     </div>
-
   </div>
 </main>
+
 <footer>
   <div class="wrap">
     <p><strong>ABOUT THIS RECORD</strong></p>
     <p>Citizen Knowledge is a companion project to <em>The Performance of Obedience: Legitimacy, Law, and the Systems We Pretend to Believe In</em>, by Greg Lewis. Each entry takes one ordinary news story and maps it against the book's argument: that selective enforcement is not an exception in modern institutions, but the default logic they run on. No images or verbatim text are reproduced from source publications; all summaries are original paraphrase, attributed by publication and date.</p>
+    <p><a href="{{ '/feed.xml' | url }}">RSS feed</a></p>
     <p>&copy; Greg Lewis 2026</p>
   </div>
 </footer>
+
 </body>
 </html>

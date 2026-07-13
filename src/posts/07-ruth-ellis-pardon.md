@@ -9,6 +9,7 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: The Cost of Enforcement / The Appearance of Action
 description: "The pardon doesn't claim she was innocent. It restores nothing predictable about how such a case would be handled today."
+deep_read: true
 ---
 
 ### The story

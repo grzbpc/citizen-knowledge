@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,14 +12,16 @@
 
 <header class="masthead">
   <div class="wrap">
-    <p class="eyebrow">A companion record to The Performance of Obedience</p>
+    <p class="eyebrow">An ongoing public record</p>
     <h1 class="title">Citizen Knowledge</h1>
-    <p class="strapline">Ordinary news, examined one story at a time against the same question: what do these events reveal about how modern institutions actually operate?
-
-Over time, the record speaks for itself.
-</p>
+    <p class="strapline">
+      Developed alongside <em>The Performance of Obedience</em>.<br><br>
+      Ordinary news, examined one story at a time against the same question: what do these events reveal about how modern institutions actually operate?
+      <br><br>
+      Over time, the record speaks for itself.
+    </p>
     <div class="meta-row">
-      <span>{{ collections.posts.length }} ENTRIES</span>
+      <span>{{ collections.posts.length }} ENTRIES PUBLISHED</span>
     </div>
   </div>
 </header>
@@ -38,10 +41,12 @@ Over time, the record speaks for itself.
         <span class="label">Maps to The Performance of Obedience</span>
         Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}
       </span>
+
       <h2>
         {% if post.data.deep_read %}<span class="deep-read-badge">Deep Read &mdash; With Manuscript</span>{% endif %}
         <a href="{{ post.url | url }}">{{ post.data.title }}</a>
       </h2>
+
       <p class="source-line">{{ post.data.source }}</p>
       <p class="dek">{{ post.data.description }}</p>
     </article>
@@ -49,6 +54,7 @@ Over time, the record speaks for itself.
 
     <div class="signup-block">
       <p class="eyebrow">Receive new ledger entries by email</p>
+
       <form
         action="https://buttondown.com/api/emails/embed-subscribe/citizenknowledge"
         method="post"
@@ -58,6 +64,7 @@ Over time, the record speaks for itself.
         <input type="email" name="email" id="email" placeholder="you@example.com" />
         <input type="hidden" value="1" name="embed" />
         <input type="submit" value="Subscribe" />
+
         <p class="signup-note">
           <a href="https://buttondown.com" target="_blank">Powered by Buttondown.</a>
         </p>
@@ -69,18 +76,21 @@ Over time, the record speaks for itself.
 <footer>
   <div class="wrap">
     <p><strong>ABOUT THIS RECORD</strong></p>
-    <p>Citizen Knowledge is an ongoing public record accompanying *The Performance of Obedience* by Greg Lewis.
 
-Each entry examines one ordinary news story through the same analytical framework, documenting recurring patterns in how institutions operate. Over time, those patterns form a record larger than any individual headline.
+    <p>
+      Citizen Knowledge is an ongoing public record accompanying <em>The Performance of Obedience</em> by Greg Lewis.
+      <br><br>
+      Each entry examines one ordinary news story through the same analytical framework, documenting recurring patterns in how institutions operate. Over time, those patterns form a record larger than any individual headline.
+      <br><br>
+      No images or verbatim text are reproduced from source publications. All summaries are original paraphrase, attributed by publication and date.
+      <br><br>
+      © Greg Lewis 2026
+    </p>
 
-No images or verbatim text are reproduced from source publications. All summaries are original paraphrase, attributed by publication and date.
-
-© Greg Lewis 2026
-</p>
     <p><a href="{{ '/feed.xml' | url }}">RSS feed</a></p>
-    <p>&copy; Greg Lewis 2026</p>
   </div>
 </footer>
 
 </body>
 </html>
+```

@@ -9,6 +9,8 @@ chapter: 14
 chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: Selective Enforcement and Visible Equality
 description: "The same rule, applied identically on paper, producing entirely different outcomes depending on who it lands on."
+deep_read: true
+
 ---
 
 ### The story

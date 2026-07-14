@@ -10,7 +10,7 @@ chapterTitle: Discretion as Power
 subheading: The Cost of Enforcement
 description: "A rapper paid £450,000 for access to the pardon power. A White House aide says no application was ever filed."
 book_reference: "This entry illustrates how discretionary power creates an informal market in access, running alongside a formal process that claims to weigh cases on their merits."
----
+deep_read: false
 ---
 
 ### The story

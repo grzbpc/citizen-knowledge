@@ -36,12 +36,12 @@
   <div class="wrap">
     {% for post in collections.posts %}
     <article class="entry">
-      <span class="stamp">
-        <span class="label">Maps to The Performance of Obedience</span>
-        Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}
-      </span>
-
-      <h2>
+         <span class="stamp">
+           <span class="label">Maps to The Performance of Obedience</span>
+           Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}
+         </span>
+         {% if post.data.deepRead %}<span class="deep-read-badge">DEEP READ</span>{% endif %}
+         <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
         {% if post.data.deep_read %}<span class="deep-read-badge">Deep Read &mdash; With Manuscript</span>{% endif %}
         <a href="{{ post.url | url }}">{{ post.data.title }}</a>
       </h2>

@@ -10,6 +10,7 @@ chapterTitle: Discretion as Power
 subheading: The Appearance of Action
 description: "Police insisted it was not politically motivated. A day later, counter-terrorism took over the investigation."
 book_reference: "This entry examines how the classification of an act, rather than the act itself, determines which powers, resources, and urgency a system brings to bear on it."
+deep_read: true
 ---
 
 ### The story

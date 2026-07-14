@@ -10,6 +10,7 @@ chapterTitle: Discretion as Power
 subheading: Cost Without Resolution
 description: "The government proscribed the IRGC this week. Anoosheh Ashoori's family had been asking for it since 2017."
 book_reference: "This entry examines the cost of a known capability sitting unused, and who absorbs that cost while a system delays acting on what it already knows."
+deep_read: false
 ---
 
 ### The story

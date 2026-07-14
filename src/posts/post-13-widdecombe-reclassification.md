@@ -1,7 +1,7 @@
 ---
 layout: deep-read-post.njk
 title: The same killing, reclassified in twenty-four hours
-date: 2026-07-14 23:00
+date: date: 2026-07-14
 source: "Metro, Tuesday 14 July 2026"
 part: IV
 partTitle: Criminality and Control

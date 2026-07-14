@@ -19,4 +19,62 @@
       Over time, the record speaks for itself.
     </p>
     <div class="meta-row">
-      <span>{{
+      <span>{{ collections.posts.length }} ENTRIES PUBLISHED</span>
+    </div>
+  </div>
+</header>
+<nav class="toc">
+  <div class="wrap">
+    <a href="{{ '/chapters/' | url }}">Browse by chapter</a>
+    <a href="{{ '/about/' | url }}">About this record</a>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    {% for post in collections.posts %}
+    <article class="entry">
+      <span class="stamp">
+        <span class="label">Maps to The Performance of Obedience</span>
+        Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}
+      </span>
+      {% if post.data.deep_read %}<span class="deep-read-badge">Deep Read &mdash; With Manuscript</span>{% endif %}
+      <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+      <p class="source-line">{{ post.data.source }}</p>
+      <p class="dek">{{ post.data.description }}</p>
+    </article>
+    {% endfor %}
+    <div class="signup-block">
+      <p class="eyebrow">Receive new ledger entries by email</p>
+      <form
+        action="https://buttondown.com/api/emails/embed-subscribe/citizenknowledge"
+        method="post"
+        class="embeddable-buttondown-form"
+      >
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="you@example.com" />
+        <input type="hidden" value="1" name="embed" />
+        <input type="submit" value="Subscribe" />
+        <p class="signup-note">
+          <a href="https://buttondown.com" target="_blank">Powered by Buttondown.</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <p><strong>ABOUT THIS RECORD</strong></p>
+    <p>
+      Citizen Knowledge is an ongoing public record accompanying <em>The Performance of Obedience</em> by Greg Lewis.
+      <br><br>
+      Each entry examines one ordinary news story through the same analytical framework, documenting recurring patterns in how institutions operate. Over time, those patterns form a record larger than any individual headline.
+      <br><br>
+      No images or verbatim text are reproduced from source publications. All summaries are original paraphrase, attributed by publication and date.
+      <br><br>
+      © Greg Lewis 2026
+    </p>
+    <p><a href="{{ '/feed.xml' | url }}">RSS feed</a></p>
+  </div>
+</footer>
+</body>
+</html>

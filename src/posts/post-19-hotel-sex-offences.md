@@ -9,6 +9,7 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: Cost Without Resolution
 description: "4,011 recorded sex offences at hotels in three years. Industry-wide measures followed one conviction, not the pattern."
+book_reference: "This entry shows protective measures arriving only once a single case forces the question publicly, despite the underlying risk being long-standing, known, and repeatedly reported by name."
 ---
 
 ### The story

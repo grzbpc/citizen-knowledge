@@ -95,6 +95,19 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
 }
 .mapping-citation strong{color:var(--ink);}
 
+/* deep-read manuscript quotations */
+.manuscript-quote{
+  background:var(--ledger-bg);
+  border-left:5px solid var(--ledger);
+  padding:16px 20px;
+  margin:24px 0;
+  font-style:italic;
+  font-size:17px;
+  line-height:1.5;
+  color:var(--body-ink);
+  text-align:left;
+}
+
 /* chapter index page */
 .chapter-group{margin-bottom:36px;}
 .chapter-group h2{
@@ -177,78 +190,10 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
 }
 
 /* --- brief homepage list row ---
-   Deliberately a different SHAPE (single compact line), not just a
-   different colour, so it reads as a distinct content type at a glance. */
-.entry.entry--brief{
-  display:flex;
-  align-items:baseline;
-  gap:16px;
-  padding:14px 0;
-  border-bottom:1px dashed var(--rule);
-}
-
-.entry.entry--brief .stamp{
-  flex:0 0 auto;
-  display:inline-block;
-  background:transparent;
-  border:1px solid var(--ledger);
-  padding:3px 8px;
-  font-family:"Courier New",monospace;
-  font-weight:700;
-  letter-spacing:0.08em;
-  text-transform:uppercase;
-  white-space:nowrap;
-  margin-bottom:0;
-  font-size:0; /* hide the long Part/Chapter text on the homepage row */
-}
-.entry.entry--brief .stamp::before{
-  content:"Brief";
-  font-size:10px;
-  color:var(--ledger);
-}
-.entry.entry--brief .stamp .label{
-  display:none;
-}
-
-.entry.entry--brief h2{
-  flex:1 1 auto;
-  font-size:17px;
-  margin:0;
-  font-weight:700;
-}
-
-.entry.entry--brief .source-line,
-.entry.entry--brief .dek{
-  display:none;
-}
-/* =========================================================
-   FIX 1: manuscript-quote styling (was missing entirely —
-   used in deep-read posts like post-16 but never defined)
-   ========================================================= */
-.manuscript-quote{
-  background:var(--ledger-bg);
-  border-left:5px solid var(--ledger);
-  padding:16px 20px;
-  margin:24px 0;
-  font-style:italic;
-  font-size:17px;
-  line-height:1.5;
-  color:var(--body-ink);
-  text-align:left;
-}
-
-/* =========================================================
-   FIX 2: brief homepage row — rebalanced.
-   Previous version stripped too much (no dek, no source line,
-   tiny illegible stamp) so it stopped reading as an article at
-   all. This version keeps it a recognisable article block —
-   headline, source, one-line dek — but distinguishes it by:
-     - a lighter overall footprint (less padding, thinner border)
-     - a small outlined "BRIEF" tag instead of the solid ledger
-       stamp used on full posts and deep-reads
-     - dashed rather than solid divider
-   so it's obviously an article, and obviously a lighter one.
-   ========================================================= */
+   Kept as a recognisable article block (headline, source, one-line dek)
+   but visually lighter than a full post: smaller outlined tag instead of
+   the solid ledger stamp, less padding, dashed divider. Obviously an
+   article; obviously a lighter one. */
 .entry.entry--brief{
   padding:18px 0;
   border-bottom:1px dashed var(--rule);
@@ -261,7 +206,7 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
   border:1px solid var(--ledger);
   padding:3px 9px;
   font-family:"Courier New",monospace;
-  font-size:10px;
+  font-size:0;
   font-weight:700;
   letter-spacing:0.1em;
   text-transform:uppercase;
@@ -269,11 +214,6 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
 }
 .entry.entry--brief .stamp .label{
   display:none;
-}
-/* show "Brief" plus the chapter number only, not the full Part/Chapter title,
-   keeping the tag short while still identifying the mapping */
-.entry.entry--brief .stamp{
-  font-size:0;
 }
 .entry.entry--brief .stamp::before{
   content:"Brief — Ch. " attr(data-chapter);

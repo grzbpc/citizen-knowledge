@@ -1,0 +1,107 @@
+/* --- Brief format additions (v2 — stronger differentiation) --- */
+
+.brief-tag{
+  display:inline-block;
+  font-family:"Courier New",monospace;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--ledger);
+  border:1px solid var(--ledger);
+  padding:3px 8px;
+  margin-bottom:14px;
+}
+
+.mapping-bar--brief{
+  background:transparent;
+  color:var(--ink);
+  border-left:4px solid var(--ledger);
+  padding:6px 0 6px 14px;
+  margin-bottom:18px;
+  font-family:"Courier New",monospace;
+  font-size:13px;
+  font-weight:700;
+}
+
+.brief-header h1{
+  font-size:26px;
+}
+
+.brief-gist{
+  font-size:19px;
+  font-weight:700;
+  color:var(--ink);
+  margin:0 0 22px;
+  line-height:1.4;
+}
+
+.brief-angle{
+  font-size:17px;
+  color:var(--body-ink);
+  margin:0 0 8px;
+}
+
+.mapping-citation--brief{
+  background:var(--ledger-bg);
+  border-left:5px solid var(--ledger);
+  padding:14px 18px;
+  margin:28px 0 0;
+}
+.mapping-citation--brief blockquote{
+  margin:6px 0 0;
+  font-style:italic;
+  font-size:15px;
+  color:var(--body-ink);
+}
+
+/* homepage: compact rendering for brief entries in the list */
+/* Deliberately a different SHAPE, not just a different colour, so it reads
+   as a distinct content type at a glance rather than a variant of the same block. */
+.entry.entry--brief{
+  display:flex;
+  align-items:baseline;
+  gap:16px;
+  padding:14px 0;
+  border-bottom:1px dashed var(--rule);
+}
+
+.entry.entry--brief .stamp{
+  flex:0 0 auto;
+  display:inline-block;
+  background:transparent;
+  color:var(--ledger);
+  border:1px solid var(--ledger);
+  padding:3px 8px;
+  font-family:"Courier New",monospace;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  margin-bottom:0;
+}
+.entry.entry--brief .stamp .label{
+  display:none;
+}
+/* Replace the long Part/Chapter text with just "BRIEF" on the homepage list.
+   Full mapping still shows on the brief's own page. */
+.entry.entry--brief .stamp{
+  font-size:0;
+}
+.entry.entry--brief .stamp::before{
+  content:"Brief";
+  font-size:10px;
+}
+
+.entry.entry--brief h2{
+  flex:1 1 auto;
+  font-size:17px;
+  margin:0;
+  font-weight:700;
+}
+
+.entry.entry--brief .source-line,
+.entry.entry--brief .dek{
+  display:none;
+}

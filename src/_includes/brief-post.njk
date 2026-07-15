@@ -21,12 +21,7 @@
 
   {{ content | safe }}
 
-  {% if quote %}
-  <div class="mapping-citation mapping-citation--brief">
-    <span class="label">From the manuscript</span>
-    <blockquote>{{ quote | safe }}</blockquote>
-  </div>
-  {% endif %}
+  {% if quote %}<blockquote>{{ quote | safe }}</blockquote>{% endif %}
 
   {% if book_reference %}
   <div class="mapping-citation mapping-citation--brief">

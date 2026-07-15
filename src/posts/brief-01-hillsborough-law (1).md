@@ -10,6 +10,7 @@ chapterTitle: Discretion as Power
 subheading: ""
 description: "Andy Burnham calls the Hillsborough Law a power shift. It's also an admission of what 37 years of the existing one couldn't do."
 quote: "Trust erodes accordingly, not because officers are malicious, but because predictability disappears."
+book_reference: "This entry shows a new legal duty as a late admission: officials were never required to cooperate honestly with inquiries, and thirty-seven years of that gap is what finally produced the law."
 ---
 
 <p class="brief-gist">Incoming PM Andy Burnham told the Commons the Hillsborough Law, imposing a duty on public officials to tell the truth and cooperate with investigations, will "reshape the relationship between the public and the state." It takes its name from the 1989 disaster in which 97 Liverpool fans died, and follows 37 years in which, Burnham wrote, families "stood firm when powerful institutions closed ranks against them."</p>

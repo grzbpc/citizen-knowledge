@@ -2,6 +2,7 @@
 layout: deep-read-post.njk
 title: A pardon that confirms the system already knew
 date: 2026-07-09
+order: 1
 source: "Metro, Thursday 9 July 2026"
 part: IV
 partTitle: Criminality and Control

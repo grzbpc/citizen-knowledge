@@ -9,6 +9,7 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: The Cost of Enforcement
 description: "Nearly two-thirds of PPE spending was wasted. The inquiry's real finding is about who the fast-track lane was built for."
+book_reference: "This entry shows how a procurement system built to move faster for a select group produced, downstream and predictably, the exact quality failures its own scrutiny existed to prevent."
 deep_read: true
 ---
 

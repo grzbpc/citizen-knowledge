@@ -32,7 +32,7 @@
     {% for post in collections.posts %}
     {% if post.data.layout == "brief-post.njk" %}
     <article class="entry entry--brief">
-      <span class="stamp">
+      <span class="stamp" data-chapter="{{ post.data.chapter }}">
         Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}
       </span>
       <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>

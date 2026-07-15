@@ -2,6 +2,7 @@
 layout: post.njk
 title: A nation of speed racers
 date: 2026-07-08
+order: 1
 source: "Metro, Wednesday 8 July 2026"
 part: I
 partTitle: When the Law Stops Meaning What It Says

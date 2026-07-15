@@ -217,3 +217,19 @@ blockquote.manuscript .cite{
      padding:4px 10px;margin-bottom:10px;
    }
 }
+/* --- Justified body text (add to style.css) --- */
+
+body{
+  text-align:justify;
+}
+
+/* Headings, nav, stamps, meta rows, and the mapping bar should stay left-aligned —
+   justification on short lines/labels looks broken, so explicitly exclude them. */
+h1, h2, h3,
+.eyebrow, .strapline, .meta-row,
+nav.toc, .backlink,
+.stamp, .mapping-bar, .mapping-citation,
+.source-line, .dek,
+footer{
+  text-align:left;
+}

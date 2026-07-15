@@ -2,6 +2,7 @@
 layout: post.njk
 title: The same human rights protection, read completely differently depending on who invokes it
 date: 2026-07-15
+order: 4
 source: "Metro, Wednesday 15 July 2026"
 part: IV
 partTitle: Criminality and Control

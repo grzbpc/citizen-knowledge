@@ -2,6 +2,7 @@
 layout: post.njk
 title: Capability existing for decades before it is applied
 date: 2026-07-08
+order: 5
 source: "Metro, Wednesday 8 July 2026"
 part: IV
 partTitle: Criminality and Control

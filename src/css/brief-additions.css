@@ -1,0 +1,74 @@
+/* --- Brief format additions --- */
+
+.brief-tag{
+  display:inline-block;
+  font-family:"Courier New",monospace;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--ledger);
+  border:1px solid var(--ledger);
+  padding:3px 8px;
+  margin-bottom:14px;
+}
+
+.mapping-bar--brief{
+  background:transparent;
+  color:var(--ink);
+  border-left:4px solid var(--ledger);
+  padding:6px 0 6px 14px;
+  margin-bottom:18px;
+  font-family:"Courier New",monospace;
+  font-size:13px;
+  font-weight:700;
+}
+
+.brief-header h1{
+  font-size:26px;
+}
+
+.brief-gist{
+  font-size:19px;
+  font-weight:700;
+  color:var(--ink);
+  margin:0 0 22px;
+  line-height:1.4;
+}
+
+.brief-angle{
+  font-size:17px;
+  color:var(--body-ink);
+  margin:0 0 8px;
+}
+
+.mapping-citation--brief{
+  background:var(--ledger-bg);
+  border-left:5px solid var(--ledger);
+  padding:14px 18px;
+  margin:28px 0 0;
+}
+.mapping-citation--brief blockquote{
+  margin:6px 0 0;
+  font-style:italic;
+  font-size:15px;
+  color:var(--body-ink);
+}
+
+/* homepage: compact rendering for brief entries in the list */
+.entry.entry--brief{
+  padding:18px 0;
+}
+.entry.entry--brief .stamp{
+  background:transparent;
+  color:var(--ledger);
+  border:1px solid var(--ledger);
+  padding:6px 10px;
+  font-size:11px;
+}
+.entry.entry--brief .stamp .label{
+  display:none;
+}
+.entry.entry--brief h2{
+  font-size:20px;
+}

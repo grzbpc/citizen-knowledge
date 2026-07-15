@@ -2,6 +2,7 @@
 layout: post.njk
 title: Politicians reaching into a system that claims neutrality
 date: 2026-07-08
+order: 2
 source: "Metro, Wednesday 8 July 2026"
 part: V
 partTitle: Withdrawal

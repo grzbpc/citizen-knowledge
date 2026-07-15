@@ -2,6 +2,7 @@
 layout: post.njk
 title: One coping mechanism sold, another quietly judged
 date: 2026-07-08
+order: 3
 source: "Metro, Wednesday 8 July 2026"
 part: III
 partTitle: Moral Inversion

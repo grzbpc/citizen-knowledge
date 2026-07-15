@@ -279,3 +279,11 @@ article blockquote p{
   padding:4px 10px;
   margin-bottom:10px;
 }
+
+/* book_reference sentence, rendered inside the mapping-citation box */
+.book-reference-note{
+  margin:10px 0 0;
+  font-size:15px;
+  font-style:italic;
+  color:var(--body-ink);
+}

@@ -4,16 +4,17 @@ Source files for the Citizen Knowledge site, built with Eleventy.
 
 ## How to add a new post
 
-1. Copy any existing file in `src/posts/` as a starting point, e.g. `src/posts/01-nation-of-speed-racers.md`.
-2. Rename it, e.g. `src/posts/07-my-new-story.md`.
+1. Copy any existing file in `src/posts/` as a starting point, e.g. `src/posts/post-15-slug.md`.
+2. Rename it, e.g. `src/posts/post-16-my-new-story.md`.
 3. Edit the frontmatter at the top (between the `---` lines):
 
 ```
 ---
 layout: post.njk
 title: Your headline here
-date: 2026-07-10
-source: "Metro, Friday 10 July 2026"
+date: 2026-07-16
+order: 1
+source: "Metro, Thursday 16 July 2026"
 part: II
 partTitle: Learning the System
 chapter: 3
@@ -36,6 +37,15 @@ Your analysis, mapping the story to the book.
 ```
 
 5. Save the file. That's the entire posting workflow, no other file needs to change. The homepage and the chapter index update automatically because they pull from every file in `src/posts/`.
+
+## Post ordering
+
+Posts sort by `date` first (newest day first), then by `order` within the same date.
+
+- `order` is a plain number. **Lower number = appears first** on that day.
+- If you post several stories on the same day, give each one an `order` value (1, 2, 3...) in the sequence you want them to appear, regardless of type (brief, standard, or deep-read) — order is entirely separate from format, so you can put a brief above a deep-read if it's the bigger story that day.
+- If you leave `order` out of a post, it defaults to last place among that day's posts. Existing posts do not need to be edited unless you want to change their position.
+- For a future "pinned" or ongoing feature that should sit above everything regardless of date, use a very low or negative `order` value (e.g. `order: -1`) as a stopgap. A proper `pinned: true` flag that breaks pinned posts out of date-sorting entirely can be added later if and when that's actually needed — not built yet.
 
 ## Testing locally before publishing
 

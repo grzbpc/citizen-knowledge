@@ -2,7 +2,7 @@
 layout: post.njk
 title: A flood-risk rule that survives by redefining what counts as warning
 date: 2026-07-15
-order: 5
+order: 2
 source: "Metro, Wednesday 15 July 2026"
 part: I
 partTitle: When the Law Stops Meaning What It Says

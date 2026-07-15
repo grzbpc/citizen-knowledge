@@ -100,7 +100,7 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
    renders as a plain <blockquote> inside the article. There is no
    .manuscript-quote class in the actual content — targeting blockquote
    directly is what actually styles these. */
-article blockquote{
+.wrap blockquote{
   background:var(--ledger-bg);
   border:2px solid var(--ledger);
   border-radius:2px;
@@ -113,7 +113,7 @@ article blockquote{
   text-align:left;
   position:relative;
 }
-article blockquote::before{
+.wrap blockquote::before{
   content:"From the manuscript";
   display:block;
   font-family:"Courier New",monospace;
@@ -125,7 +125,7 @@ article blockquote::before{
   color:var(--ledger);
   margin-bottom:8px;
 }
-article blockquote p{
+.wrap blockquote p{
   margin:0;
 }
 
@@ -201,14 +201,6 @@ article blockquote p{
   padding:14px 18px;
   margin:28px 0 0;
 }
-.mapping-citation--brief blockquote{
-  margin:6px 0 0;
-  font-style:italic;
-  font-size:15px;
-  color:var(--body-ink);
-  text-align:left;
-}
-
 /* --- brief homepage list row --- */
 .entry.entry--brief{
   padding:18px 0;

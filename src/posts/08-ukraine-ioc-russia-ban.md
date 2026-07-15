@@ -2,6 +2,7 @@
 layout: deep-read-post.njk
 title: Neutral on paper, selective in practice
 date: 2026-07-09
+order: 2
 source: "Metro, Thursday 9 July 2026"
 part: V
 partTitle: Withdrawal

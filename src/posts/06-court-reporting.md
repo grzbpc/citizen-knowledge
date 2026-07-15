@@ -2,6 +2,7 @@
 layout: post.njk
 title: Reporting a live trial in a way that primes a verdict before one exists
 date: 2026-07-08
+order: 6
 source: "Metro, Wednesday 8 July 2026"
 part: IV
 partTitle: Criminality and Control

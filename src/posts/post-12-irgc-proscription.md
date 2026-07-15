@@ -2,6 +2,7 @@
 layout: post.njk
 title: The words came too late for the people who needed them first
 date: 2026-07-14
+order: 2
 source: "Metro, Tuesday 14 July 2026"
 part: IV
 partTitle: Criminality and Control

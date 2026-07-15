@@ -199,7 +199,7 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
   background:var(--ledger-bg);
   border-left:5px solid var(--ledger);
   padding:14px 18px;
-  margin:28px 0 0;
+  margin:28px 0 20px;
 }
 /* --- brief homepage list row --- */
 .entry.entry--brief{

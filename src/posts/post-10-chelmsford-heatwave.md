@@ -2,6 +2,7 @@
 layout: post.njk
 title: The dogs got a day off. The prisoners did not.
 date: 2026-07-10
+order: 2
 source: "Metro, Friday 10 July 2026"
 part: IV
 partTitle: Criminality and Control

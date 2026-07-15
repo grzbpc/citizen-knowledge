@@ -2,6 +2,7 @@
 layout: post.njk
 title: The anti-establishment candidate, running against the establishment charge
 date: 2026-07-10
+order: 1
 source: "Metro, Friday 10 July 2026"
 part: V
 partTitle: Withdrawal

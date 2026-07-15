@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }} &mdash; Citizen Knowledge</title>
+<meta name="description" content="{{ description or "A companion record to The Performance of Obedience." }}">
+<link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+</head>
+<body>
+<div class="wrap">
+  <a class="backlink" href="{{ '/' | url }}">&larr; Back to the Record</a>
+  <header class="post-header brief-header">
+    <span class="brief-tag">Brief</span>
+    <div class="mapping-bar mapping-bar--brief">
+      Part {{ part }}: {{ partTitle }} &rarr; Chapter {{ chapter }}: {{ chapterTitle }}{% if subheading %} &rarr; {{ subheading }}{% endif %}
+    </div>
+    <h1>{{ title }}</h1>
+    <p class="source-line">{{ source }}</p>
+  </header>
+
+  {{ content | safe }}
+
+  {% if quote %}
+  <div class="mapping-citation mapping-citation--brief">
+    <span class="label">From the manuscript</span>
+    <blockquote>{{ quote | safe }}</blockquote>
+  </div>
+  {% endif %}
+
+  <footer>
+    Source: {{ source }}. No images or verbatim text reproduced; summary is original paraphrase.
+  </footer>
+</div>
+</body>
+</html>

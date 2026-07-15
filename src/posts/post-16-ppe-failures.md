@@ -2,6 +2,7 @@
 layout: deep-read-post.njk
 title: A £10bn waste figure that answers a narrower question than it looks like
 date: 2026-07-15
+order: 4
 source: "Metro, Wednesday 15 July 2026"
 part: IV
 partTitle: Criminality and Control

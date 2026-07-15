@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
-
 <header class="masthead">
   <div class="wrap">
     <p class="eyebrow">A companion record to The Performance of Obedience</p>
@@ -19,14 +18,12 @@
     </div>
   </div>
 </header>
-
 <nav class="toc">
   <div class="wrap">
     <a href="{{ '/chapters/' | url }}">Browse by chapter</a>
     <a href="{{ '/about/' | url }}">About this record</a>
   </div>
 </nav>
-
 <main>
   <div class="wrap">
     {% for post in collections.posts %}
@@ -41,6 +38,7 @@
     </article>
     {% else %}
     <article class="entry">
+      {% if post.data.deep_read %}<span class="deep-read-tag">Deep Read</span>{% endif %}
       <span class="stamp">
         <span class="label">Maps to The Performance of Obedience</span>
         Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}
@@ -53,7 +51,6 @@
     {% endfor %}
   </div>
 </main>
-
 <footer>
   <div class="wrap">
     <p><strong>ABOUT THIS RECORD</strong></p>
@@ -61,6 +58,5 @@
     <p>&copy; Greg Lewis 2026</p>
   </div>
 </footer>
-
 </body>
 </html>

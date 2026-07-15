@@ -2,6 +2,7 @@
 layout: post.njk
 title: When a formal power only works if you threaten something else entirely
 date: 2026-07-14
+order: 4
 source: "Metro, Tuesday 14 July 2026"
 part: V
 partTitle: Withdrawal

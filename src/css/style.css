@@ -95,8 +95,12 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
 }
 .mapping-citation strong{color:var(--ink);}
 
-/* deep-read manuscript quotations */
-.manuscript-quote{
+/* deep-read manuscript quotations
+   These are written in the post's Markdown as "> *text*", which Eleventy
+   renders as a plain <blockquote> inside the article. There is no
+   .manuscript-quote class in the actual content — targeting blockquote
+   directly is what actually styles these. */
+article blockquote{
   background:var(--ledger-bg);
   border:2px solid var(--ledger);
   border-radius:2px;
@@ -109,7 +113,7 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
   text-align:left;
   position:relative;
 }
-.manuscript-quote::before{
+article blockquote::before{
   content:"From the manuscript";
   display:block;
   font-family:"Courier New",monospace;
@@ -120,6 +124,9 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
   text-transform:uppercase;
   color:var(--ledger);
   margin-bottom:8px;
+}
+article blockquote p{
+  margin:0;
 }
 
 /* chapter index page */
@@ -143,7 +150,6 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
    BRIEF FORMAT ADDITIONS
    ========================================================= */
 
-/* --- individual brief post page --- */
 .brief-tag{
   display:inline-block;
   font-family:"Courier New",monospace;
@@ -203,11 +209,7 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
   text-align:left;
 }
 
-/* --- brief homepage list row ---
-   Kept as a recognisable article block (headline, source, one-line dek)
-   but visually lighter than a full post: smaller outlined tag instead of
-   the solid ledger stamp, less padding, dashed divider. Obviously an
-   article; obviously a lighter one. */
+/* --- brief homepage list row --- */
 .entry.entry--brief{
   padding:18px 0;
   border-bottom:1px dashed var(--rule);
@@ -247,4 +249,33 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
 .entry.entry--brief .dek{
   font-size:15px;
   display:block;
+}
+
+/* =========================================================
+   Deep-read homepage marker
+   ========================================================= */
+.entry .deep-read-tag{
+  display:inline-block;
+  background:var(--ink);
+  color:var(--paper);
+  font-family:"Courier New",monospace;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  padding:3px 9px;
+  margin-bottom:8px;
+}
+
+.deep-read-badge{
+  display:inline-block;
+  background:var(--ink);
+  color:var(--paper);
+  font-family:"Courier New",monospace;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  padding:4px 10px;
+  margin-bottom:10px;
 }

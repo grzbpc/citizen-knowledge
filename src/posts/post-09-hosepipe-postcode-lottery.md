@@ -2,6 +2,7 @@
 layout: post.njk
 title: The same hosepipe, the same heatwave, and a criminal offence that depends on your street
 date: 2026-07-13
+order: 1
 source: "The Standard, Monday 13 July 2026"
 part: IV
 partTitle: Criminality and Control

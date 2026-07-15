@@ -2,6 +2,7 @@
 layout: post.njk
 title: Safety measures that arrive after the case that makes the news, not before
 date: 2026-07-15
+order: 5
 source: "Metro, Wednesday 15 July 2026"
 part: IV
 partTitle: Criminality and Control

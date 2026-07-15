@@ -2,6 +2,7 @@
 layout: post.njk
 title: A ruling read as vindication, resting on delay rather than denial
 date: 2026-07-08
+order: 4
 source: "Metro, Wednesday 8 July 2026"
 part: IV
 partTitle: Criminality and Control

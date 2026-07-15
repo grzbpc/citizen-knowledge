@@ -98,14 +98,28 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
 /* deep-read manuscript quotations */
 .manuscript-quote{
   background:var(--ledger-bg);
-  border-left:5px solid var(--ledger);
-  padding:16px 20px;
-  margin:24px 0;
+  border:2px solid var(--ledger);
+  border-radius:2px;
+  padding:18px 22px;
+  margin:26px 0;
   font-style:italic;
   font-size:17px;
-  line-height:1.5;
+  line-height:1.55;
   color:var(--body-ink);
   text-align:left;
+  position:relative;
+}
+.manuscript-quote::before{
+  content:"From the manuscript";
+  display:block;
+  font-family:"Courier New",monospace;
+  font-style:normal;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--ledger);
+  margin-bottom:8px;
 }
 
 /* chapter index page */

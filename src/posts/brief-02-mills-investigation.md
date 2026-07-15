@@ -2,6 +2,7 @@
 layout: brief-post.njk
 title: A closed investigation, sitting quietly next to a pay rise
 date: 2026-07-15
+order: 6
 source: "Metro, Wednesday 15 July 2026"
 part: III
 partTitle: Moral Inversion

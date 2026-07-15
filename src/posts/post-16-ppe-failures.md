@@ -9,6 +9,7 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: The Cost of Enforcement
 description: "Nearly two-thirds of PPE spending was wasted. The inquiry's real finding is about who the fast-track lane was built for."
+deep_read: true
 ---
 
 ### The story

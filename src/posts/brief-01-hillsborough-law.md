@@ -2,6 +2,7 @@
 layout: brief-post.njk
 title: A law built because the ordinary process didn't work
 date: 2026-07-15
+order: 3
 source: "Metro, Wednesday 15 July 2026"
 part: IV
 partTitle: Criminality and Control

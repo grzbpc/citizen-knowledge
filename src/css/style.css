@@ -279,3 +279,27 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
   font-style:italic;
   color:var(--body-ink);
 }
+/* =========================================================
+   DATE DIVIDERS
+   ========================================================= */
+
+.date-divider{
+  border:none;
+  border-top:2px solid var(--ink);
+  margin:36px 0 24px;
+}
+
+.date-heading{
+  font-family:"Courier New",monospace;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--ledger);
+  margin:0 0 18px;
+  text-align:left;
+}
+
+main .wrap > .date-heading:first-of-type{
+  margin-top:0;
+}

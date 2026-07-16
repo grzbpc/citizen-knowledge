@@ -28,10 +28,11 @@
   <div class="wrap">
     {% set previousDate = "" %}
     {% for post in collections.posts %}
-    {% if post.data.date != previousDate %}
+    {% set postDateStr = post.data.date | dateStr %}
+    {% if postDateStr != previousDate %}
       {% if not loop.first %}<hr class="date-divider">{% endif %}
-      <p class="date-heading">{{ post.data.date }}</p>
-      {% set previousDate = post.data.date %}
+      <p class="date-heading">{{ postDateStr }}</p>
+      {% set previousDate = postDateStr %}
     {% endif %}
     {% if post.data.layout == "brief-post.njk" %}
     <article class="entry entry--brief">

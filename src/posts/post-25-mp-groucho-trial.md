@@ -2,6 +2,7 @@
 layout: post.njk
 title: The same gap between a legal principle and a headline, a second time
 date: 2026-07-16
+order: 4
 source: "Metro, Thursday 16 July 2026"
 part: IV
 partTitle: Criminality and Control
@@ -9,6 +10,7 @@ chapter: 12
 chapterTitle: Illegal, Illicit, and Ignored
 subheading: The Gap Between Law and Practice
 description: "A denial, reported. An interpretation, disputed. The trial continues, same as it did in Post 6."
+book_reference: "This entry repeats the pattern traced in Post 6: lawful, accurate court reporting built around a single dramatic detail that primes a reader's judgement ahead of any verdict."
 ---
 
 ### The story

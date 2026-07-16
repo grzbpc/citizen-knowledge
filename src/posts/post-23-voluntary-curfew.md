@@ -2,7 +2,7 @@
 layout: post.njk
 title: The word doing the work is "voluntary"
 date: 2026-07-16
-order: 2
+order: 3
 source: "Metro, Thursday 16 July 2026"
 part: V
 partTitle: Withdrawal
@@ -10,6 +10,7 @@ chapter: 14
 chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: Statements as Evidence of Concern
 description: "Ninety percent of teens in a trial would not switch off the curfew. Ten percent is the number that matters."
+book_reference: "This entry shows an optional safeguard being presented as a protective policy, where the opt-out mechanism exempts precisely the users the measure is meant to protect."
 ---
 
 ### The story

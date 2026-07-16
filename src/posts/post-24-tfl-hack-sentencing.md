@@ -2,6 +2,7 @@
 layout: post.njk
 title: Twenty-seven thousand password resets is what "secure" turned out to mean
 date: 2026-07-16
+order: 2
 source: "Metro, Thursday 16 July 2026"
 part: IV
 partTitle: Criminality and Control
@@ -9,6 +10,7 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: Cost Without Resolution
 description: "Two teenagers got the keys to the kingdom using one password reset request."
+book_reference: "This entry shows a critical infrastructure system's security resting, at the point that mattered, on a process no stronger than an ordinary customer support request, with the language of sophistication arriving only after the fact."
 ---
 
 ### The story

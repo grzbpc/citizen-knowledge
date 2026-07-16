@@ -2,6 +2,7 @@
 layout: post.njk
 title: The word doing the work is "voluntary"
 date: 2026-07-16
+order: 2
 source: "Metro, Thursday 16 July 2026"
 part: V
 partTitle: Withdrawal

@@ -26,7 +26,13 @@
 </nav>
 <main>
   <div class="wrap">
+    {% set previousDate = "" %}
     {% for post in collections.posts %}
+    {% if post.data.date != previousDate %}
+      {% if not loop.first %}<hr class="date-divider">{% endif %}
+      <p class="date-heading">{{ post.data.date }}</p>
+      {% set previousDate = post.data.date %}
+    {% endif %}
     {% if post.data.layout == "brief-post.njk" %}
     <article class="entry entry--brief">
       <span class="stamp" data-chapter="{{ post.data.chapter }}">

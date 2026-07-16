@@ -2,6 +2,7 @@
 layout: post.njk
 title: A crackdown announced after the cases it responds to are already over
 date: 2026-07-16
+order: 1
 source: "Metro, Thursday 16 July 2026"
 part: IV
 partTitle: Criminality and Control

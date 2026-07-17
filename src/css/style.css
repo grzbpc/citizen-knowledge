@@ -325,3 +325,32 @@ main .wrap > .date-heading:first-of-type{
   border:1px solid var(--rule);padding:2px 7px;white-space:nowrap;
 }
 .format-tag.deep-read{color:var(--ledger);border-color:var(--ledger);opacity:1;}
+
+/* =========================================================
+   STANDARD-POST STAMP — homepage + individual post pages
+   Fine, low-emphasis, grey/transparent. Uses the same visual
+   language as .format-tag on the chapters page, since standard
+   is the most common type and should not compete visually with
+   the deep-read (black) or brief (burgundy) stamps.
+   ========================================================= */
+.standard-tag{
+  display:inline-block;
+  font-family:"Courier New",monospace;
+  font-size:10px;
+  font-weight:400;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--body-ink);
+  opacity:0.7;
+  border:1px solid var(--rule);
+  padding:3px 9px;
+  margin-bottom:10px;
+}
+
+/* On individual post pages the tag sits above the mapping bar,
+   consistent with where .deep-read-badge and .brief-tag sit
+   in deep-read-post.njk and brief-post.njk respectively. */
+.post-header .standard-tag,
+.post-header .deep-read-badge{
+  margin-bottom:14px;
+}

@@ -11,6 +11,11 @@
 <div class="wrap">
   <a class="backlink" href="{{ '/' | url }}">&larr; Back to the Record</a>
   <header class="post-header">
+    {% if deep_read %}
+      <span class="deep-read-badge">Deep Read &mdash; With Manuscript</span>
+    {% else %}
+      <span class="standard-tag">Standard</span>
+    {% endif %}
     <div class="mapping-bar">
       <span class="label">Maps to The Performance of Obedience</span>
       Part {{ part }}: {{ partTitle }} &rarr; Chapter {{ chapter }}: {{ chapterTitle }}{% if subheading %} &rarr; {{ subheading }}{% endif %}
@@ -18,15 +23,12 @@
     <h1>{{ title }}</h1>
     <p class="source-line">{{ source }}</p>
   </header>
-
   {{ content | safe }}
-
   <div class="mapping-citation">
     <span class="label">Book reference</span>
     <strong>Part {{ part }}, {{ partTitle }} &middot; Chapter {{ chapter }}, {{ chapterTitle }}{% if subheading %} &middot; {{ subheading }}{% endif %}</strong>
     {% if book_reference %}<p class="book-reference-note">{{ book_reference }}</p>{% endif %}
   </div>
-
   <footer>
     Source: {{ source }}. No images or verbatim text reproduced; summary is original paraphrase.
   </footer>

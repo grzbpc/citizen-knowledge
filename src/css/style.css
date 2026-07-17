@@ -306,10 +306,11 @@ main .wrap > .date-heading:first-of-type{
 
 /* chapter index entries */
 .chapter-group li{
-  margin-bottom:14px;list-style:none;
+  margin-bottom:18px;list-style:none;
 }
 .entry-row{
   display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  row-gap:4px;
 }
 .entry-row a{
   color:var(--ink);text-decoration:none;font-size:17px;font-weight:700;
@@ -324,7 +325,12 @@ main .wrap > .date-heading:first-of-type{
   letter-spacing:0.1em;text-transform:uppercase;color:var(--body-ink);opacity:0.7;
   border:1px solid var(--rule);padding:2px 7px;white-space:nowrap;
 }
-.format-tag.deep-read{color:var(--ledger);border-color:var(--ledger);opacity:1;}
+.format-tag.deep-read{
+  background:var(--ink);color:var(--paper);border-color:var(--ink);opacity:1;
+}
+.format-tag.brief{
+  background:transparent;color:var(--ledger);border-color:var(--ledger);opacity:1;
+}
 
 /* =========================================================
    STANDARD-POST STAMP — homepage + individual post pages

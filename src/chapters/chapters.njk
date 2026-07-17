@@ -1,0 +1,65 @@
+---
+permalink: /chapters/index.html
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Browse by Chapter &mdash; Citizen Knowledge</title>
+<link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+</head>
+<body>
+<div class="wrap">
+  <a class="backlink" href="{{ '/' | url }}">&larr; Citizen Knowledge</a>
+  <header class="masthead">
+    <h1 class="title" style="font-size:34px;">Browse by Chapter</h1>
+    <p class="strapline">Every entry, grouped by which part of the book it maps to.</p>
+  </header>
+
+  <main>
+    {% set posts = collections.posts %}
+    {% set chapterNums = [] %}
+    {% for post in posts %}
+      {% if post.data.chapter not in chapterNums %}
+        {% set chapterNums = (chapterNums.push(post.data.chapter), chapterNums) %}
+      {% endif %}
+    {% endfor %}
+
+    {% for num in chapterNums | sort %}
+      {% set chapterPosts = [] %}
+      {% for post in posts %}
+        {% if post.data.chapter == num %}
+          {% set chapterPosts = (chapterPosts.push(post), chapterPosts) %}
+        {% endif %}
+      {% endfor %}
+      {% set first = chapterPosts[0] %}
+      <div class="chapter-group">
+        <h2>Part {{ first.data.part }}: {{ first.data.partTitle }} &rarr; Chapter {{ num }}: {{ first.data.chapterTitle }}</h2>
+        <ul>
+        {% for post in chapterPosts %}
+          <li>
+            <div class="entry-row">
+              <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+              <span class="entry-date">{{ post.data.date | date("d MMM yyyy") }}</span>
+              {% if post.data.deep_read %}
+                <span class="format-tag deep-read">Deep Read</span>
+              {% elif post.data.layout == "brief-post.njk" %}
+                <span class="format-tag">Brief</span>
+              {% else %}
+                <span class="format-tag">Standard</span>
+              {% endif %}
+            </div>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </main>
+
+  <footer>
+    <p>&copy; Greg Lewis 2026</p>
+  </footer>
+</div>
+</body>
+</html>

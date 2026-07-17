@@ -2,7 +2,7 @@
 layout: deep-read-post.njk
 title: The fine is identical. The enforcement is timed.
 date: 2026-07-17
-order: 2
+order: 1
 source: "Metro, Friday 17 July 2026"
 part: V
 partTitle: Withdrawal

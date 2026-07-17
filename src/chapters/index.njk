@@ -41,7 +41,7 @@ permalink: /chapters/index.html
           <li>
             <div class="entry-row">
               <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-              <span class="entry-date">{{ post.data.date | date("d MMM yyyy") }}</span>
+         <span class="entry-date">{{ post.data.date | formatDate }}</span>
               {% if post.data.deep_read %}
                 <span class="format-tag deep-read">Deep Read</span>
               {% elif post.data.layout == "brief-post.njk" %}

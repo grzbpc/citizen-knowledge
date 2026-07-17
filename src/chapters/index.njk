@@ -38,7 +38,19 @@ permalink: /chapters/index.html
         <h2>Part {{ first.data.part }}: {{ first.data.partTitle }} &rarr; Chapter {{ num }}: {{ first.data.chapterTitle }}</h2>
         <ul>
         {% for post in chapterPosts %}
-          <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+          <li>
+            <div class="entry-row">
+              <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+              <span class="entry-date">{{ post.data.date | date("d MMM yyyy") }}</span>
+              {% if post.data.deep_read %}
+                <span class="format-tag deep-read">Deep Read</span>
+              {% elif post.data.layout == "brief-post.njk" %}
+                <span class="format-tag">Brief</span>
+              {% else %}
+                <span class="format-tag">Standard</span>
+              {% endif %}
+            </div>
+          </li>
         {% endfor %}
         </ul>
       </div>

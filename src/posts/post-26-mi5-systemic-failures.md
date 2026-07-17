@@ -2,7 +2,7 @@
 layout: post.njk
 title: The system investigates itself and finds itself wanting, then continues
 date: 2026-07-17
-order: 1
+order: 2
 source: "Metro, Friday 17 July 2026"
 part: IV
 partTitle: Criminality and Control

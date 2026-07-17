@@ -303,3 +303,26 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
 main .wrap > .date-heading:first-of-type{
   margin-top:0;
 }
+
+/* chapter index entries */
+.chapter-group li{
+  margin-bottom:14px;list-style:none;
+}
+.entry-row{
+  display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+}
+.entry-row a{
+  color:var(--ledger);text-decoration:underline;text-decoration-color:var(--rule);
+  text-underline-offset:3px;font-size:17px;font-weight:400;
+}
+.entry-row a:hover{color:var(--ink);text-decoration-color:var(--ink);}
+.entry-date{
+  font-family:"Courier New",monospace;font-size:12px;color:var(--body-ink);opacity:0.75;
+  white-space:nowrap;
+}
+.format-tag{
+  display:inline-block;font-family:"Courier New",monospace;font-size:10px;font-weight:400;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--body-ink);opacity:0.7;
+  border:1px solid var(--rule);padding:2px 7px;white-space:nowrap;
+}
+.format-tag.deep-read{color:var(--ledger);border-color:var(--ledger);opacity:1;}

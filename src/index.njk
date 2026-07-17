@@ -36,7 +36,6 @@
     {% endif %}
     {% if post.data.layout == "brief-post.njk" %}
     <article class="entry entry--brief">
-      <span class="brief-tag">Brief</span>
       <span class="stamp" data-chapter="{{ post.data.chapter }}">
         Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}
       </span>

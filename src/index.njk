@@ -45,7 +45,11 @@
     </article>
     {% else %}
     <article class="entry">
-      {% if post.data.deep_read %}<span class="deep-read-tag">Deep Read</span>{% endif %}
+      {% if post.data.deep_read %}
+        <span class="deep-read-tag">Deep Read</span>
+      {% else %}
+        <span class="standard-tag">Standard</span>
+      {% endif %}
       <span class="stamp">
         <span class="label">Maps to The Performance of Obedience</span>
         Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}

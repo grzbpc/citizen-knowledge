@@ -27,10 +27,34 @@
 <main>
   <div class="wrap">
     {% set previousDate = "" %}
+    {% set dateGroupCount = 0 %}
+    {% set signupInserted = false %}
     {% for post in collections.posts %}
     {% set postDateStr = post.data.date | dateStr %}
     {% if postDateStr != previousDate %}
-      {% if not loop.first %}<hr class="date-divider">{% endif %}
+      {% set dateGroupCount = dateGroupCount + 1 %}
+      {% if dateGroupCount == 2 and not signupInserted %}
+        {% set signupInserted = true %}
+        <div class="signup-block" style="margin:36px 0;padding:24px;background:var(--ledger-bg);border-left:5px solid var(--ledger);">
+          <p style="font-size:16px;margin:0 0 12px;font-weight:700;">Receive new entries by email</p>
+          <p style="font-size:15px;margin:0 0 16px;">New posts are sent out as they're published. You can also follow the <a href="{{ '/feed.xml' | url }}">RSS feed</a> directly.</p>
+          <form
+            action="https://buttondown.com/api/emails/embed-subscribe/citizenknowledge"
+            method="post"
+            class="embeddable-buttondown-form"
+          >
+            <label for="bd-email-home">Email</label>
+            <input type="email" name="email" id="bd-email-home" placeholder="you@example.com" style="font-family:Georgia,serif;font-size:15px;padding:8px 10px;border:1px solid var(--ink);width:60%;max-width:280px;" />
+            <input type="hidden" value="1" name="embed" />
+            <input type="submit" value="Subscribe" style="font-family:'Courier New',monospace;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:9px 16px;background:var(--ink);color:var(--paper);border:none;cursor:pointer;" />
+            <p style="font-size:12px;margin-top:10px;">
+              <a href="https://buttondown.com" target="_blank" style="color:var(--ink);">Powered by Buttondown.</a>
+            </p>
+          </form>
+        </div>
+      {% else %}
+        {% if not loop.first %}<hr class="date-divider">{% endif %}
+      {% endif %}
       <p class="date-heading">{{ postDateStr }}</p>
       {% set previousDate = postDateStr %}
     {% endif %}

@@ -1,0 +1,87 @@
+SUBJECT LINE:
+Citizen Knowledge — 5 new entries, Tuesday, 14 July 2026
+
+EMAIL BODY (copy everything below this line into Buttondown):
+------------------------------------------------------------
+
+# Citizen Knowledge — Tuesday, 14 July 2026
+
+Citizen Knowledge maps ordinary daily news against the argument of *The Performance of Obedience*: that selective enforcement, not consistent rule-following, is how modern institutions actually operate.
+
+This email bundles everything published on the site today. Three entry types appear below:
+
+- **Standard entries** — a news story mapped to the book, in full.
+- **Deep Read entries** — a fuller analysis that includes short excerpts from the manuscript itself. To keep those excerpts in context (and out of inboxes/forwards), only a summary appears here — click through to read the full entry on the site.
+- **Briefs** — a shorter-format entry, included here in full.
+
+Read the full archive any time at https://citizenknowledge.theperformanceofobedience.co.uk
+
+---
+
+**The pardon that was never filed, and the one that cost a million**
+*Maps to: Part IV: Criminality and Control → Chapter 13: Discretion as Power → The Cost of Enforcement*
+
+Metro reports that American rapper Boosie Badazz is taking legal action against political lobbyists Jacob Wohl and Jack Burkman after allegedly paying $600,000 (£450,000) for a presidential pardon from Donald Trump that never came. Boosie, facing sentencing for possessing a firearm as a felon, sought the pair's help after they claimed strong connections within Trump's inner circle; his legal team was told on New Year's Day that the pardon had already been signed. According to a White House aide cited in the report, no pardon application had even been submitted on his behalf. Boosie is now seeking to recover half his fee under a contract clause, which Wohl and Burkman dispute was ever agreed.
+
+The formal pardon process exists to make clemency look like a reasoned, defensible exercise of executive judgement, weighing rehabilitation, sentence severity, and the public interest. What this story shows is a second, informal channel running alongside it, one that has nothing to do with those criteria and everything to do with who can pay for proximity to the person holding the pen. Boosie was told his pardon existed before it did, by people whose job was to sell him access to a process they may never have actually engaged with at all. The White House's own account, that no application was filed, suggests the transaction he paid for may have been theatre from the start, not a real channel that simply failed to deliver.
+
+That distinction matters for what Chapter 13 calls discretion as power. Even a fraudulent claim of access only works because the underlying premise is plausible: that clemency can, in fact, be reached informally, by people with the right connections, at a price, outside whatever process exists on paper. Nobody signing a six-figure contract for pardon lobbying believes they are paying for a fair hearing on the merits; they are paying for a shortcut around one. Whether Wohl and Burkman actually had that access or merely claimed to is almost secondary. Either answer confirms that a market exists for the belief that presidential mercy can be bought, and a system that has allowed that belief to become a reasonable commercial bet cannot be surprised when people who cannot pay find themselves outside a process that increasingly runs on who can.
+
+Read on the site: https://citizenknowledge.theperformanceofobedience.co.uk/posts/post-11-pardon-for-sale/
+
+---
+
+**The words came too late for the people who needed them first**
+*Maps to: Part IV: Criminality and Control → Chapter 13: Discretion as Power → Cost Without Resolution*
+
+Metro reports that Elika Ashoori, whose father Anoosheh was held hostage in Iran's Evin jail for five years after being detained in August 2017 and freed in March 2022 alongside Nazanin Zaghari-Ratcliffe, has said the government could have saved "countless lives" had it proscribed the Islamic Revolutionary Guard Corps (IRGC) as a terrorist organisation years earlier. The designation, confirmed this week after a spate of anti-semitic attacks in Britain including the torching of Jewish community ambulances and the jailing of two men for stabbing a journalist on behalf of the Iranian state, follows what the government itself describes as years of "threats to life and intimidation on UK soil." Elika told Metro: "The government has buried its head in the sand for years. By not proscribing them, we were partaking."
+
+Elika Ashoori's account gives this story something most cases of delayed enforcement lack: someone whose life was shaped by the specific years the delay covered. Her father was detained in 2017. The proscription her family says might have prevented it arrived in 2026. In between sit five years of imprisonment, a body of intelligence the government itself now describes as showing sustained threat activity on UK soil, and a policy position, that proscribing the IRGC would foreclose diplomacy with Tehran, that was a calculation about relative cost, not a statement that the danger was ever in doubt.
+
+That is the shape Chapter 13 calls discretion as power, and this account is unusually direct about naming its own logic. "The IRGC is a bank and a training centre for radicalism across the world," Elika said, "I am not surprised at the level of anti-semitic attacks in London." What forced the recalculation was not new evidence, since the threat pattern she describes was already established. What changed was that the cost of continued restraint, measured in visible attacks on synagogues and ambulances, became harder for the government to carry than the diplomatic cost of finally acting. Elika's own framing, that by not proscribing the IRGC sooner "we were partaking," is the sharpest possible statement of what the book means by cost without resolution: a capability to act existed the entire time her father was detained, and the eventual decision to use it does not undo who it failed to protect while it sat unused.
+
+Read on the site: https://citizenknowledge.theperformanceofobedience.co.uk/posts/post-12-irgc-proscription/
+
+---
+
+**The same killing, reclassified in twenty-four hours**
+*DEEP READ ENTRY*
+*Maps to: Part IV: Criminality and Control → Chapter 13: Discretion as Power → The Appearance of Action*
+
+Metro reports that counter-terrorism detectives are now investigating the killing of former MP and Reform UK spokeswoman Ann Widdecombe, 78, found dead at her Dartmoor home, a day after Devon and Cornwall police had insisted the killing was not politically motivated and called for an end to speculation. Counter Terrorism Policing South East now leads the investigation, and a 28-year-old man held in custody has been re-arrested on suspicion of commission, preparation or instigation of acts of terrorism. Home Secretary Shabana Mahmood told MPs the suspect was not known to Prevent, Britain's anti-extremism scheme, and said she had ordered a review to learn lessons from the murder of Conservative MP Sir David Amess, stabbed to death by an Islamist terrorist at a constituency surgery in 2021.
+
+Nothing about the killing changed between the police statement on Sunday and the counter-terrorism referral on Monday. The victim was the same, the suspect was the same, and the evidence in the case, on the police's own account of "new information and evidence" coming to light "during what has been a dynamic and complex investigation," was still being assembled in both moments. What changed was the classification. And with the classification came a different investigating body, a different set of powers, a different statutory framework, and a different level of resource and public urgency applied to the same underlying act.
+
+This is a Deep Read entry — the full analysis, with excerpts from the manuscript, is on the site.
+
+Read the full deep read: https://citizenknowledge.theperformanceofobedience.co.uk/posts/post-13-widdecombe-reclassification/
+
+---
+
+**A smuggling network dismantled, and the demand that built it left standing**
+*Maps to: Part IV: Criminality and Control → Chapter 12: Illegal, Illicit, and Ignored → The Gap Between Law and Practice*
+
+Metro reports that two people smugglers have been jailed after using coded language, referring to migrants as "chicken" and "pork," to plan trips moving people into the UK. Duc Quang Ta and Sarfaraz Sardarzeh were part of a group that used encrypted social media apps, with migrants kept in safe houses in Belgium until space was available on a lorry, and ferries described as "going by water." The National Crime Agency stopped Ta at Birmingham crown court heading to Kent with £55,000 in cash. After a three-week trial, Ta was jailed for eight years for smuggling 22 illegal immigrants over 18 days in 2020; Sardarzeh received a suspended sentence for helping smuggle three migrants into the UK.
+
+On its own terms, this is enforcement working. A network was identified, surveilled, disrupted, prosecuted, and sentenced. Coded language was decrypted, cash was seized, a lorry route was closed, and a man is serving eight years. Nothing in the case suggests the investigation was anything other than competent, and nothing about the outcome is unjust to the men convicted. If the measure of an enforcement system is whether it can catch and punish the people committing the offence it is aimed at, this system passed.
+
+What the case does not touch, and was never designed to touch, is why twenty-two people paid to be moved across a border inside a lorry in the first place. The coded language, the safe houses, the encrypted apps, and the £55,000 in cash all exist as a direct function of there being no lawful route available to the people making that journey. Chapter 12's argument about the gap between what a law prohibits and what actually happens in practice is at its clearest in cases like this, where the illegality is not incidental to the demand but constitutive of the market that serves it. Closing one route raises the price of the next one. Jailing one facilitator creates a vacancy. The conviction is real, the sentence is real, and the underlying pressure that produced both is entirely unchanged by either. That is not a failure of the prosecution. It is a description of what this kind of enforcement is actually able to do, and a reason to be careful about reading a successful case as evidence that the problem it addressed is being solved.
+
+Read on the site: https://citizenknowledge.theperformanceofobedience.co.uk/posts/post-14-smuggling-convictions/
+
+---
+
+**When a formal power only works if you threaten something else entirely**
+*Maps to: Part V: Withdrawal → Chapter 14: Symbolic Politics and the Maintenance of Appearances → Selective Enforcement and Visible Equality*
+
+Metro reports that Pakistan could face visa restrictions unless it takes back Rochdale grooming gang leader Shabir Ahmed, with the government indicating it is prepared to use such penalties to secure his removal. Ahmed, jailed for 22 years for rape and sexual offences against girls as young as 12, was due for removal after being freed on 2 July, but Pakistan has given no indication it will accept him back. Home Secretary Shabana Mahmood was reported to have previously threatened visa penalties against Angola, Namibia, and the Democratic Republic of Congo, with a government spokesperson saying that four months later, all three were co-operating. Pakistan is reportedly demanding the extradition of two political dissidents from the UK in exchange.
+
+Deportation is a formal legal power. A court orders removal, the Home Office effects it, and the person leaves. That is how the system describes itself, and it is the description on which public confidence in immigration enforcement rests. What this story shows is that the formal power, on its own, does not actually do anything. A removal order is a piece of paper that requires another sovereign state to agree to accept the person named on it, and if that state declines, the order sits unexecuted regardless of how lawfully it was made.
+
+What makes the power operative is not the law but the leverage, and the leverage is applied selectively, country by country, according to what each state can be pressured with and what it wants in return. Angola, Namibia, and the DRC apparently began co-operating four months after visa penalties were threatened; Pakistan is reportedly asking for the extradition of political dissidents as its price. Chapter 14's argument about the gap between how a system describes itself and how it actually functions is precisely this. The formal framework says removal follows from a court order. The actual mechanism is a series of bilateral negotiations in which a person's removal is traded against visa access, diplomatic goodwill, or, in this case, the fate of two dissidents living in Britain. That the negotiations are conducted case by case rather than under any consistent rule is not a scandal in itself; it may well be the only way the outcome can be reached at all. But it means the confident language of "we will remove him" describes an intention, not a capability, and the difference between the two is precisely where the system's account of itself stops matching what it can actually do.
+
+Read on the site: https://citizenknowledge.theperformanceofobedience.co.uk/posts/post-15-pakistan-visa-leverage/
+
+
+------------------------------------------------------------
+(5 posts found for 2026-07-14)

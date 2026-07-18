@@ -1,0 +1,14 @@
+# Local-only files — never commit these to the public repo
+
+# Buttondown API key (SECRET — must never be public)
+buttondown.key
+
+# Node dependencies
+node_modules/
+
+# Eleventy build output
+_site/
+
+# Local build artifacts from the helper scripts
+daily-email-output.txt
+CitizenKnowledge_PrintPack_*.docx

@@ -1,20 +1,23 @@
 ---
-permalink: /posts/post-20-mills-investigation_b/index.html
 layout: brief-post.njk
-title: A closed investigation, sitting quietly next to a pay rise
+title: A law built because the ordinary process didn't work
 date: 2026-07-15
-order: 6
+order: 3
 source: "Metro, Wednesday 15 July 2026"
-part: III
-partTitle: Moral Inversion
-chapter: 8
-chapterTitle: Work as Virtue, Poverty as Failure
+part: IV
+partTitle: Criminality and Control
+chapter: 13
+chapterTitle: Discretion as Power
 subheading: ""
-description: "The BBC investigated, found insufficient evidence, and closed the file in 2019. The salary kept climbing until March."
-quote: "Whether the underlying problem is moving towards resolution becomes increasingly difficult to determine."
-book_reference: "This entry shows a closed file and a rising salary coexisting for years without friction, until public pressure forced the two into the same sentence."
+description: "Andy Burnham calls the Hillsborough Law a power shift. It's also an admission of what 37 years of the existing one couldn't do."
+quote: "Trust erodes accordingly, not because officers are malicious, but because predictability disappears."
+book_reference: "This entry shows a new legal duty as a late admission: officials were never required to cooperate honestly with inquiries, and thirty-seven years of that gap is what finally produced the law."
 ---
 
-<p class="brief-gist">Metro's BBC pay-list report notes, almost in passing, that Scott Mills, the corporation's highest-paid star until his sacking in March, had an internal Metropolitan Police-prompted investigation opened into serious allegations involving a boy aged under 16, between 1997 and 2000. Prosecutors decided in 2019 there was insufficient evidence to bring charges, and the file was closed. Mills earned between £745,000 and £749,999 in the year to March 2026.</p>
+### The story
 
-<p class="brief-angle">"Insufficient evidence to charge" is a specific, narrow finding, not an exoneration, and institutions are generally careful to keep those two things separate when it suits them. What's notable here is how little the 2019 closure appears to have shaped anything afterwards: the salary continued rising for years after the file closed, and the sacking in March is reported without a clearly stated cause. An institution can hold a closed file and a rising pay grade in the same hand indefinitely, right up until something forces the two into the same sentence.</p>
+Incoming PM Andy Burnham told the Commons the Hillsborough Law, imposing a duty on public officials to tell the truth and cooperate with investigations, will "reshape the relationship between the public and the state." It takes its name from the 1989 disaster in which 97 Liverpool fans died, and follows 37 years in which, Burnham wrote, families "stood firm when powerful institutions closed ranks against them."
+
+### The reframe
+
+A new law compelling officials to cooperate with inquiries is only necessary because the existing legal and institutional framework didn't require that, in practice, for 37 years. Officials weren't breaking the law by closing ranks; there wasn't a law making that illegal. This is worth including as the other side of the book's usual pattern: sometimes the gap between rule and practice does eventually get closed, but only after decades, and only because the people harmed refused to stop pointing at it. The law itself is a late admission of exactly what its absence had already made clear.

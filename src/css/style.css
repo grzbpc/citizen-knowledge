@@ -179,21 +179,9 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
   font-size:26px;
 }
 
-.brief-gist{
-  font-size:19px;
-  font-weight:700;
-  color:var(--ink);
-  margin:0 0 22px;
-  line-height:1.4;
-  text-align:justify;
-}
-
-.brief-angle{
-  font-size:17px;
-  color:var(--body-ink);
-  margin:0 0 8px;
-  text-align:justify;
-}
+/* Brief post body copy ("The story" / "The reframe") now uses the same
+   article h3 / article p rules as standard and deep-read posts, so no
+   .brief-gist / .brief-angle rules are needed here any more. */
 
 .mapping-citation--brief{
   background:var(--ledger-bg);

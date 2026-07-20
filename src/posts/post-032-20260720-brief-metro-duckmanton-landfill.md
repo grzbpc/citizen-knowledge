@@ -1,17 +1,23 @@
 ---
-title: "The Apology That Changes Nothing: Duckmanton's Landfill"
+layout: brief-post.njk
+title: An apology, and the smell continues
 date: 2026-07-20
 order: 4
-layout: brief-post.njk
 source: "Metro, Monday 20 July 2026"
-part: "IV"
-partTitle: "Criminality and Control"
-chapter: "13"
-chapterTitle: "Discretion as Power"
-subheading: "The Cost of Enforcement"
-book_reference: "Part IV, Criminality and Control · Chapter 13, Discretion as Power · The Cost of Enforcement"
+part: IV
+partTitle: Criminality and Control
+chapter: 13
+chapterTitle: Discretion as Power
+subheading: ""
+description: "Flies, dust, and a stench residents call unbearable. The operator says it's sorry and that efforts continue."
+quote: "The system optimises for defensibility, not resolution."
+book_reference: "This entry shows an apology and an open-ended promise standing in for any enforceable timeline, the least expensive form of compliance an operator can offer."
 ---
 
+### The story
+
 Residents of Duckmanton, Derbyshire, say a landfill site towering over their village has made life "completely unbearable," flies invading homes, dust so thick some describe themselves as prisoners indoors, and a stench that has worsened one resident's asthma. Operator Valencia apologised and said the site's expansion has exposed stockpiled waste as it creates a new landfill cell, adding that "efforts to stem the smell continue."
+
+### The reframe
 
 There is no enforcement action reported here, no fine, no order to reduce operations, no timeline attached to those "efforts." Just an apology and a promise that work is ongoing, the standard shape of a regulatory relationship where the operator holds a permit, the harm is diffuse and hard to quantify street by street, and the regulator's realistic options fall well short of anything residents would recognise as a remedy.

@@ -123,18 +123,11 @@ function getPostType(data) {
 // Deep-read manuscript quotes (lines starting with ">") are kept and returned
 // as a separate array of quote blocks, in the order they appear, interleaved
 // with the surrounding reframe paragraphs.
+// Brief posts use the same ### The story / ### The reframe headings as
+// standard posts (changed 20 July 2026 — they previously used raw
+// <p class="brief-gist"> / <p class="brief-angle"> HTML, which is no longer
+// produced by any post; see build-email.js for the matching fix).
 function extractSections(body, postType) {
-  if (postType === "brief") {
-    const gistMatch = body.match(/<p class="brief-gist">([\s\S]*?)<\/p>/i);
-    const angleMatch = body.match(/<p class="brief-angle">([\s\S]*?)<\/p>/i);
-    return {
-      story: gistMatch ? stripTags(gistMatch[1]).trim() : "",
-      reframeBlocks: [
-        { type: "para", text: angleMatch ? stripTags(angleMatch[1]).trim() : "" }
-      ]
-    };
-  }
-
   const storyMatch = body.match(/###\s*The story\s*\r?\n+([\s\S]*?)(?=\r?\n###|\s*$)/i);
   const reframeMatch = body.match(
     /###\s*The [Rr]eframe(?:,\s*With the Manuscript)?\s*\r?\n+([\s\S]*?)(?=\r?\n###|\s*$)/i
@@ -541,15 +534,26 @@ matchingPosts.forEach((post, index) => {
     );
   }
 
-  // Permalink line (informational — not a live link on paper, just a reference)
-  const slug = post.file.replace(/\.md$/, "").replace(/ \(\d+\)$/, "");
+  // Permalink line (informational — not a live link on paper, just a reference).
+  // Posts 001-028 carry a `permalink:` override preserving their original
+  // pre-rename URL (see naming-convention.md), so that value must win where
+  // it exists. Posts from 029 onward have no override; Eleventy derives the
+  // URL from the filename instead — same logic as build-email.js.
+  let postUrl;
+  if (data.permalink) {
+    const cleaned = data.permalink.trim().replace(/index\.html$/, "");
+    postUrl = `${SITE_URL}${cleaned.startsWith("/") ? "" : "/"}${cleaned}`;
+  } else {
+    const slug = post.file.replace(/\.md$/, "").replace(/ \(\d+\)$/, "");
+    postUrl = `${SITE_URL}/posts/${slug}/`;
+  }
   children.push(
     new Paragraph({
       spacing: { before: 100, after: 60 },
       border: { top: { style: BorderStyle.SINGLE, size: 4, color: RULE, space: 8 } },
       children: [
         new TextRun({ text: "Also online at: ", size: 17, font: "Courier New", color: INK }),
-        new TextRun({ text: `${SITE_URL}/posts/${slug}/`, size: 17, font: "Courier New", color: LEDGER })
+        new TextRun({ text: postUrl, size: 17, font: "Courier New", color: LEDGER })
       ]
     })
   );

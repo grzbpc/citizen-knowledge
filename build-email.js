@@ -60,59 +60,35 @@ function parsePost(raw) {
   return { data, body: body.trim() };
 }
 
-// ---- 3. Pull out sections from the body, depending on post type ----
-// Standard posts use: ### The story / ### The reframe
-// Deep-read posts use: ### The story / ### The Reframe, With the Manuscript
-//   and interleave manuscript quotes as blockquote lines starting with ">".
-// Brief posts use raw HTML: <p class="brief-gist"> / <p class="brief-angle">
-function extractSections(body, postType) {
-  if (postType === "brief") {
-    const gistMatch = body.match(
-      /<p class="brief-gist">([\s\S]*?)<\/p>/i
-    );
-    const angleMatch = body.match(
-      /<p class="brief-angle">([\s\S]*?)<\/p>/i
-    );
-    return {
-      story: gistMatch ? stripTags(gistMatch[1]).trim() : "",
-      reframeBlocks: [
-        { type: "para", text: angleMatch ? stripTags(angleMatch[1]).trim() : "" }
-      ].filter((b) => b.text),
-    };
-  }
-
+// ---- 3. Pull out sections from the body ----
+// All three post types (Standard, Deep Read, Brief) use the same markdown
+// heading structure in the actual site content:
+//   ### The story
+//   ### The reframe            (Standard, Brief)
+//   ### The reframe, with the manuscript   (Deep Read)
+// Deep Read posts interleave manuscript quotes as blockquote lines
+// starting with ">" inside the reframe section. Briefs and Standards
+// don't use quotes in the body, but the parser handles them the same way
+// regardless, so nothing breaks if a quote line ever appears in either.
+function extractSections(body) {
   const storyMatch = body.match(
     /###\s*The story\s*\r?\n+([\s\S]*?)(?=\r?\n###|\s*$)/i
   );
-  // Matches either "The reframe" or "The Reframe, With the Manuscript"
+  // Matches either "The reframe" or "The reframe, with the manuscript"
   const reframeMatch = body.match(
-    /###\s*The [Rr]eframe(?:,\s*With the Manuscript)?\s*\r?\n+([\s\S]*?)(?=\r?\n###|\s*$)/i
+    /###\s*The [Rr]eframe(?:,\s*[Ww]ith the [Mm]anuscript)?\s*\r?\n+([\s\S]*?)(?=\r?\n###|\s*$)/i
   );
 
   const story = storyMatch ? storyMatch[1].trim() : "";
   const reframeRaw = reframeMatch ? reframeMatch[1].trim() : "";
 
   // Split the reframe into ordered blocks, tagging manuscript excerpts.
-  // Excerpts appear in one of three formats depending on when the post was
-  // written:
-  //   1. Markdown blockquotes (lines starting ">") — current standard.
-  //   2. Raw HTML <div class="manuscript-quote">...</div> — early format.
-  //   3. Raw HTML <blockquote class="manuscript">...<span class="cite">...</span></blockquote>
-  //      — used by posts 07 and 08. The cite span is appended to the quote
-  //      text with an em dash rather than dropped.
+  // Excerpts appear either as markdown blockquotes (lines starting ">")
+  // or as raw HTML <div class="manuscript-quote">...</div>.
   const reframeBlocks = [];
   const divRegex = /<div class="manuscript-quote">([\s\S]*?)<\/div>/gi;
-  const blockquoteRegex = /<blockquote class="manuscript">([\s\S]*?)<\/blockquote>/gi;
   let lastIndex = 0;
   let m;
-
-  function formatManuscriptHtml(rawHtml) {
-    const citeMatch = rawHtml.match(/<span class="cite">([\s\S]*?)<\/span>/i);
-    const citeText = citeMatch ? stripTags(citeMatch[1]).replace(/\s+/g, " ").trim() : "";
-    const bodyOnly = rawHtml.replace(/<span class="cite">[\s\S]*?<\/span>/i, "");
-    const quoteText = stripTags(bodyOnly).replace(/\s+/g, " ").trim();
-    return citeText ? `${quoteText} — ${citeText}` : quoteText;
-  }
 
   function pushParaChunks(chunk) {
     chunk.split(/\r?\n\r?\n/).forEach((p) => {
@@ -131,64 +107,20 @@ function extractSections(body, postType) {
     });
   }
 
-  // Pass 1: extract <blockquote class="manuscript"> blocks first, since they
-  // may contain their own blank lines internally that would otherwise
-  // confuse the paragraph-chunk splitter.
-  let withoutBlockquotes = "";
-  lastIndex = 0;
-  while ((m = blockquoteRegex.exec(reframeRaw)) !== null) {
-    withoutBlockquotes += reframeRaw.slice(lastIndex, m.index);
-    withoutBlockquotes += `\n\n@@QUOTE@@${formatManuscriptHtml(m[1])}@@ENDQUOTE@@\n\n`;
-    lastIndex = blockquoteRegex.lastIndex;
-  }
-  withoutBlockquotes += reframeRaw.slice(lastIndex);
-
-  // Pass 2: extract <div class="manuscript-quote"> blocks the same way.
-  let normalised = "";
-  lastIndex = 0;
-  while ((m = divRegex.exec(withoutBlockquotes)) !== null) {
-    normalised += withoutBlockquotes.slice(lastIndex, m.index);
+  while ((m = divRegex.exec(reframeRaw)) !== null) {
+    pushParaChunks(reframeRaw.slice(lastIndex, m.index));
     const quoteText = stripTags(m[1]).replace(/\s+/g, " ").trim();
-    normalised += `\n\n@@QUOTE@@${quoteText}@@ENDQUOTE@@\n\n`;
+    if (quoteText) reframeBlocks.push({ type: "quote", text: quoteText });
     lastIndex = divRegex.lastIndex;
   }
-  normalised += withoutBlockquotes.slice(lastIndex);
-
-  // Pass 3: split into paragraph chunks, converting @@QUOTE@@ markers and
-  // markdown ">" lines into quote blocks, everything else into para blocks.
-  normalised.split(/\r?\n\r?\n/).forEach((p) => {
-    const trimmed = p.trim();
-    if (!trimmed) return;
-    const markerMatch = trimmed.match(/^@@QUOTE@@([\s\S]*)@@ENDQUOTE@@$/);
-    if (markerMatch) {
-      const quoteText = markerMatch[1].trim();
-      if (quoteText) reframeBlocks.push({ type: "quote", text: quoteText });
-    } else if (trimmed.startsWith(">")) {
-      const quoteText = trimmed
-        .split(/\r?\n/)
-        .map((line) => line.replace(/^>\s?/, ""))
-        .join(" ")
-        .trim();
-      if (quoteText) reframeBlocks.push({ type: "quote", text: quoteText });
-    } else {
-      reframeBlocks.push({ type: "para", text: trimmed });
-    }
-  });
+  pushParaChunks(reframeRaw.slice(lastIndex));
 
   return { story, reframeBlocks };
 }
 
-// Minimal HTML tag stripper for brief-post <p> contents (handles <em>, <strong> etc.)
+// Minimal HTML tag stripper (handles <em>, <strong> etc. inside manuscript divs)
 function stripTags(html) {
-  return html
-    .replace(/<[^>]+>/g, "")
-    .replace(/&hellip;/g, "…")
-    .replace(/&mdash;/g, "—")
-    .replace(/&ndash;/g, "–")
-    .replace(/&amp;/g, "&")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&#39;/g, "'")
-    .replace(/&quot;/g, '"');
+  return html.replace(/<[^>]+>/g, "");
 }
 
 // ---- Detect post type from layout / flags ----
@@ -251,7 +183,7 @@ for (const file of files) {
 
   if (!isMatch) continue;
 
-  const sections = extractSections(body, getPostType(data));
+  const sections = extractSections(body);
   matchingPosts.push({ file, data, sections });
 }
 
@@ -302,10 +234,10 @@ matchingPosts.forEach((post, index) => {
   const mappingLine = buildMappingLine(data);
   const postType = getPostType(data);
 
-  output += `**${data.title}**\n`;
-  if (postType === "deep-read") output += `*DEEP READ ENTRY*\n`;
-  if (postType === "brief") output += `*BRIEF ENTRY*\n`;
-  if (postType === "standard") output += `*STANDARD ENTRY*\n`;
+  output += `**${data.title}**\n\n`;
+  if (postType === "deep-read") output += `*DEEP READ ENTRY*\n\n`;
+  if (postType === "standard") output += `*STANDARD ENTRY*\n\n`;
+  if (postType === "brief") output += `*BRIEF ENTRY*\n\n`;
   output += `*Maps to: ${mappingLine}*\n\n`;
 
   if (sections.story) {
@@ -328,7 +260,10 @@ matchingPosts.forEach((post, index) => {
     });
   }
 
-  if (postType === "brief" && data.book_reference) {
+  // Book reference now prints for every post type, matching the site
+  // itself. Plain italics, no heading label — it reads as clearly
+  // separate from the article without needing to announce itself.
+  if (data.book_reference) {
     output += `_${data.book_reference}_\n\n`;
   }
 

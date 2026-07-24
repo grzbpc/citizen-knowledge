@@ -61,11 +61,13 @@ function parsePost(raw) {
 }
 
 // ---- 3. Pull out sections from the body ----
-// All three post types (Standard, Deep Read, Brief) use the same markdown
+// All post types (Standard, Deep Read, Brief) use the same markdown
 // heading structure in the actual site content:
 //   ### The story
 //   ### The reframe            (Standard, Brief)
 //   ### The reframe, with the manuscript   (Deep Read)
+// Counter-Read posts add one further heading after the reframe:
+//   ### Why this doesn't hold
 // Deep Read posts interleave manuscript quotes as blockquote lines
 // starting with ">" inside the reframe section. Briefs and Standards
 // don't use quotes in the body, but the parser handles them the same way
@@ -78,9 +80,14 @@ function extractSections(body) {
   const reframeMatch = body.match(
     /###\s*The [Rr]eframe(?:,\s*[Ww]ith the [Mm]anuscript)?\s*\r?\n+([\s\S]*?)(?=\r?\n###|\s*$)/i
   );
+  // Counter-Read closing verdict section
+  const verdictMatch = body.match(
+    /###\s*Why this doesn't hold\s*\r?\n+([\s\S]*?)(?=\r?\n###|\s*$)/i
+  );
 
   const story = storyMatch ? storyMatch[1].trim() : "";
   const reframeRaw = reframeMatch ? reframeMatch[1].trim() : "";
+  const verdict = verdictMatch ? verdictMatch[1].trim() : "";
 
   // Split the reframe into ordered blocks, tagging manuscript excerpts.
   // Excerpts appear either as markdown blockquotes (lines starting ">")
@@ -115,7 +122,7 @@ function extractSections(body) {
   }
   pushParaChunks(reframeRaw.slice(lastIndex));
 
-  return { story, reframeBlocks };
+  return { story, reframeBlocks, verdict };
 }
 
 // Minimal HTML tag stripper (handles <em>, <strong> etc. inside manuscript divs)
@@ -133,6 +140,10 @@ function getPostType(data) {
     return "deep-read";
   }
   return "standard";
+}
+
+function isCounterRead(data) {
+  return !!(data.counter && data.counter.trim().toLowerCase() === "true");
 }
 
 // ---- 4. Build the mapping line, matching the site's own format ----
@@ -154,7 +165,7 @@ if (!fs.existsSync(POSTS_DIR)) {
 const files = fs
   .readdirSync(POSTS_DIR)
   .filter((f) => f.endsWith(".md"))
-  .sort(); // post-01, post-02... keeps stable order
+  .sort(); // post-001, post-002... keeps stable order
 
 const matchingPosts = [];
 const allFilesReport = [];
@@ -216,16 +227,17 @@ output += `EMAIL BODY (copy everything below this line into Buttondown):\n`;
 output += `------------------------------------------------------------\n\n`;
 output += `# Citizen Knowledge — ${dateForHeading}\n\n`;
 
-// Explainer block: what this email is, the three post types, where to go
+// Explainer block: what this email is, the post types, where to go
 // for the full deep-read analysis, and a line about the site itself.
 // Kept short and only sent once per email, at the top.
 output += `Citizen Knowledge maps ordinary daily news against the argument of `;
 output += `*The Performance of Obedience*: that selective enforcement, not `;
 output += `consistent rule-following, is how modern institutions actually operate.\n\n`;
-output += `This email bundles everything published on the site today. Three entry types appear below:\n\n`;
+output += `This email bundles everything published on the site today. Entry types appear below:\n\n`;
 output += `- **Standard entries** — a news story mapped to the book, in full.\n`;
 output += `- **Deep Read entries** — a fuller analysis that includes short excerpts from the manuscript itself, shown as indented quotes.\n`;
-output += `- **Briefs** — a shorter-format entry, included here in full.\n\n`;
+output += `- **Briefs** — a shorter-format entry, included here in full.\n`;
+output += `- **Counter-Read entries** — a story that looks like it fits the book's argument but which the reporting doesn't actually support, included with an explanation of why it doesn't hold.\n\n`;
 output += `Read the full archive any time at ${SITE_URL}\n\n`;
 output += `---\n\n`;
 
@@ -233,11 +245,13 @@ matchingPosts.forEach((post, index) => {
   const { data, sections } = post;
   const mappingLine = buildMappingLine(data);
   const postType = getPostType(data);
+  const counter = isCounterRead(data);
 
   output += `**${data.title}**\n\n`;
-  if (postType === "deep-read") output += `*DEEP READ ENTRY*\n\n`;
-  if (postType === "standard") output += `*STANDARD ENTRY*\n\n`;
-  if (postType === "brief") output += `*BRIEF ENTRY*\n\n`;
+  if (counter) output += `*COUNTER-READ ENTRY*\n\n`;
+  else if (postType === "deep-read") output += `*DEEP READ ENTRY*\n\n`;
+  else if (postType === "standard") output += `*STANDARD ENTRY*\n\n`;
+  else if (postType === "brief") output += `*BRIEF ENTRY*\n\n`;
   output += `*Maps to: ${mappingLine}*\n\n`;
 
   if (sections.story) {
@@ -260,6 +274,11 @@ matchingPosts.forEach((post, index) => {
     });
   }
 
+  if (counter && sections.verdict) {
+    output += `**Why this doesn't hold**\n\n`;
+    output += `${sections.verdict}\n\n`;
+  }
+
   // Book reference now prints for every post type, matching the site
   // itself. Plain italics, no heading label — it reads as clearly
   // separate from the article without needing to announce itself.
@@ -267,13 +286,22 @@ matchingPosts.forEach((post, index) => {
     output += `_${data.book_reference}_\n\n`;
   }
 
-  // Permalink based on Eleventy's default output for src/posts/*.md with no
-  // permalink override: files land under /posts/<filename-without-.md>/
-  // e.g. src/posts/post-15-pakistan-visa-leverage.md
-  //   -> https://.../posts/post-15-pakistan-visa-leverage/
-  const slug = post.file.replace(/\.md$/, "").replace(/ \(\d+\)$/, "");
+  // Live URL: posts 001-028 carry a permalink: override in frontmatter
+  // pointing at their old pre-rename URL, and that MUST be used verbatim
+  // when present — Eleventy honours it, so the filename-derived guess
+  // below would be wrong (a dead/404 link) for any of those posts.
+  // Only fall back to deriving the URL from the filename when no
+  // permalink override exists (post-029 onward).
+  let postUrl;
+  if (data.permalink) {
+    const cleaned = data.permalink.trim().replace(/index\.html$/, "").replace(/\/$/, "");
+    postUrl = `${SITE_URL}${cleaned}/`;
+  } else {
+    const slug = post.file.replace(/\.md$/, "").replace(/ \(\d+\)$/, "");
+    postUrl = `${SITE_URL}/posts/${slug}/`;
+  }
   const linkLabel = postType === "deep-read" ? "Read the full deep read" : "Read on the site";
-  output += `${linkLabel}: ${SITE_URL}/posts/${slug}/\n\n`;
+  output += `${linkLabel}: ${postUrl}\n\n`;
 
   if (index < matchingPosts.length - 1) {
     output += `---\n\n`;

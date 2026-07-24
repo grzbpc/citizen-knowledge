@@ -34,6 +34,8 @@ const BODY_INK = "242320";
 const LEDGER = "7A2222";
 const LEDGER_BG = "F1E3E0";
 const RULE = "B8B2A2";
+const COUNTER = "4A4A46";
+const COUNTER_BG = "EDEBE5";
 
 // ---- 1. Work out the date window ----
 const argA = process.argv[2];
@@ -119,6 +121,10 @@ function getPostType(data) {
   return "standard";
 }
 
+function isCounterRead(data) {
+  return !!(data.counter && data.counter.trim().toLowerCase() === "true");
+}
+
 // ---- 3. Extract sections — FULL content, no teaser-shortening for deep-read ----
 // Deep-read manuscript quotes (lines starting with ">") are kept and returned
 // as a separate array of quote blocks, in the order they appear, interleaved
@@ -127,14 +133,18 @@ function getPostType(data) {
 // standard posts (changed 20 July 2026 — they previously used raw
 // <p class="brief-gist"> / <p class="brief-angle"> HTML, which is no longer
 // produced by any post; see build-email.js for the matching fix).
+// Counter-Read posts add a further ### Why this doesn't hold section after
+// the reframe, extracted separately and returned as `verdict`.
 function extractSections(body, postType) {
   const storyMatch = body.match(/###\s*The story\s*\r?\n+([\s\S]*?)(?=\r?\n###|\s*$)/i);
   const reframeMatch = body.match(
     /###\s*The [Rr]eframe(?:,\s*With the Manuscript)?\s*\r?\n+([\s\S]*?)(?=\r?\n###|\s*$)/i
   );
+  const verdictMatch = body.match(/###\s*Why this doesn't hold\s*\r?\n+([\s\S]*?)(?=\r?\n###|\s*$)/i);
 
   const story = storyMatch ? storyMatch[1].trim() : "";
   const reframeRaw = reframeMatch ? reframeMatch[1].trim() : "";
+  const verdictRaw = verdictMatch ? verdictMatch[1].trim() : "";
 
   // Manuscript quotes appear in one of three forms in this project's posts:
   //   1. Markdown blockquote lines starting with ">" — current standard.
@@ -156,69 +166,54 @@ function extractSections(body, postType) {
     return citeText ? `${quoteText} — ${citeText}` : quoteText;
   }
 
-  function pushParaChunks(chunk) {
-    const paragraphs = chunk.split(/\r?\n\r?\n/);
-    paragraphs.forEach((p) => {
+  function pushBlocksFrom(rawText, targetArray) {
+    let normalised = "";
+    let li = 0, m;
+
+    let withoutBlockquotes = "";
+    li = 0;
+    while ((m = blockquoteSplitRegex.exec(rawText)) !== null) {
+      withoutBlockquotes += rawText.slice(li, m.index);
+      withoutBlockquotes += `\n\n@@QUOTE@@${formatManuscriptHtml(m[1])}@@ENDQUOTE@@\n\n`;
+      li = blockquoteSplitRegex.lastIndex;
+    }
+    withoutBlockquotes += rawText.slice(li);
+
+    li = 0;
+    while ((m = divSplitRegex.exec(withoutBlockquotes)) !== null) {
+      normalised += withoutBlockquotes.slice(li, m.index);
+      const quoteText = stripTags(m[1]).replace(/\s+/g, " ").trim();
+      normalised += `\n\n@@QUOTE@@${quoteText}@@ENDQUOTE@@\n\n`;
+      li = divSplitRegex.lastIndex;
+    }
+    normalised += withoutBlockquotes.slice(li);
+
+    normalised.split(/\r?\n\r?\n/).forEach((p) => {
       const trimmed = p.trim();
       if (!trimmed) return;
-      if (trimmed.startsWith(">")) {
+      const markerMatch = trimmed.match(/^@@QUOTE@@([\s\S]*)@@ENDQUOTE@@$/);
+      if (markerMatch) {
+        const quoteText = markerMatch[1].trim();
+        if (quoteText) targetArray.push({ type: "quote", text: quoteText });
+      } else if (trimmed.startsWith(">")) {
         const quoteText = trimmed
           .split(/\r?\n/)
           .map((line) => line.replace(/^>\s?/, ""))
           .join(" ")
           .trim();
-        if (quoteText) reframeBlocks.push({ type: "quote", text: quoteText });
+        if (quoteText) targetArray.push({ type: "quote", text: quoteText });
       } else {
-        reframeBlocks.push({ type: "para", text: trimmed });
+        targetArray.push({ type: "para", text: trimmed });
       }
     });
   }
 
-  // Pass 1: extract <blockquote class="manuscript"> blocks first, since they
-  // may contain their own blank lines internally that would otherwise
-  // confuse the paragraph-chunk splitter.
-  let withoutBlockquotes = "";
-  lastIndex = 0;
-  while ((match = blockquoteSplitRegex.exec(reframeRaw)) !== null) {
-    withoutBlockquotes += reframeRaw.slice(lastIndex, match.index);
-    withoutBlockquotes += `\n\n@@QUOTE@@${formatManuscriptHtml(match[1])}@@ENDQUOTE@@\n\n`;
-    lastIndex = blockquoteSplitRegex.lastIndex;
-  }
-  withoutBlockquotes += reframeRaw.slice(lastIndex);
+  pushBlocksFrom(reframeRaw, reframeBlocks);
 
-  // Pass 2: extract <div class="manuscript-quote"> blocks the same way.
-  let normalised = "";
-  lastIndex = 0;
-  while ((match = divSplitRegex.exec(withoutBlockquotes)) !== null) {
-    normalised += withoutBlockquotes.slice(lastIndex, match.index);
-    const quoteText = stripTags(match[1]).replace(/\s+/g, " ").trim();
-    normalised += `\n\n@@QUOTE@@${quoteText}@@ENDQUOTE@@\n\n`;
-    lastIndex = divSplitRegex.lastIndex;
-  }
-  normalised += withoutBlockquotes.slice(lastIndex);
+  const verdictBlocks = [];
+  if (verdictRaw) pushBlocksFrom(verdictRaw, verdictBlocks);
 
-  // Pass 3: split into paragraph chunks, converting @@QUOTE@@ markers and
-  // markdown ">" lines into quote blocks, everything else into para blocks.
-  normalised.split(/\r?\n\r?\n/).forEach((p) => {
-    const trimmed = p.trim();
-    if (!trimmed) return;
-    const markerMatch = trimmed.match(/^@@QUOTE@@([\s\S]*)@@ENDQUOTE@@$/);
-    if (markerMatch) {
-      const quoteText = markerMatch[1].trim();
-      if (quoteText) reframeBlocks.push({ type: "quote", text: quoteText });
-    } else if (trimmed.startsWith(">")) {
-      const quoteText = trimmed
-        .split(/\r?\n/)
-        .map((line) => line.replace(/^>\s?/, ""))
-        .join(" ")
-        .trim();
-      if (quoteText) reframeBlocks.push({ type: "quote", text: quoteText });
-    } else {
-      reframeBlocks.push({ type: "para", text: trimmed });
-    }
-  });
-
-  return { story, reframeBlocks };
+  return { story, reframeBlocks, verdictBlocks };
 }
 
 // ---- 4. Read & filter posts ----
@@ -251,7 +246,7 @@ for (const file of files) {
   if (!isMatch) continue;
 
   const sections = extractSections(body, getPostType(data));
-  matchingPosts.push({ file, data, sections, postType: getPostType(data) });
+  matchingPosts.push({ file, data, sections, postType: getPostType(data), counter: isCounterRead(data) });
 }
 
 console.log(`\n--- Scan report: ${files.length} .md file(s) checked in ${POSTS_DIR} ---`);
@@ -305,7 +300,7 @@ children.push(
 const explainerLines = [
   "Citizen Knowledge is a companion project to a book called The Performance of Obedience: Legitimacy, Law, and the Systems We Pretend to Believe In, by Greg Lewis, currently with UK literary agents.",
   "The book argues that selective enforcement — not consistent rule-following — is how modern institutions actually operate: the same law, the same rule, the same process, applied differently depending on who it lands on. Citizen Knowledge takes ordinary daily news stories and maps each one against that argument, showing which part of the book's structure the story illustrates.",
-  "This printout gathers everything published on the site this week into one document. Three kinds of entry may appear:",
+  "This printout gathers everything published on the site this week into one document. Several kinds of entry may appear:",
 ];
 
 explainerLines.forEach((t) => {
@@ -318,7 +313,8 @@ explainerLines.forEach((t) => {
 const entryTypeList = [
   ["Standard entries", "a news story mapped to the book, in full."],
   ["Deep Read entries", "a fuller analysis that includes short excerpts from the manuscript itself, printed here in full rather than summarised."],
-  ["Briefs", "a shorter-format entry, included here in full."]
+  ["Briefs", "a shorter-format entry, included here in full."],
+  ["Counter-Read entries", "a story that looks like it fits the book's argument but which the reporting doesn't actually support, printed with an explanation of why it doesn't hold."]
 ];
 entryTypeList.forEach(([label, desc]) => {
   children.push(new Paragraph({
@@ -394,26 +390,41 @@ function buildMappingLine(data) {
 }
 
 matchingPosts.forEach((post, index) => {
-  const { data, sections, postType } = post;
+  const { data, sections, postType, counter } = post;
 
-  // Stamp block — colours mirror the site's three-way scheme:
+  // Stamp block — colours mirror the site's scheme:
   //   Deep Read = solid black background, white text
   //   Brief     = white background, burgundy border and text
   //   Standard  = pale grey background, grey text (site uses transparent;
   //               paper needs a filled/bordered box to read as a stamp)
-  const stampLabelText = postType === "deep-read" ? "MAPS TO THE PERFORMANCE OF OBEDIENCE — DEEP READ ENTRY"
-    : postType === "brief" ? "MAPS TO THE PERFORMANCE OF OBEDIENCE — BRIEF ENTRY"
-    : "MAPS TO THE PERFORMANCE OF OBEDIENCE — STANDARD ENTRY";
+  //   Counter-Read = white background, dashed slate border and text —
+  //               layered on top of whichever base type it is, since a
+  //               Counter-Read is still structurally a Standard/Deep
+  //               Read/Brief. Takes visual priority over the base stamp
+  //               so the boundary-case status is what the reader sees first.
+  let stampLabelText, stampFill, stampTextColor, stampBorderColor, stampBorderStyle, stampBorderSize;
 
-  const stampFill = postType === "deep-read" ? INK
-    : postType === "brief" ? "FFFFFF"
-    : "EDEBE5";
-  const stampTextColor = postType === "deep-read" ? "F7F5F0"
-    : postType === "brief" ? LEDGER
-    : BODY_INK;
-  const stampBorderColor = postType === "brief" ? LEDGER : stampFill;
-  const stampBorderStyle = postType === "brief" ? BorderStyle.SINGLE : BorderStyle.NONE;
-  const stampBorderSize = postType === "brief" ? 8 : 0;
+  if (counter) {
+    stampLabelText = `MAPS TO THE PERFORMANCE OF OBEDIENCE — COUNTER-READ (BOUNDARY CASE)`;
+    stampFill = "FFFFFF";
+    stampTextColor = COUNTER;
+    stampBorderColor = COUNTER;
+    stampBorderStyle = BorderStyle.DASHED;
+    stampBorderSize = 8;
+  } else {
+    stampLabelText = postType === "deep-read" ? "MAPS TO THE PERFORMANCE OF OBEDIENCE — DEEP READ ENTRY"
+      : postType === "brief" ? "MAPS TO THE PERFORMANCE OF OBEDIENCE — BRIEF ENTRY"
+      : "MAPS TO THE PERFORMANCE OF OBEDIENCE — STANDARD ENTRY";
+    stampFill = postType === "deep-read" ? INK
+      : postType === "brief" ? "FFFFFF"
+      : "EDEBE5";
+    stampTextColor = postType === "deep-read" ? "F7F5F0"
+      : postType === "brief" ? LEDGER
+      : BODY_INK;
+    stampBorderColor = postType === "brief" ? LEDGER : stampFill;
+    stampBorderStyle = postType === "brief" ? BorderStyle.SINGLE : BorderStyle.NONE;
+    stampBorderSize = postType === "brief" ? 8 : 0;
+  }
 
   children.push(
     new Table({
@@ -523,6 +534,58 @@ matchingPosts.forEach((post, index) => {
       );
     }
   });
+
+  // Why this doesn't hold — Counter-Read only, printed in the slate colour
+  // to visually separate the verdict from the ordinary reframe above it.
+  if (counter && sections.verdictBlocks && sections.verdictBlocks.length) {
+    children.push(
+      new Paragraph({
+        spacing: { before: 160, after: 100 },
+        border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: COUNTER, space: 4 } },
+        children: [new TextRun({ text: "WHY THIS DOESN'T HOLD", bold: true, size: 18, font: "Courier New", color: COUNTER, characterSpacing: 10 })]
+      })
+    );
+    sections.verdictBlocks.forEach((block) => {
+      if (block.type === "quote") {
+        children.push(
+          new Table({
+            width: { size: 100, type: WidthType.PERCENTAGE },
+            borders: {
+              top: { style: BorderStyle.NONE, size: 0, color: COUNTER },
+              bottom: { style: BorderStyle.NONE, size: 0, color: COUNTER },
+              left: { style: BorderStyle.SINGLE, size: 24, color: COUNTER },
+              right: { style: BorderStyle.NONE, size: 0, color: COUNTER },
+              insideHorizontal: { style: BorderStyle.NONE, size: 0, color: COUNTER },
+              insideVertical: { style: BorderStyle.NONE, size: 0, color: COUNTER },
+            },
+            rows: [
+              new TableRow({
+                children: [
+                  new TableCell({
+                    shading: { type: ShadingType.CLEAR, fill: COUNTER_BG },
+                    margins: { top: 160, bottom: 160, left: 260, right: 260 },
+                    children: [
+                      new Paragraph({
+                        children: [new TextRun({ text: block.text, italics: true, size: 22, font: "Georgia", color: INK })]
+                      })
+                    ]
+                  })
+                ]
+              })
+            ]
+          }),
+          new Paragraph({ spacing: { before: 200, after: 200 }, children: [] })
+        );
+      } else {
+        children.push(
+          new Paragraph({
+            spacing: { after: 220 },
+            children: [new TextRun({ text: block.text, size: 23, font: "Georgia", color: BODY_INK })]
+          })
+        );
+      }
+    });
+  }
 
   // Book reference footer line — this field appears on all post types
   if (data.book_reference) {

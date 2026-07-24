@@ -10,7 +10,6 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: ""
 description: "Four men have been jailed for a combined 30 years for an 'honour' kidnapping, torture, and a £20,000 ransom demand made directly to the victim's father."
-quote: "The kidnap has changed my life. I now rarely leave the house."
 book_reference: "This entry shows a family responding to a threat against one of its members through its own private channel, a ransom call, rather than through any institution, and the state's role beginning only once that private process had already run its course."
 ---
 

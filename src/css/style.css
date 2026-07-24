@@ -5,6 +5,8 @@
   --ledger:#7A2222;
   --ledger-bg:#F1E3E0;
   --rule:#B8B2A2;
+  --counter:#4A4A46;
+  --counter-bg:#EDEBE5;
 }
 *{box-sizing:border-box;}
 body{
@@ -319,6 +321,9 @@ main .wrap > .date-heading:first-of-type{
 .format-tag.brief{
   background:transparent;color:var(--ledger);border-color:var(--ledger);opacity:1;
 }
+.format-tag.counter{
+  background:transparent;color:var(--counter);border-color:var(--counter);border-style:dashed;opacity:1;
+}
 
 /* =========================================================
    STANDARD-POST STAMP — homepage + individual post pages
@@ -347,4 +352,62 @@ main .wrap > .date-heading:first-of-type{
 .post-header .standard-tag,
 .post-header .deep-read-badge{
   margin-bottom:14px;
+}
+
+/* =========================================================
+   COUNTER-READ — boundary-case entries
+   A Counter-Read is still a Standard, Deep Read, or Brief in
+   structure (same layout file, same "The story" / "The reframe"
+   shape) but carries an additional counter: true flag, marked
+   with this separate slate-grey dashed badge so it reads
+   visually as the site checking itself, not a fourth ordinary
+   category competing with the existing grey/black/burgundy set.
+   Placed above (or alongside) the standard-tag / deep-read-badge
+   / brief-tag it would otherwise carry.
+   ========================================================= */
+.counter-badge{
+  display:inline-block;
+  background:transparent;
+  color:var(--counter);
+  font-family:"Courier New",monospace;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  border:1px dashed var(--counter);
+  padding:4px 10px;
+  margin-bottom:10px;
+  margin-right:8px;
+}
+
+.entry .counter-tag{
+  display:inline-block;
+  background:transparent;
+  color:var(--counter);
+  font-family:"Courier New",monospace;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  border:1px dashed var(--counter);
+  padding:3px 9px;
+  margin-bottom:8px;
+  margin-right:6px;
+}
+
+/* "Why this doesn't hold" — reframe's closing subsection on a
+   Counter-Read post. Same h3 rule as the rest of article content,
+   but in the slate counter colour instead of ledger red, so the
+   verdict visually separates itself from the ordinary reframe. */
+article h3.counter-verdict{
+  color:var(--counter);
+  border-bottom-color:var(--counter);
+}
+
+.mapping-citation.mapping-citation--counter{
+  background:var(--counter-bg);
+  border-left-color:var(--counter);
+}
+.mapping-citation--counter .label{
+  color:var(--counter);
 }

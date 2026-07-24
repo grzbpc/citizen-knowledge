@@ -10,7 +10,9 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: ""
 description: "Flies, dust, and a stench residents call unbearable. The operator says it's sorry and that efforts continue."
-quote: "The system optimises for defensibility, not resolution."
+quote: "Enforcement gravitates toward what is manageable rather than what is meaningful. The system optimises for defensibility, not resolution."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 13"
 book_reference: "This entry shows an apology and an open-ended promise standing in for any enforceable timeline, the least expensive form of compliance an operator can offer."
 ---
 

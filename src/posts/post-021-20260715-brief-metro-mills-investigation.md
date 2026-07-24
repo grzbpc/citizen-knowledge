@@ -1,4 +1,5 @@
 ---
+permalink: /posts/post-20-mills-investigation_b/index.html
 layout: brief-post.njk
 title: A closed investigation, sitting quietly next to a pay rise
 date: 2026-07-15
@@ -10,7 +11,9 @@ chapter: 8
 chapterTitle: Work as Virtue, Poverty as Failure
 subheading: ""
 description: "The BBC investigated, found insufficient evidence, and closed the file in 2019. The salary kept climbing until March."
-quote: "Whether the underlying problem is moving towards resolution becomes increasingly difficult to determine."
+quote: "Statements become evidence of concern. Targets become evidence of commitment. Consultations become evidence of engagement. Activity becomes evidence of progress. Whether the underlying problem is moving towards resolution becomes increasingly difficult to determine."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 14"
 book_reference: "This entry shows a closed file and a rising salary coexisting for years without friction, until public pressure forced the two into the same sentence."
 ---
 
@@ -20,4 +23,4 @@ Metro's BBC pay-list report notes, almost in passing, that Scott Mills, the corp
 
 ### The reframe
 
-"Insufficient evidence to charge" is a specific, narrow finding, not an exoneration, and institutions are generally careful to keep those two things separate when it suits them. What's notable here is how little the 2019 closure appears to have shaped anything afterwards: the salary continued rising for years after the file closed, and the sacking in March is reported without a clearly stated cause. An institution can hold a closed file and a rising pay grade in the same hand indefinitely, right up until something forces the two into the same sentence.
+"Insufficient evidence to charge" is a specific, narrow finding, not an exoneration, and institutions are generally careful to keep those two things separate when it suits them. What is notable here is how little the 2019 closure appears to have shaped anything afterwards: the salary continued rising for years after the file closed, and the sacking in March is reported without a clearly stated cause. An institution can hold a closed file and a rising pay grade in the same hand indefinitely, right up until something forces the two into the same sentence.

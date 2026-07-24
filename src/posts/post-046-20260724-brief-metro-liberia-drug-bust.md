@@ -11,12 +11,14 @@ chapterTitle: Discretion as Power
 subheading: ""
 description: "A record £230million cocaine bust in Liberia has prompted a warning that the UK expects a country without drug-detection dogs or scanners to police a smuggling route on its behalf."
 quote: "We do not have dogs and scanners at the airport to detect narcotics."
+quote_source: "article"
+quote_cite: "Senator Amara Konneh, quoted in Metro, 24 July 2026"
 book_reference: "This entry shows an enforcement burden assigned by default to the country least equipped to carry it, while the country receiving the benefit of that enforcement offers no comment on the imbalance."
 ---
 
 ### The story
 
-A record £230million cocaine cargo has been seized in Monrovia, Liberia, discovered during an investigation into a separate £14million shipment bound for the UK. Liberian senator Amara Konneh called it "an SOS call to the UK not to overlook Liberia," warning the country's politicians say they are not receiving enough help to stop class A drugs being smuggled from its territory. A separate 200kg haul was intercepted before a planned 3,000-mile flight to the UK via Brussels. Konneh said: "We do not have dogs and scanners at the airport to detect narcotics. The UK should redefine its relationship with Liberia to assist our security agencies with our capacity to address this issue," adding that "the UK has more sophisticated law enforcement to address drug trafficking than Liberia." The National Crime Agency declined to comment on the report.
+A record £230million cocaine cargo has been seized in Monrovia, Liberia, discovered during an investigation into a separate £14million shipment bound for the UK. Liberian senator Amara Konneh called it "an SOS call to the UK not to overlook Liberia," warning the country's politicians say they are not receiving enough help to stop class A drugs being smuggled from its territory. A separate 200kg haul was intercepted before a planned 3,000-mile flight to the UK via Brussels. Konneh said the country lacks the detection equipment at its airport to intercept narcotics, and called on the UK to redefine its relationship with Liberia to assist its security agencies, noting that the UK has more sophisticated law enforcement to address drug trafficking than Liberia does. The National Crime Agency declined to comment on the report.
 
 ### The reframe
 

@@ -1,4 +1,5 @@
 ---
+permalink: /posts/post-21-hillsborough-law_b/index.html
 layout: brief-post.njk
 title: A law built because the ordinary process didn't work
 date: 2026-07-15
@@ -10,7 +11,9 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: ""
 description: "Andy Burnham calls the Hillsborough Law a power shift. It's also an admission of what 37 years of the existing one couldn't do."
-quote: "Trust erodes accordingly, not because officers are malicious, but because predictability disappears."
+quote: "Trust erodes accordingly, not because officers are malicious, but because predictability disappears. Citizens cannot orient their behaviour around principles that are applied unevenly and explained after the fact."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 13"
 book_reference: "This entry shows a new legal duty as a late admission: officials were never required to cooperate honestly with inquiries, and thirty-seven years of that gap is what finally produced the law."
 ---
 
@@ -20,4 +23,4 @@ Incoming PM Andy Burnham told the Commons the Hillsborough Law, imposing a duty 
 
 ### The reframe
 
-A new law compelling officials to cooperate with inquiries is only necessary because the existing legal and institutional framework didn't require that, in practice, for 37 years. Officials weren't breaking the law by closing ranks; there wasn't a law making that illegal. This is worth including as the other side of the book's usual pattern: sometimes the gap between rule and practice does eventually get closed, but only after decades, and only because the people harmed refused to stop pointing at it. The law itself is a late admission of exactly what its absence had already made clear.
+A new law compelling officials to cooperate with inquiries is only necessary because the existing legal and institutional framework did not require that, in practice, for 37 years. Officials were not breaking the law by closing ranks; there was not a law making that illegal. This is worth including as the other side of the book's usual pattern: sometimes the gap between rule and practice does eventually get closed, but only after decades, and only because the people harmed refused to stop pointing at it. The law itself is a late admission of exactly what its absence had already made clear.

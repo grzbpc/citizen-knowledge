@@ -10,7 +10,9 @@ chapter: 13
 chapterTitle: Discretion as Power
 subheading: ""
 description: "£30.5million was supposed to fix this. Days later, 7,000 properties lost water again."
-quote: "A penalty that does not change future behaviour was never a penalty; it was a cost, priced in and paid."
+quote: "Where enforcement fails to reduce harm, the response is rarely to question the framework itself. Instead, enforcement is intensified, expanded, or rebranded. The system grows even when the problem does not shrink."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 13"
 book_reference: "This entry shows a fine large enough to make headlines produce a recurrence of the exact failure it was imposed for within days, suggesting the penalty was priced too low to change behaviour, or the underlying problem exceeds what any fine is set to fix."
 ---
 

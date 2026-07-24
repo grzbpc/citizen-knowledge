@@ -24,7 +24,19 @@
 
   {{ content | safe }}
 
-  {% if quote %}<blockquote>{{ quote | safe }}</blockquote>{% endif %}
+  {# The quote: field is NOT automatically a manuscript excerpt. quote_source
+     must be set explicitly to "manuscript" or "article"; anything else (or
+     omitted) renders an unlabelled pull-quote. A quote with no verifiable
+     source should not be published at all. #}
+  {% if quote %}
+    {% if quote_source == "manuscript" %}
+      <blockquote class="quote--manuscript">{{ quote | safe }}{% if quote_cite %}<span class="cite">{{ quote_cite }}</span>{% endif %}</blockquote>
+    {% elif quote_source == "article" %}
+      <blockquote class="quote--article">{{ quote | safe }}{% if quote_cite %}<span class="cite">{{ quote_cite }}</span>{% endif %}</blockquote>
+    {% else %}
+      <blockquote>{{ quote | safe }}</blockquote>
+    {% endif %}
+  {% endif %}
 
   {% if book_reference %}
   <div class="mapping-citation mapping-citation--brief{% if counter %} mapping-citation--counter{% endif %}">
@@ -34,7 +46,9 @@
   {% endif %}
 
   <footer>
-    Source: {{ source }}. No images or verbatim text reproduced; summary is original paraphrase.
+    Source: {{ source }}. No images reproduced.
+    {% if quote_source == "article" or has_article_quote %}Short quotations from the source article are reproduced verbatim and marked as such; all other summary is original paraphrase.{% else %}All summaries are original paraphrase.{% endif %}
+    {% if quote_source == "manuscript" %}Manuscript quotation from <em>The Performance of Obedience</em>, by Greg Lewis, reproduced as a short excerpt for analytical purposes.{% endif %}
   </footer>
 </div>
 </body>

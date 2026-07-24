@@ -23,20 +23,24 @@
     <p class="source-line">{{ source }}</p>
   </header>
 
+  {# Standard posts carry no manuscript quotes by default, so no
+     .manuscript-quotes wrapper here. If a standard post ever includes
+     one, it must be written as raw HTML with class="quote--manuscript"
+     and its own .cite line. Article quotes use class="quote--article". #}
+  {% if deep_read %}<div class="manuscript-quotes">{% endif %}
   {{ content | safe }}
+  {% if deep_read %}</div>{% endif %}
 
   <div class="mapping-citation{% if counter %} mapping-citation--counter{% endif %}">
     <span class="label">{% if counter %}Book reference &mdash; boundary case{% else %}Book reference{% endif %}</span>
     <strong>Part {{ part }}, {{ partTitle }} &middot; Chapter {{ chapter }}, {{ chapterTitle }}{% if subheading %} &middot; {{ subheading }}{% endif %}</strong>
-    {% if book_reference %}<p>{{ book_reference }}</p>{% endif %}
+    {% if book_reference %}<p class="book-reference-note">{{ book_reference }}</p>{% endif %}
   </div>
 
   <footer>
-    {% if deep_read %}
-    Source: {{ source }}. No images reproduced. Manuscript quotations from <em>The Performance of Obedience</em> reproduced as brief excerpts for analytical purposes.
-    {% else %}
-    Source: {{ source }}. No images reproduced. All summaries are original paraphrase.
-    {% endif %}
+    Source: {{ source }}. No images reproduced.
+    {% if has_article_quote %}Short quotations from the source article are reproduced verbatim and marked as such; all other summary is original paraphrase.{% else %}All summaries are original paraphrase.{% endif %}
+    {% if deep_read %}Manuscript quotations from <em>The Performance of Obedience</em> reproduced as brief excerpts for analytical purposes.{% endif %}
   </footer>
 </div>
 </body>

@@ -22,14 +22,25 @@
     <h1>{{ title }}</h1>
     <p class="source-line">{{ source }}</p>
   </header>
-  {{ content | safe }}
+
+  {# .manuscript-quotes labels markdown "> *text*" blockquotes as manuscript
+     excerpts. Any blockquote in this layout that is NOT from the manuscript
+     must be written in the post as raw HTML with class="quote--article",
+     which overrides the label. #}
+  <div class="manuscript-quotes">
+    {{ content | safe }}
+  </div>
+
   <div class="mapping-citation{% if counter %} mapping-citation--counter{% endif %}">
     <span class="label">{% if counter %}Book reference &mdash; boundary case{% else %}Book reference{% endif %}</span>
     <strong>Part {{ part }}, {{ partTitle }} &middot; Chapter {{ chapter }}, {{ chapterTitle }}{% if subheading %} &middot; {{ subheading }}{% endif %}</strong>
     {% if book_reference %}<p class="book-reference-note">{{ book_reference }}</p>{% endif %}
   </div>
+
   <footer>
-    Source: {{ source }}. No images reproduced. Manuscript quotations from <em>The Performance of Obedience</em>, by Greg Lewis, reproduced here as short excerpts for analytical purposes.
+    Source: {{ source }}. No images reproduced.
+    {% if has_article_quote %}Short quotations from the source article are reproduced verbatim and marked as such; all other summary is original paraphrase.{% else %}All summaries are original paraphrase.{% endif %}
+    Manuscript quotations from <em>The Performance of Obedience</em>, by Greg Lewis, reproduced here as short excerpts for analytical purposes.
   </footer>
 </div>
 </body>

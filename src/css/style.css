@@ -97,11 +97,23 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
 }
 .mapping-citation strong{color:var(--ink);}
 
-/* deep-read manuscript quotations
-   These are written in the post's Markdown as "> *text*", which Eleventy
-   renders as a plain <blockquote> inside the article. There is no
-   .manuscript-quote class in the actual content — targeting blockquote
-   directly is what actually styles these. */
+/* =========================================================
+   QUOTATIONS — SOURCE-LABELLED
+   ---------------------------------------------------------
+   CRITICAL: a blockquote's label must match where the words
+   actually came from. Previously a single rule stamped
+   "From the manuscript" onto EVERY blockquote on the site,
+   including Brief-layout pull-quotes taken from news
+   articles or written for the site. That mislabelled
+   non-manuscript text as the author's own book and is the
+   bug this section exists to prevent recurring.
+
+   Base .wrap blockquote carries NO label. A label appears
+   only when an explicit class is applied:
+     .quote--manuscript  -> "From the manuscript"
+     .quote--article     -> "From the source article"
+     (no class)          -> unlabelled pull-quote
+   ========================================================= */
 .wrap blockquote{
   background:var(--ledger-bg);
   border:2px solid var(--ledger);
@@ -115,7 +127,16 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
   text-align:left;
   position:relative;
 }
-.wrap blockquote::before{
+.wrap blockquote p{
+  margin:0;
+}
+
+/* Manuscript excerpts. Deep Read posts write these in Markdown as
+   "> *text*"; the deep-read layout wraps article content in a
+   container carrying .manuscript-quotes so the label applies to
+   markdown-generated blockquotes without needing a class on each. */
+.wrap blockquote.quote--manuscript::before,
+.manuscript-quotes blockquote::before{
   content:"From the manuscript";
   display:block;
   font-family:"Courier New",monospace;
@@ -127,8 +148,40 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
   color:var(--ledger);
   margin-bottom:8px;
 }
-.wrap blockquote p{
-  margin:0;
+
+/* Verbatim quotation from the source news article. Visually
+   distinct from manuscript excerpts (slate, dashed) so the two
+   can never be confused at a glance. */
+.wrap blockquote.quote--article{
+  background:var(--counter-bg);
+  border:2px dashed var(--counter);
+}
+.wrap blockquote.quote--article::before{
+  content:"From the source article";
+  display:block;
+  font-family:"Courier New",monospace;
+  font-style:normal;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--counter);
+  margin-bottom:8px;
+}
+
+/* Inline citation line inside a quote box (chapter ref, or
+   publication + date for article quotes). */
+.wrap blockquote .cite{
+  display:block;
+  margin-top:10px;
+  font-family:"Courier New",monospace;
+  font-style:normal;
+  font-size:11px;
+  letter-spacing:0.06em;
+  color:var(--ledger);
+}
+.wrap blockquote.quote--article .cite{
+  color:var(--counter);
 }
 
 /* chapter index page */
@@ -181,7 +234,7 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
   font-size:26px;
 }
 
-/* Brief post body copy ("The story" / "The reframe") now uses the same
+/* Brief post body copy ("The story" / "The reframe") uses the same
    article h3 / article p rules as standard and deep-read posts, so no
    .brief-gist / .brief-angle rules are needed here any more. */
 
@@ -327,10 +380,6 @@ main .wrap > .date-heading:first-of-type{
 
 /* =========================================================
    STANDARD-POST STAMP — homepage + individual post pages
-   Fine, low-emphasis, grey/transparent. Uses the same visual
-   language as .format-tag on the chapters page, since standard
-   is the most common type and should not compete visually with
-   the deep-read (black) or brief (burgundy) stamps.
    ========================================================= */
 .standard-tag{
   display:inline-block;
@@ -346,9 +395,6 @@ main .wrap > .date-heading:first-of-type{
   margin-bottom:10px;
 }
 
-/* On individual post pages the tag sits above the mapping bar,
-   consistent with where .deep-read-badge and .brief-tag sit
-   in deep-read-post.njk and brief-post.njk respectively. */
 .post-header .standard-tag,
 .post-header .deep-read-badge{
   margin-bottom:14px;
@@ -357,13 +403,8 @@ main .wrap > .date-heading:first-of-type{
 /* =========================================================
    COUNTER-READ — boundary-case entries
    A Counter-Read is still a Standard, Deep Read, or Brief in
-   structure (same layout file, same "The story" / "The reframe"
-   shape) but carries an additional counter: true flag, marked
-   with this separate slate-grey dashed badge so it reads
-   visually as the site checking itself, not a fourth ordinary
-   category competing with the existing grey/black/burgundy set.
-   Placed above (or alongside) the standard-tag / deep-read-badge
-   / brief-tag it would otherwise carry.
+   structure but carries an additional counter: true flag,
+   marked with this slate-grey dashed badge.
    ========================================================= */
 .counter-badge{
   display:inline-block;
@@ -395,10 +436,6 @@ main .wrap > .date-heading:first-of-type{
   margin-right:6px;
 }
 
-/* "Why this doesn't hold" — reframe's closing subsection on a
-   Counter-Read post. Same h3 rule as the rest of article content,
-   but in the slate counter colour instead of ledger red, so the
-   verdict visually separates itself from the ordinary reframe. */
 article h3.counter-verdict{
   color:var(--counter);
   border-bottom-color:var(--counter);

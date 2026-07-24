@@ -49,6 +49,9 @@ permalink: /chapters/index.html
               {% else %}
                 <span class="format-tag">Standard</span>
               {% endif %}
+              {% if post.data.counter %}
+                <span class="format-tag counter">Counter-Read</span>
+              {% endif %}
             </div>
           </li>
         {% endfor %}

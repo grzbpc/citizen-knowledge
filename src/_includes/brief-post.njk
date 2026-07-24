@@ -13,6 +13,7 @@
 <div class="wrap">
   <a class="backlink" href="{{ '/' | url }}">&larr; Back to the Record</a>
   <header class="post-header brief-header">
+    {% if counter %}<span class="counter-badge">Counter-Read &mdash; Boundary Case</span>{% endif %}
     <span class="brief-tag">Brief</span>
     <div class="mapping-bar mapping-bar--brief">
       Part {{ part }}: {{ partTitle }} &rarr; Chapter {{ chapter }}: {{ chapterTitle }}{% if subheading %} &rarr; {{ subheading }}{% endif %}
@@ -26,8 +27,8 @@
   {% if quote %}<blockquote>{{ quote | safe }}</blockquote>{% endif %}
 
   {% if book_reference %}
-  <div class="mapping-citation mapping-citation--brief">
-    <span class="label">Book reference</span>
+  <div class="mapping-citation mapping-citation--brief{% if counter %} mapping-citation--counter{% endif %}">
+    <span class="label">{% if counter %}Book reference &mdash; boundary case{% else %}Book reference{% endif %}</span>
     <p class="book-reference-note">{{ book_reference }}</p>
   </div>
   {% endif %}

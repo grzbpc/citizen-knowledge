@@ -23,7 +23,7 @@ Ms Patel has been running Krimmz, working with children in Bolton, for long enou
 
 The book's account of what triggers scrutiny under threshold logic is relevant here, even where the underlying rule is social rather than legal:
 
-<blockquote class="quote--manuscript">As long as behaviour stays below the level that attracts attention, it is tolerated. Once it crosses an informal boundary, the full force of the rule can be applied.<span class="cite">Chapter 2: Selective Enforcement and Threshold Logic</span></blockquote>
+<blockquote class="quote--manuscript">Threshold logic follows. Behaviour below the level that attracts attention is tolerated. Once it crosses an informal boundary, the full force of the rule can be applied.<span class="cite">Chapter 2: Selective Enforcement and Threshold Logic</span></blockquote>
 
 Nothing about Ms Patel's clothing changed between her years of unremarked volunteering and the week of the award. What changed was exposure. The niqab did not become newly incompatible with working with children; it became newly visible to an audience primed to object to it. That is not a claim about whether critics are right or wrong on the substance. It is a observation about timing, and timing is usually the more honest signal. If the objection were genuinely about children's welfare, it would have applied with equal force during every session Krimmz has run since the club was founded. It did not surface until the recognition did.
 

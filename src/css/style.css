@@ -448,3 +448,54 @@ article h3.counter-verdict{
 .mapping-citation--counter .label{
   color:var(--counter);
 }
+/* =========================================================
+   SEARCH PAGE
+   ========================================================= */
+.search-box{
+  margin:8px 0 24px;
+}
+.search-input{
+  width:100%;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:19px;
+  padding:12px 14px;
+  border:2px solid var(--ink);
+  background:var(--paper);
+  color:var(--body-ink);
+  box-sizing:border-box;
+}
+.search-input:focus{
+  outline:none;
+  border-color:var(--ledger);
+}
+.search-filters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  margin-top:14px;
+  font-family:"Courier New",monospace;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--ink);
+}
+.search-filters label{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  cursor:pointer;
+}
+.search-status{
+  font-family:"Courier New",monospace;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--ledger);
+  margin:0 0 8px;
+  text-align:left;
+}
+.search-result{
+  padding:24px 0;
+}

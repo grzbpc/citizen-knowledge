@@ -18,6 +18,10 @@ permalink: /chapters/index.html
     <h1 class="title" style="font-size:34px;">Browse by Chapter</h1>
     <p class="strapline">Every entry, grouped by which part of the book it maps to.</p>
   </header>
+<nav class="toc">
+  <a href="{{ '/search/' | url }}">Search</a>
+  <a href="{{ '/about/' | url }}">About this record</a>
+</nav>
   <main>
     {% set posts = collections.posts %}
     {% set chapterNums = [] %}

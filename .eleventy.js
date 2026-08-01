@@ -1,6 +1,8 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
 
+eleventyConfig.addPassthroughCopy("src/js");
+
   eleventyConfig.addFilter("dateStr", function(date) {
     const d = new Date(date);
     const yyyy = d.getFullYear();

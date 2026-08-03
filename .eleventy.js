@@ -30,3 +30,10 @@ eleventyConfig.addPassthroughCopy("src/js");
     }
   };
 };
+return {
+     pathPrefix: "/citizen-knowledge/",
+     dir: {
+       input: "src",
+       output: "_site"
+     }
+   };

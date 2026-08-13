@@ -22,9 +22,7 @@ Thames Water has sparked outrage after handing a delayed £1million "golden hand
 
 A government ban is supposed to be the point at which a rule stops being advice and starts being binding. Thames Water's chairman describes the payment to Mr Buck as a "necessary incentive," the sort of phrase that only needs saying if there is a rule in the vicinity that might otherwise have prevented it.
 
-The manuscript's account of how selectively applied rules end up defended more loudly the less they actually constrain anyone describes this pattern precisely:
-
-<blockquote class="quote--manuscript"><p>The more selectively a rule is applied, the more aggressively it must be defended rhetorically.</p><span class="cite">The Performance of Obedience, Ch. 2</span></blockquote>
+The manuscript's account of how selectively applied rules end up defended more loudly the less they actually constrain anyone describes this pattern precisely.
 
 The government's attempt to ban these payments at failing utilities was a real policy, aimed at a real problem, announced for a real reason. A year on, the company at the centre of that problem has paid one bonus, paused a set of others, then agreed a fresh round to a dozen more executives, all while continuing to miss its own targets for the infrastructure the money was supposedly needed to protect. The ban exists. It has not, in any way that shows up in Thames Water's accounts, bound Thames Water.
 

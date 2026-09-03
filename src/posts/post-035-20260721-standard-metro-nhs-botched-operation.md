@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: Cost Without Resolution
 description: "Erna McGuinness died in pain after a botched procedure. The NHS paid a settlement and confirms only that the doctor no longer works there."
 book_reference: "This entry shows a five-figure settlement and a departed doctor standing in for accountability, with the actual disciplinary or professional consequence, if any, left unstated."
+has_article_quote: true
 ---
 
 ### The story

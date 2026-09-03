@@ -12,6 +12,7 @@ subheading: Success Measured Upward
 description: "The Metropolitan Police has insisted that using drill rap lyrics as evidence in criminal cases is 'really important', as campaign group Art Not Evidence calls for a change in the law, with a report finding drill lyrics were used as evidence against 252 defendants between 2020 and 2023."
 book_reference: "This entry treats the Met's defence of drill lyrics as courtroom evidence, contested by campaigners as a genre-specific practice rather than a neutral rule, as an illustration of the manuscript's account of how enforcement systems present a discretionary choice about which evidence to pursue as though it were a fixed, universal standard."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

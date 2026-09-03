@@ -12,6 +12,7 @@ subheading: When Language Fills the Gap
 description: "A Commons Defence Committee inquiry has found the Ministry of Defence's handling of the Afghan data breach was 'utterly inadequate' and its use of secrecy amounted to a shield against accountability, leaving people who worked with UK troops still in danger years later."
 book_reference: "This entry shows an institution's primary response to its own failure being a legal mechanism that suppressed disclosure of the failure, rather than a remedy for the people it had endangered."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

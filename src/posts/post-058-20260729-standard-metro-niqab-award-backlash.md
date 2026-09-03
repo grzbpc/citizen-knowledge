@@ -11,6 +11,7 @@ chapterTitle: Selective Enforcement and Threshold Logic
 subheading: Exposure, Not Responsibility
 description: "Khadija Patel, who founded a youth sports club in Bolton and wears a niqab, has been abused online and told her religious garment 'does not empower children' after receiving a British Citizen Award."
 book_reference: "This entry shows years of unremarked volunteering becoming a target for criticism only at the moment it received public recognition, revealing that the objection was never really about the clothing."
+has_article_quote: true
 ---
 
 ### The story

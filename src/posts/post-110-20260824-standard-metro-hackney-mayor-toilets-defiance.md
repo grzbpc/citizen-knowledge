@@ -11,6 +11,7 @@ chapterTitle: The Illusion of Law
 subheading: Calibration, Not Rebellion
 description: "The Mayor of Hackney has told council staff not to 'police access' to women's toilets in the borough, in apparent defiance of Equality and Human Rights Commission guidance issued after a 2025 Supreme Court ruling that 'woman', 'man' and 'sex' in the Equality Act refer to biological sex."
 book_reference: "This entry treats a directly elected mayor instructing staff not to enforce a rule clarified by the country's highest court as a live instance of the manuscript's account of rules that remain visible and loudly defended while their actual force is decided locally, case by case, by whoever holds the discretion."
+has_article_quote: true
 ---
 
 ### The story

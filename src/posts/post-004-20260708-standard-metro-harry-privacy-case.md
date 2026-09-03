@@ -13,6 +13,7 @@ subheading: The Cost of Enforcement
 description: "The claims were dismissed because evidence had faded, not because they were shown to be false."
 book_reference: "This entry shows how a dismissal on evidential grounds is publicly repackaged as a finding on the merits, collapsing two very different outcomes into one convenient story."
 deep_read: false
+has_article_quote: true
 ---
 
 ### The story

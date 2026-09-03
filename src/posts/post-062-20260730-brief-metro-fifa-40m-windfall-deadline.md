@@ -11,6 +11,7 @@ chapterTitle: The Professional Loop
 subheading: ""
 description: "Fifa has offered England and other member associations $40million each if they sign up to Gianni Infantino's World Cup sell-off plan by 19 September, with Uefa warning there is 'significant and growing opposition' to the scheme."
 book_reference: "This entry shows the same transaction from post-057 given a compliance deadline and a per-signature price, the mechanism made explicit rather than implied."
+has_article_quote: true
 ---
 
 ### The story

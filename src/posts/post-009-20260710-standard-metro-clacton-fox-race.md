@@ -13,6 +13,7 @@ subheading: Selective Enforcement and Visible Equality
 description: "Farage brands his by-election a fight against the establishment, while the establishment's own machinery quietly grants him the contest."
 book_reference: "This entry shows how a claim of outsider status depends on ignoring the discretionary institutional power actively shaping the same campaign."
 deep_read: false
+has_article_quote: true
 ---
 
 ### The story

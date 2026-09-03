@@ -12,6 +12,7 @@ subheading: Legitimacy Under Threshold Logic
 description: "Villagers under Heathrow's flight path have been offered £3,000 in compensation for a third runway, while people near Gatwick's proposed second runway were offered £6,500. Stanwell Moor residents call the gap unfair."
 book_reference: "This entry treats the Heathrow-Gatwick compensation gap as a demonstration of the manuscript's account of threshold logic, the same policy problem producing entirely different payouts depending on which airport happens to be expanding near you."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

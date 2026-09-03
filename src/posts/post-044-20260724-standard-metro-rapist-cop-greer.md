@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: The Cost of Enforcement
 description: "PC Alan Greer raped and attempted to murder women for a decade while serving as a police officer. Colleagues told the BBC there were no opportunities to spot his offending sooner."
 book_reference: "This entry shows an institution describing a decade of undetected offending by one of its own as an absence of opportunity, rather than as a question about what its own oversight was designed to catch."
+has_article_quote: true
 ---
 
 ### The story

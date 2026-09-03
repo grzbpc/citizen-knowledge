@@ -12,6 +12,7 @@ subheading: The Cost of Enforcement
 description: "A scheme to release 6,000 prisoners early has been paused, not because the underlying case for it changed, but after public fury that PC Andrew Harper's killers could be freed under it."
 book_reference: "This entry shows a blanket policy suspended in response to one high-profile case rather than any reassessment of the policy's general merits, revealing that the rule was always going to be applied selectively, only never openly."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

@@ -11,6 +11,7 @@ chapterTitle: Illegal, Illicit, and Ignored
 subheading: The Gap Between Law and Practice
 description: "£500,000 reached Reform through Montenegro and an obscure crypto firm. No single step was necessarily illegal. That is the point."
 book_reference: "This entry shows a donor transparency rule that was never repealed and never obviously broken, producing exactly the opacity it existed to prevent, because it was never built with the reach to follow money moving this way."
+has_article_quote: true
 ---
 
 ### The story

@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: The Appearance of Action
 description: "A confiscated bodycam kept recording for four hours. Eleven months later, an officer's own words came back to her."
 book_reference: "This entry shows an institution's evidence-gathering apparatus turning against it by accident, and the response, an internal process it will not describe, standing in for an explanation it has not given."
+has_article_quote: true
 ---
 
 ### The story

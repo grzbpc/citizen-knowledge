@@ -12,6 +12,7 @@ subheading: Behaviour Around the Invisible Line
 description: "More than 65 works of art, including a photo of PM Benjamin Disraeli and an engraving of anti-slavery campaigner William Wilberforce, are missing from the Houses of Parliament since the start of 2024, a Freedom of Information request has found, with Parliament stating that artworks are 'frequently moved between recorded locations and are often subsequently found.'"
 book_reference: "This entry treats Parliament's explanation for more than 65 missing artworks, that items are frequently moved and often subsequently found, as an illustration of the manuscript's account of how the same institution that enforces rigid accountability on the public maintains, for itself, a category of loss that never quite closes as loss."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

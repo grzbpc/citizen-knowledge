@@ -12,6 +12,7 @@ subheading: Inside the Safety Net
 description: "Andy Burnham has promised families on benefits up to £4,500 a year if their teenager takes an apprenticeship, framed as stopping households losing out on cash - support that depends on a specific choice, not on need."
 book_reference: "This entry shows a support payment framed as protection against loss, when what it actually protects against is the household making a different, equally lawful choice about their child's education."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

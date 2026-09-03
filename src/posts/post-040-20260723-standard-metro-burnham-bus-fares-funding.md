@@ -11,6 +11,7 @@ chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: Statements as Evidence of Concern
 description: "Andy Burnham says a £2 bus fare cap is funded from savings by scrapping the digital ID scheme. A minister says the digital ID scheme was unfunded anyway, and an economist can't see how the numbers work."
 book_reference: "This entry shows a costed policy announcement whose funding source is disputed by the government's own former colleague and by independent analysts, within days of the announcement being made."
+has_article_quote: true
 ---
 
 ### The story

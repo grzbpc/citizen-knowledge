@@ -12,6 +12,7 @@ subheading: The Cost of Appearance
 description: "A funeral director left 31 bodies, including a stillborn baby's, to decompose at his Hull parlour while taking payment for cremations he never carried out. He was only caught by accident, on his return from holiday."
 book_reference: "This entry shows an industry maintaining full outward legitimacy, invoices, uniforms, ceremony, paperwork, while the underlying service failed completely, and shows that failure surviving for years because nobody with the power to check was required to."
 quote_source: "none"
+has_article_quote: true
 ---
 
 ### The story

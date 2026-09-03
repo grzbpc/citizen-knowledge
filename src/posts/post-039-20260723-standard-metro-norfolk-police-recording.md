@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: The Cost of Enforcement
 description: "Gemma Barnes's confiscated body camera recorded Norfolk officers joking about sex with suspects and mocking her own arrest. Police have confirmed 'appropriate misconduct processes' are being followed."
 book_reference: "This entry shows an institution acknowledging the existence of misconduct while declining to specify any process, timeline, or consequence attached to the acknowledgement."
+has_article_quote: true
 ---
 
 ### The story

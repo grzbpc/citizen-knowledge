@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: The Cost of Enforcement
 description: "Sadiq Khan says murder in London is at its lowest per capita rate on record. Nigel Farage says the city is gripped by a 'crime wave.' Both are citing the same official figures."
 book_reference: "This entry shows that official statistics do not settle a dispute about institutional legitimacy on their own; both sides selected and framed the same underlying data to support opposite conclusions, and the figures alone could not adjudicate between them."
+has_article_quote: true
 ---
 
 ### The story

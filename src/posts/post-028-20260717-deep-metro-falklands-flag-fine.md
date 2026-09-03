@@ -13,6 +13,7 @@ subheading: Selective Enforcement and Visible Equality
 description: "Argentina's FA was fined the same amount for the same offence in 2014. This time the ban won't be enforced until it no longer matters."
 book_reference: "The identical fine and the deferred ban together show a system that repeats its own stated penalty without ever letting that penalty interrupt the event it was meant to police."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

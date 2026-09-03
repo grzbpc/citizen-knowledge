@@ -11,6 +11,7 @@ chapterTitle: The Professional Loop
 subheading: Circular Legitimacy
 description: "Fifa has provoked a furious reaction with plans to sell stakes in the World Cup to private investors including Jared Kushner's Affinity Partners, in a scheme Uefa says 'a red line has been crossed'."
 book_reference: "This entry shows an institution approving, defending, and standing to profit from the same transaction, while insisting the arrangement changes nothing about who governs the asset."
+has_article_quote: true
 ---
 
 ### The story

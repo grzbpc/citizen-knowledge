@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: ""
 description: "Robert Bush, 48, faces sentencing for 67 offences after his Hull funeral parlour left 31 bodies to rot, including a stillborn baby, while families were falsely told their loved ones had been cremated."
 book_reference: "This entry shows an industry operating on trust rather than routine inspection, where the absence of oversight was discovered only after the harm had already accumulated across dozens of families and years."
+has_article_quote: true
 ---
 
 ### The story

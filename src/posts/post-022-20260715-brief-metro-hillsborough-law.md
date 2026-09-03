@@ -15,6 +15,7 @@ quote: "Trust erodes accordingly, not because officers are malicious, but becaus
 quote_source: "manuscript"
 quote_cite: "The Performance of Obedience, Ch. 13"
 book_reference: "This entry shows a new legal duty as a late admission: officials were never required to cooperate honestly with inquiries, and thirty-seven years of that gap is what finally produced the law."
+has_article_quote: true
 ---
 
 ### The story

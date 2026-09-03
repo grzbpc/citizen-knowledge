@@ -14,6 +14,7 @@ quote: "Where enforcement fails to reduce harm, the response is rarely to questi
 quote_source: "manuscript"
 quote_cite: "The Performance of Obedience, Ch. 13"
 book_reference: "This entry shows a fine large enough to make headlines produce a recurrence of the exact failure it was imposed for within days, suggesting the penalty was priced too low to change behaviour, or the underlying problem exceeds what any fine is set to fix."
+has_article_quote: true
 ---
 
 ### The story

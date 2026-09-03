@@ -12,6 +12,7 @@ subheading: The Appearance of Action
 description: "Bianka Taylor's son's killer, jailed just last year, is already set to be released early, under a scheme the government has since carved exceptions into for rapists and serious child sex offenders, but not for others."
 book_reference: "This entry sets a scheme narrowed by carve-out against the manuscript's account of how enforcement systems perform reassurance through visible, partial correction while the underlying framework continues to operate as before."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

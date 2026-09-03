@@ -14,6 +14,7 @@ quote: "We do not have dogs and scanners at the airport to detect narcotics."
 quote_source: "article"
 quote_cite: "Senator Amara Konneh, quoted in Metro, 24 July 2026"
 book_reference: "This entry shows an enforcement burden assigned by default to the country least equipped to carry it, while the country receiving the benefit of that enforcement offers no comment on the imbalance."
+has_article_quote: true
 ---
 
 ### The story

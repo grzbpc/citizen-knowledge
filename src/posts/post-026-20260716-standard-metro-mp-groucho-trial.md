@@ -12,6 +12,7 @@ chapterTitle: Illegal, Illicit, and Ignored
 subheading: The Gap Between Law and Practice
 description: "A denial, reported. An interpretation, disputed. The trial continues, same as it did in Post 6."
 book_reference: "This entry repeats the pattern traced in Post 6: lawful, accurate court reporting built around a single dramatic detail that primes a reader's judgement ahead of any verdict."
+has_article_quote: true
 ---
 
 ### The story

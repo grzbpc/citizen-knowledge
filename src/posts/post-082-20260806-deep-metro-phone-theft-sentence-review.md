@@ -12,6 +12,7 @@ subheading: Situational Literacy
 description: "As the government orders a review of IPP sentences and a police watchdog considers a legal bid to block a killer's early release, one mother says her son is still serving time for a phone theft in 2005, having repeatedly been refused the same review now being offered to others."
 book_reference: "This entry sets one family's years of unanswered requests for review against a government now conducting that same review at scale for other, more serious cases, and asks what separated the two outcomes."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

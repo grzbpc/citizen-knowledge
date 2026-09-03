@@ -11,6 +11,7 @@ chapterTitle: Illegal, Illicit, and Ignored
 subheading: The Gap Between Law and Practice
 description: "Emmanuel Avogo loses his anonymity as a deterrent to other knife carriers. The girl who set up the ambush that killed Adam Khan keeps hers."
 book_reference: "This entry shows two defendants convicted over the same killing receiving opposite treatment on the one thing capable of following either of them beyond sentencing: whether their name is public."
+has_article_quote: true
 ---
 
 ### The story

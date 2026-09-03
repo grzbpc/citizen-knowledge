@@ -12,6 +12,7 @@ chapterTitle: The Illusion of Law
 subheading: ""
 description: "The land carries the highest level of flood risk there is. The High Court approved building on it anyway."
 book_reference: "This entry shows a protective threshold surviving on paper by having its practical test quietly redefined underneath it, from 'safe to build on' to 'notice before the water arrives.'"
+has_article_quote: true
 ---
 
 ### The story

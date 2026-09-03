@@ -12,6 +12,7 @@ subheading: When Rules Become Instruments
 description: "Reform UK has said tenants who do not keep their gardens tidy would face eviction from social housing under a Reform government, with party chairman Lee Anderson also confirming the party would evict foreign nationals and prioritise British veterans and married couples in council house allocation."
 book_reference: "This entry treats Reform's proposed garden-tidiness and marital-status conditions on social housing as a live instance of the manuscript's account of thresholds invented after the fact: informal, unstated criteria layered onto an existing allocation system, which convert who gets housed from a matter of need into a matter of who can perform the correct household."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

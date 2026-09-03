@@ -14,6 +14,7 @@ quote: "Enforcement gravitates toward what is manageable rather than what is mea
 quote_source: "manuscript"
 quote_cite: "The Performance of Obedience, Ch. 13"
 book_reference: "This entry shows an apology and an open-ended promise standing in for any enforceable timeline, the least expensive form of compliance an operator can offer."
+has_article_quote: true
 ---
 
 ### The story

@@ -13,6 +13,7 @@ subheading: The Gap Between Law and Practice
 description: "The presumption of innocence governs what a jury must do. It was never built to survive a headline."
 book_reference: "This entry shows the gap between the presumption of innocence as a formal legal instruction to a jury and its practical survival once a live trial has a headline attached."
 deep_read: false
+has_article_quote: true
 ---
 
 ### The story

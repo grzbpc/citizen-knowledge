@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: The Appearance of Action
 description: "A British activist aboard a seized Gaza-bound aid ship has described her interrogation by Israeli special forces as terrifying, after troops took control of the vessel."
 book_reference: "This entry places an account of force exercised out of public view alongside the manuscript's observation that visible enforcement performs a reassurance function regardless of what happened before the cameras arrived."
+has_article_quote: true
 ---
 
 ### The story

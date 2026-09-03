@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: The Cost of Enforcement
 description: "Andy Burnham has cut business rates 20% for pubs, clubs and music venues, funded by stripping relief from firms he says 'do social harm' - adult gaming centres and vape shops among them."
 book_reference: "This entry shows a state deciding, without a fixed test or published criteria, which categories of lawful business deserve support and which deserve to fund it, and calling the resulting transfer a policy rather than a judgement."
+has_article_quote: true
 ---
 
 ### The story

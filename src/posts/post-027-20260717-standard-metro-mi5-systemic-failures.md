@@ -12,6 +12,7 @@ chapterTitle: Discretion as Power
 subheading: The Cost of Enforcement
 description: "MI5 apologised, settled, and confirmed its own report found 'systemic failures.' The failures are the finding. Nothing structural is described as changing."
 book_reference: "An institution's public acknowledgement of its own systemic failure functions here as the resolution, standing in for any described change to the system that produced it."
+has_article_quote: true
 ---
 
 ### The story

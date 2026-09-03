@@ -12,6 +12,7 @@ chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: Statements as Evidence of Concern
 description: "Ninety percent of teens in a trial would not switch off the curfew. Ten percent is the number that matters."
 book_reference: "This entry shows an optional safeguard being presented as a protective policy, where the opt-out mechanism exempts precisely the users the measure is meant to protect."
+has_article_quote: true
 ---
 
 ### The story

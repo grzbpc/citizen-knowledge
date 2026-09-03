@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: The Same Obligation, Different Letters
 description: "England fast bowler Bryden Carse has been dropped from the squad for the second Test against Pakistan following his arrest on suspicion of drunk and disorderly behaviour, weeks after Ben Stokes and Jonny Bairstow were left out of a Test against New Zealand for breaching 'contractual obligations' during a night out and the Cricket Regulator ruled the pair had no case to answer."
 book_reference: "This entry treats the England cricket team's parallel handling of two comparable off-field incidents, one resulting in a dropped player and an ongoing investigation, the other resolved with no formal finding against anyone, as an illustration of the manuscript's account of discretion determining outcome long before any written rule is consulted."
+has_article_quote: true
 ---
 
 ### The story

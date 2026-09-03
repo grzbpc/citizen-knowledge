@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: Cost Without Resolution
 description: "Alleged offences dating to 2010. A formal extradition request only now. The gap between capability and resolution is the story."
 book_reference: "This entry shows a case with alleged offences dating back sixteen years only now producing a formal extradition request, illustrating that a process existing in principle is not the same as a process resolved in practice."
+has_article_quote: true
 ---
 
 ### The story

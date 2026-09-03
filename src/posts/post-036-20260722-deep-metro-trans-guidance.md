@@ -12,6 +12,7 @@ subheading: The Coercive Trap
 description: "The Cabinet Office says there is no legal requirement to tell anybody. The plans it has refused to publish say otherwise."
 book_reference: "This entry shows a system that denies imposing an obligation while drafting the exact mechanism, undefined 'misconduct', that would enforce it, so the absence of a formal rule becomes indistinguishable from the presence of one."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

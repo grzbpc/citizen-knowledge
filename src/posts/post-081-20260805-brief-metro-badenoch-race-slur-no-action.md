@@ -14,6 +14,7 @@ quote: "The boundary itself is rarely stated. It is learned through observation,
 quote_source: "manuscript"
 quote_cite: "The Performance of Obedience, Ch. 2"
 book_reference: "This entry places a conviction for racial harassment beside a separately reported slur that police found too vague to act on, and asks what determines which side of that line a given remark falls."
+has_article_quote: true
 ---
 
 ### The story

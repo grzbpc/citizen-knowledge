@@ -11,6 +11,7 @@ chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: The Politics of Announcement
 description: "Nigel Farage has insisted his 'operation fortress' plan to deport illegal migrants is legally sound, as rival parties dismiss it as a gimmick and question how it would actually be enforced."
 book_reference: "This entry sets an announcement, made and defended in the present tense, against the absence of any account of how the mechanism it describes would actually operate."
+has_article_quote: true
 ---
 
 ### The story

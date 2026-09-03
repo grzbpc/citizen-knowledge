@@ -12,6 +12,7 @@ chapterTitle: Discretion as Power
 subheading: The Appearance of Action
 description: "The minister says the system will be strengthened. The abuse it failed to stop already happened."
 book_reference: "This entry shows a system announcing strengthened safeguards only once named catastrophic failures have already run their course through the courts, framing repair as prevention after the fact."
+has_article_quote: true
 ---
 
 ### The story

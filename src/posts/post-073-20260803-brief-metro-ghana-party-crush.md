@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: The Appearance of Action
 description: "A stampede at Ghana Party in the Park in Barnet left at least 23 people injured after a small fire caused a temporary gate closure, a crowd surge, and a crush. Organisers said the decision to cancel the event was made solely on the grounds of health and safety."
 book_reference: "This entry treats a statement about the decision to cancel as separate from any account of the decisions that allowed the crush to occur, and notes that only the first was offered."
+has_article_quote: true
 ---
 
 ### The story

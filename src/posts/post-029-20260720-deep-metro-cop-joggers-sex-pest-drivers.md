@@ -12,6 +12,7 @@ subheading: The Cost of Enforcement
 description: "Six sting operations, officers dressed as joggers, a dedicated backup unit. The resourcing is real. The question is why it landed here."
 book_reference: "This entry shows that enforcement capacity is not fixed or scarce by nature; it is built and deployed according to priorities set above the level of any individual officer, and a well-resourced sting proves that capacity exists, not that it is applied evenly."
 deep_read: true
+has_article_quote: true
 ---
 
 ### The story

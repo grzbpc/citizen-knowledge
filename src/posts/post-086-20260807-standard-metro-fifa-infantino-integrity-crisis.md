@@ -11,6 +11,7 @@ chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: The Politics of Announcement
 description: "Barcelona have branded Real Madrid's winners the deserving Ballon d'Or contenders while Uefa's president tells Fifa boss Gianni Infantino that his reassurances on football's integrity crisis are nothing short of changed, with the spotlight remaining on Infantino as the World Cup approaches."
 book_reference: "This entry reads Fifa's integrity reassurances as an instance of the manuscript's argument that announcement has come to substitute for delivery: the statement of concern arrives promptly, while the structural change it describes remains permanently in progress."
+has_article_quote: true
 ---
 
 ### The story

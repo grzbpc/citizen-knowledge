@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: ""
 description: "He negotiated the £340million deal, then quit as an MP for a job at the company he'd awarded it to. Now Hungary wants to know how that happened."
 book_reference: "This entry shows scrutiny arriving on schedule, the moment its subject has already left the position it would have constrained."
+has_article_quote: true
 ---
 
 ### The story

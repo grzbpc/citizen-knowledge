@@ -11,6 +11,7 @@ chapterTitle: The Illusion of Law
 subheading: Rules in Theory, Leverage in Practice
 description: "The AA says drivers who passed their test in an automatic car should be allowed to drive a manual after a one-hour conversion lesson, rather than waiting the current average of 22 weeks for a manual test slot, as the government says it has no plans to change the rule."
 book_reference: "This entry shows a written rule defended on safety grounds by the body enforcing it, and a road safety organisation stating on the record that the current threshold does not correspond to any safety difference it can identify."
+has_article_quote: true
 ---
 
 ### The story

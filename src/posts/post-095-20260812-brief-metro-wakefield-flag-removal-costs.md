@@ -14,6 +14,7 @@ quote: "Institutions therefore become increasingly skilled at signalling intenti
 quote_source: "manuscript"
 quote_cite: "The Performance of Obedience, Ch. 14"
 book_reference: "This entry treats a council's admission that removing flags will cost far more than putting them up as a small, self-contained instance of the manuscript's account of institutions that can signal cheaply but only demonstrate outcomes at far greater expense."
+has_article_quote: true
 ---
 
 ### The story

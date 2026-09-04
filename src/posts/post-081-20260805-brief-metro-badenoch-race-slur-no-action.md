@@ -5,7 +5,7 @@ date: 2026-08-05
 order: 4
 source: "Metro, Wednesday 5 August 2026"
 part: IV
-partTitle: Discretion as Power
+partTitle: Criminality and Control
 chapter: 13
 chapterTitle: Discretion as Power
 subheading: The Burden of Coherence

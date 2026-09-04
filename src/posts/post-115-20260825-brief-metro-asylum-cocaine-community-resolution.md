@@ -4,8 +4,8 @@ title: Stopped with drugs once, no charge. Stopped again, fined £120. Same man,
 date: 2026-08-25
 order: 3
 source: "Metro, Tuesday 25 August 2026"
-part: I
-partTitle: When the Law Stops Meaning What It Says
+part: IV
+partTitle: Criminality and Control
 chapter: 13
 chapterTitle: Discretion as Power
 subheading: The Same Obligation, Different Letters

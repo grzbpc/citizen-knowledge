@@ -5,7 +5,7 @@ date: 2026-08-21
 order: 1
 source: "Metro, Friday 21 August 2026"
 part: II
-partTitle: Work, Productivity, and Market Velocity
+partTitle: Learning the System
 chapter: 6
 chapterTitle: The Professional Loop
 subheading: Circular Legitimacy

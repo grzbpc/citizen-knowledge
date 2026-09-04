@@ -4,8 +4,8 @@ title: One player was arrested and dropped. Two others breached the same curfew 
 date: 2026-08-25
 order: 2
 source: "Metro, Tuesday 25 August 2026"
-part: I
-partTitle: When the Law Stops Meaning What It Says
+part: IV
+partTitle: Criminality and Control
 chapter: 13
 chapterTitle: Discretion as Power
 subheading: The Same Obligation, Different Letters

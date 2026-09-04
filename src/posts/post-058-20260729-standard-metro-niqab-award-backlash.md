@@ -5,7 +5,7 @@ date: 2026-07-29
 order: 3
 source: "Metro, Wednesday 29 July 2026"
 part: I
-partTitle: When the Law Stops Meaning What it Says
+partTitle: When the Law Stops Meaning What It Says
 chapter: 2
 chapterTitle: Selective Enforcement and Threshold Logic
 subheading: Exposure, Not Responsibility

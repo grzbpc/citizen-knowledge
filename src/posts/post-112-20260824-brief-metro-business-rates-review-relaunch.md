@@ -4,8 +4,8 @@ title: Last month, tax cuts for pubs. This month, a fresh review into how their 
 date: 2026-08-24
 order: 3
 source: "Metro, Monday 24 August 2026"
-part: I
-partTitle: When the Law Stops Meaning What It Says
+part: V
+partTitle: Withdrawal
 chapter: 14
 chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: The Cost of Sustained Performance

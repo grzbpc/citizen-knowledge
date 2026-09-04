@@ -4,8 +4,8 @@ title: One nicotine product is sold as a way to quit. The other is what people a
 date: 2026-08-26
 order: 5
 source: "Metro, Wednesday 26 August 2026"
-part: II
-partTitle: Work, Productivity, and Market Velocity
+part: III
+partTitle: Moral Inversion
 chapter: 11
 chapterTitle: The Managed Vice
 subheading: Taxed Harm, Punished Harm

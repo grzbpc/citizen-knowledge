@@ -4,8 +4,8 @@ title: The legal e-bike is sold on the high street. The illegal one gets a polic
 date: 2026-08-17
 order: 2
 source: "Metro, Monday 17 August 2026"
-part: II
-partTitle: Work, Productivity, and Market Velocity
+part: III
+partTitle: Moral Inversion
 chapter: 11
 chapterTitle: The Managed Vice
 subheading: Taxed Harm, Punished Harm

@@ -5,7 +5,7 @@ date: 2026-09-02
 order: 1
 source: "Metro, Wednesday 2 September 2026"
 part: II
-partTitle: Work, Productivity, and Market Velocity
+partTitle: Learning the System
 chapter: 5
 chapterTitle: Markets Without Meaning
 subheading: From Investment to Arbitrage

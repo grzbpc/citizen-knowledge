@@ -4,8 +4,8 @@ title: The plan has a name and a launch. What it does not have yet is a mechanis
 date: 2026-08-04
 order: 2
 source: "Metro, Tuesday 4 August 2026"
-part: IV
-partTitle: Symbolic Politics and the Maintenance of Appearances
+part: V
+partTitle: Withdrawal
 chapter: 14
 chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: The Politics of Announcement

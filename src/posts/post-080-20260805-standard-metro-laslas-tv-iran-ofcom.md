@@ -4,8 +4,8 @@ title: The regulator says it is watching. It has said that before.
 date: 2026-08-05
 order: 3
 source: "Metro, Wednesday 5 August 2026"
-part: IV
-partTitle: Symbolic Politics and the Maintenance of Appearances
+part: V
+partTitle: Withdrawal
 chapter: 14
 chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: When Language Fills the Gap

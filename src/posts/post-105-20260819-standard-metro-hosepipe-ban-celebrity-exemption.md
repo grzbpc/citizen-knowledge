@@ -14,9 +14,13 @@ book_reference: "This entry sets an unenforced restriction on two visible landow
 has_article_quote: true
 ---
 
+### The story
+
 South East Water has told customers that levels in its drinking water storage tanks remain "critically low" and asked people to use water only for essential purposes, even as supplies were restored to 7,400 homes in Herne Bay after outages. In Benenden, Kent, residents spelled out "HELP US" in a dry field. Wessex Water imposed a fresh hosepipe ban yesterday, just as much of England experienced its first real rain in a month. The Department for Environment, Food and Rural Affairs said SEW "needs to go further and faster" to reduce leaks and follow its drought plan.
 
 On the same page, Jeremy Clarkson and Rod Stewart were named among those accused by some observers of ignoring hosepipe restrictions, after aerial photographs appeared to show well-watered lawns at both men's properties. Clarkson's response was that a borehole, not a hosepipe, was responsible. Neither claim has been formally investigated. Neither man faces a fine.
+
+### The reframe
 
 The imbalance is visible on a single page. A water company is publicly rebuked by name for supply failures affecting thousands of households in Kent. Two named individuals are accused, in the same edition, of the more direct offence of using a hosepipe during a ban that carries a criminal penalty, and the matter ends with a joke about a borehole. Nobody is checking the borehole claim. Nobody needs to. A hosepipe ban depends on the same thing every discretionary rule depends on: someone watching, and someone deciding it is worth the bother to look.
 

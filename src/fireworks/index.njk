@@ -17,8 +17,16 @@ eleventyExcludeFromCollections: true
 .fw-link span{display:block;font-size:11px;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;opacity:0.85;margin-bottom:4px;}
 .fw-link.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);}
 .fw-deadline{background:var(--ledger-bg);border-left:5px solid var(--ledger);padding:16px 20px;margin:0 0 28px;font-size:17px;text-align:left;}
-article ul{font-size:18px;line-height:1.5;margin:0 0 20px;padding-left:22px;color:var(--body-ink);}
+article ul{font-size:18px;line-height:1.5;margin:0 0 20px;padding-left:22px;color:var(--body-ink);text-align:left;}
 article li{margin-bottom:10px;}
+details.fw-letter{margin:0 0 28px;}
+details.fw-letter summary{display:block;cursor:pointer;padding:16px 18px;background:transparent;color:var(--ink);border:2px solid var(--ink);font-family:"Courier New",monospace;font-size:14px;font-weight:700;letter-spacing:0.04em;text-align:left;list-style:none;}
+details.fw-letter summary::-webkit-details-marker{display:none;}
+details.fw-letter summary span{display:block;font-size:11px;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;opacity:0.85;margin-bottom:4px;}
+details.fw-letter[open] summary{background:var(--ink);color:var(--paper);}
+.fw-letter-body{border:2px solid var(--ink);border-top:none;padding:22px 20px 6px;background:#fff;}
+.fw-letter-body h4{font-family:"Courier New",monospace;font-size:13px;letter-spacing:0.04em;color:var(--ledger);margin:24px 0 12px;text-align:left;}
+.fw-letter-body p{font-size:17px;}
 </style>
 </head>
 <body>
@@ -28,7 +36,7 @@ article li{margin-bottom:10px;}
       <span class="label">Private page</span>
       Fireworks consultation, open until 7 October 2026
     </div>
-    <h1>Fireworks: what the consultation is, and the content of the RSPCA petition letter upon submission</h1>
+    <h1>Fireworks: the consultation, and the RSPCA letter</h1>
     <p class="source-line">Shared by link only. Not listed anywhere on the site.</p>
   </header>
 
@@ -38,8 +46,8 @@ article li{margin-bottom:10px;}
     </div>
 
     <h3>The links</h3>
-    <a class="fw-link" href="https://www.rspca.org.uk/getinvolved/campaign/fireworks" target="_blank" rel="noopener"><span>RSPCA campaign page</span>Send a ready-made response from the RSPCA</a>
-    <a class="fw-link alt" href="https://www.gov.uk/government/consultations/fireworks-and-pyrotechnics-in-the-uk" target="_blank" rel="noopener"><span>Government consultation page</span>Fireworks and pyrotechnics in the UK on GOV.UK</a>
+    <a class="fw-link" href="https://www.rspca.org.uk/getinvolved/campaign/fireworks" target="_blank" rel="noopener"><span>RSPCA campaign page</span>Send the RSPCA response</a>
+    <a class="fw-link alt" href="https://www.gov.uk/government/consultations/fireworks-and-pyrotechnics-in-the-uk" target="_blank" rel="noopener"><span>Government consultation page</span>Fireworks and pyrotechnics in the UK</a>
     <a class="fw-link alt" href="https://ditresearch.eu.qualtrics.com/jfe/form/SV_eg0jcixPsRnv1NY" target="_blank" rel="noopener"><span>Respond directly</span>The official online response form</a>
 
     <h3>What the consultation is</h3>
@@ -53,13 +61,13 @@ article li{margin-bottom:10px;}
 
     <h3>How to respond</h3>
     <ul>
-      <li>Easiest: use the RSPCA page above, which puts a response together for you and sends it to your MP and the consultation team.</li>
-      <li>Or use the official online form linked above.</li>
+      <li>Easiest: use the RSPCA button above. The text of the email it produces is reproduced below.</li>
+      <li>Or use the official online form.</li>
       <li>Or email <strong>fireworksconsultation@businessandtrade.gov.uk</strong> in your own words and say it is a consultation response.</li>
     </ul>
 
-    <h3>What the RSPCA petition letter asks for</h3>
-    <p>I sent my response through the RSPCA route. The three things it asked for were fireworks for the general public capped at 90 decibels, clear and responsible labelling, and a restriction on private firework displays. On the decibel question I said yes, specifically to 90 dB.</p>
+    <h3>What the RSPCA letter asks for</h3>
+    <p>Three things: fireworks for the general public capped at 90 decibels, clear and responsible labelling, and a restriction on private firework displays.</p>
 
     <h3>Why, in short</h3>
     <ul>
@@ -67,12 +75,50 @@ article li{margin-bottom:10px;}
       <li>Up to 64% of cat owners report clear signs of stress. In one study 76% of cats hid, 65% fled and 43% froze. Cats are probably more affected than reported, because their reactions are quieter than a dog's.</li>
       <li>Fireworks are unpredictable and intermittent, so animals do not get used to them. Some dogs take days, weeks or months to recover.</li>
       <li>Horses, livestock and wildlife cannot simply be brought indoors with the curtains shut. Horses in particular bolt, and injuries range from cuts to broken limbs.</li>
-      <li>Cattle start to react at around 85 dB and show a strong startle response above 90 dB. Pigs should not be exposed to noise above 85 dB under farming welfare regulations. Fireworks can exceed 100 dB.</li>
+      <li>Cattle start to react at around 85 dB and show a strong startle response above 90 dB. Pigs must not be exposed to noise above 85 dB under farming welfare regulations. Fireworks can exceed 100 dB.</li>
       <li>Research on birds shows large numbers taking flight at night when they would normally be resting, which costs them energy and causes disorientation.</li>
     </ul>
 
-    <h3>The honest limit</h3>
-    <p>A 90 dB cap would help, but it would not solve everything. The unpredictability and the flashing lights would still frighten animals. It said that in the response, because a lower volume is an improvement and not a cure.</p>
+    <h3>The limit of a 90 dB cap</h3>
+    <p>A 90 dB cap would help, but it would not solve everything. The unpredictability and the flashing lights would still frighten animals. The letter says so itself, because a lower volume is an improvement and not a cure.</p>
+
+    <h3>The full letter</h3>
+    <details class="fw-letter">
+      <summary><span>Tap to open</span>Read the full text of the RSPCA letter</summary>
+      <div class="fw-letter-body">
+        <p>Consultation response - Please quieten the noise from fireworks</p>
+        <p>Dear Fireworks Consultation Team,</p>
+        <p>I am writing to you today to respond to the public consultation on fireworks, highlighting the areas most important to me when reviewing the current restrictions on fireworks across the UK.</p>
+        <p>Firstly, I'd like to extend my gratitude and appreciation to the Department of Business and Trade for committing to collecting evidence and views on this issue, which in my opinion, is long overdue. Every year, fireworks pose a serious risk of harm and injury to animals across the nation, including thousands of beloved pets, farm animals and wildlife. A comprehensive review into the use of fireworks is therefore an essential change when considering the countless animals across the UK, in addition to the risks posed to other vulnerable members of society and people with noise sensitivity.</p>
+        <p>Both myself and the RSPCA are supporters of more responsible fireworks, and I am grateful for the chance to contribute to this process and to share views informed by the evidence from RSPCA.</p>
+        <p>With an opportunity to protect both animals and people from distressing events caused by fireworks due to the unpredictable, loud noises and flashing lights, I hope that the UK Government will commit to quietening the noise for years to come. Recommendations include the clear and responsible labelling of pyrotechnics, lower decibel fireworks of 90dB, and a restriction on private firework displays.</p>
+        <p>Please count this email as an individual consultation response and see the responses to the consultation questions most important to me below.</p>
+        <p>In response to Question 6, I would agree that it would be essential for the decibel level of fireworks consumers use to be lowered, specifically to 90 dB. This would help ensure a better experience for those with noise sensitivity and mitigate the risks caused to animals by loud noises.</p>
+
+        <h4>Question 7: What might be the positive impacts of reducing the maximum decibel level of fireworks available to the general public? Please explain your answer, providing evidence where possible.</h4>
+        <p>Research from the RSPCA demonstrates that 62% of animal owners have said their pet has been negatively affected by fireworks, an indication of a huge impact on our nation of animal lovers. From an animal welfare perspective, aversive stimuli, such as loud noises, that are unpredictable and out of an animal's control, as is the case with fireworks, are particularly stressful for them. Being unpredictable, as well as intermittent and relatively infrequent, also makes it unlikely that animals will acclimatise to fireworks noise. Therefore, reducing the maximum decibel level of fireworks could have a positive impact on animals.</p>
+        <p>However, lowering decibel thresholds will not completely eliminate the negative effects on animals, because the inherent unpredictability of fireworks continues to pose a threat to animal welfare. It should also be noted that the bright, unpredictable and extensive light movements of firework displays are also a risk for animals within visual range of the fireworks.</p>
+        <p>Studies have found that fireworks can cause stress and fear in companion animals, and the loud bangs can also cause auditory issues if in close proximity. With dogs most likely to be affected, 60% of dog owners said their dog had been negatively affected. In reaction to fireworks, dogs have been shown to frequently exhibit active fear behaviours including destructive behaviour, shivering or trembling, vocalisation, cowering, and urination or defecation, whereas cats hide and/or attempt to escape or exhibit cowering behaviour. Whilst many dogs fearful of fireworks recover by the following morning, some dogs will take days, weeks or even months to get over being exposed to the noise of fireworks.</p>
+        <p>Research on cats is limited, but cats are also heavily affected. Up to 64% of owners said their pet displayed clear signs of stress, such as hiding or refusing to eat. Whilst another study questioning owners about their cats' response to fireworks showed that 76% of their pets hid, 65% fled and 43% froze, and additionally, 27% were reluctant to venture outside during the fireworks period, even though no fireworks may have been going off at that point. This latter finding suggests that the effect of fireworks on cats may be prolonged or lead to an anticipatory response causing an anxiety to engage in their normal behaviours.</p>
+        <p>Many behavioural responses in cats are less obvious than in dogs, for example, hiding and freezing as opposed to vocalisation, destruction and inappropriate toileting. However, because reported statistics rely on owner observations, the actual proportion of cats affected by fireworks could be significantly higher.</p>
+        <p>In addition, horses and livestock are easily frightened by loud noises and sudden bright lights, and can be at risk of injuring themselves on fencing, farm equipment or fixtures and fittings within their housing if startled. Horses in particular take flight when scared and can collide with fences, the interior of buildings, and other harmful objects as they flee. The majority of owners report their horses to respond negatively to fireworks, with running and even breaking through fences, as well as injuries ranging from lacerations to broken limbs.</p>
+        <p>It should also be noted that in contrast to advice for pet animals, in the case of horses, ponies or donkeys, the strategy of moving animals to an area away from detonation of fireworks, such as indoors, and shutting curtains/blinds and distraction with music etc, are often not suitable or achievable. This also applies to livestock and free-living wildlife as well as captive wild animals, such as those kept in zoos, where it may not always be possible to move them to an alternative area.</p>
+        <p>Many people may not be aware of the impact on other animals, such as livestock. The RSPCA understands that unexpected loud or novel noises can be highly stressful to livestock and that animals are more sensitive to high frequency noise than humans.</p>
+        <p>For example, sound may trigger a behavioural response in cattle at around 85 dB, with sounds above 90 dB triggering a strong startle response. Sound causes discomfort in cattle at around 90-100 dB, and over 110 dB may cause damage to the ear. Sudden and intermittent sounds are a leading cause of fear-related behaviours in cattle.</p>
+        <p>Research shows that sudden noises above 110 dB caused cattle to show fear-related behaviours such as jumping, huddling together, freezing, aggression and increased defecation. In dairy cattle, exposure to 80-100 dB of noise twice daily may reduce milk production. Given these sensitivities, the loud and sudden noises associated with fireworks can undoubtedly trigger the stress response. Fireworks can produce sounds in excess of 100 dB, which easily have the potential to trigger stress-related behaviours.</p>
+        <p>Moreover, due to the sound sensitivity of pigs, the Welfare of Farmed Animals (England) Regulations 2007, Welfare of Farmed Animals (Wales) Regulations 2007 and EC Council Directive 2008/120/EC of 18 December 2008 requires that pigs must not be exposed to constant or sudden noise, and noise levels above 85 dB must be avoided in areas where pigs are kept. With this in mind, the loud and unpredictable nature of fireworks can be particularly distressing for pigs. Fireworks often produce sounds above 85 dB, with sudden and intermittent bursts that can trigger the acute stress response. This can lead to the above physiological and behavioural responses, and may contribute to the development of aberrant behaviours like tail biting.</p>
+        <p>Much of the research on the impact of fireworks on wild animal welfare relates to birds. A 2011 study used radar to examine the effects of fireworks on the behaviour of waterfowl. The research found that fireworks displays provoked mass movement of thousands of geese, flying higher than normal, at a time when they would normally be resting. The authors estimated that hundreds of thousands of birds would be disturbed by New Year's fireworks displays, raising concerns about the energy costs of disorientation and panic flights.</p>
+        <p>Research in 2023 found that birds in an urban environment flew higher and in larger numbers at a time when they would normally be resting, in response to a fireworks display. In contrast to the RSPB's view, the authors also stated that disturbance by anthropogenic noise such as fireworks had distinct effects from thunderstorms, since they lacked any environmental cues such as changes in wind and air pressure. These studies indicate that fireworks in both urban and rural locations can impact the welfare of birds.</p>
+        <p>A 2023 review of the impact of fireworks on wildlife welfare, through the noise, light, and environmental pollution they cause, stated that the evidence for fireworks' impacts on wild animal welfare was 'overwhelming', including effects on migratory behaviour, and levels of stress hormones. The authors also pointed out that the use of firecrackers in agriculture and other industry as a bird deterrent method was indicative of their ability to frighten birds.</p>
+        <p>Although there is limited direct evidence, it is also likely that fireworks and their debris will cause a disturbance to wildlife, and are likely to cause suffering or distress, depending on the distance from the explosive and the noise level. Debris produced by fireworks can also pose a hazard to animals, such as horses and farm livestock if found on the land.</p>
+        <p>The impacts of fireworks on wild animal welfare is under-researched, and lags behind research on their effects on companion animals, which itself is limited. However, some studies have provided direct observations of behavioural and physiological changes linked to fireworks displays. The evidence suggests that not only do fireworks have negative effects on wildlife welfare, but that these may be more significant and widespread than previously thought.</p>
+
+        <h4>Question 8: What might be the negative impacts of reducing the maximum decibel level of fireworks available to the general public? Please explain your answer, providing evidence where possible.</h4>
+        <p>Alongside the RSPCA, I support reducing the maximum decibel level of fireworks and believe this will have a positive impact on both animals and people across the UK. However, if this measure was introduced by the UK Government, animals would still be impacted by fireworks as the unpredictability of fireworks and bright lights can still cause harm and distress.</p>
+        <p>In a move that is long overdue and necessary to the welfare of people and animals across the country, I hope that this consultation provides the evidence needed to facilitate change for the better. Thank you once again for taking the time to assess the issue of fireworks.</p>
+        <p>Yours sincerely,<br>[Sender's name and address]</p>
+      </div>
+    </details>
   </article>
 
   <footer>

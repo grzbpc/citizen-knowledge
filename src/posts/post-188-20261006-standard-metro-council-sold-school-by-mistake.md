@@ -8,7 +8,7 @@ part: I
 partTitle: When the Law Stops Meaning What It Says
 chapter: 2
 chapterTitle: Selective Enforcement and Threshold Logic
-subheading: Small Variance, Large Consequences
+subheading: "Illustration: Small Variance, Large Consequences"
 description: "Birmingham council says a missing form meant a house sold at auction in 2013 for £395,000 was registered with the land under a nearby primary school, an error found in 2024, and has launched High Court action against the buyer and his lender; the buyer's lawyer says the transfer was to his company."
 book_reference: "This entry treats one form completed where two were needed as an illustration of the manuscript's account of small administrative variances that produce large and lasting consequences."
 deep_read: false

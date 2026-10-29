@@ -25,7 +25,7 @@ Start with what actually happened here. South Korea, a formal treaty ally that h
 
 The manuscript's account of selective enforcement is built around exactly this kind of asymmetry, where the label applied to a behaviour depends less on the behaviour than on who is doing it:
 
-> *What matters is not only the behaviour, but the circumstances around it: who is visible, who is expendable, who is insulated.*
+> *What matters is not the behaviour itself, but the circumstances surrounding it; who is visible, who is expendable, and who is insulated.*
 
 South Korea is visible and, in this instance, expendable. It is a democracy that answers to its own public and its own alliance obligations, which means declining to join a war it was not asked to fight is a position it can actually state out loud, in public, through official channels. That transparency is precisely what makes it easy to penalise. Kim Jong-un answers to no comparable check. His approval or disapproval of joint exercises is not a diplomatic position weighed against competing obligations. It is simply accommodated, and accommodated in language, "unthreatening and respectful," that a democratic ally's considered decision not to join an unrelated war did not receive.
 

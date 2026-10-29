@@ -24,7 +24,7 @@ Metro reports on Baroness Hallett's Covid inquiry findings: almost £10billion o
 
 The headline figure, £10billion wasted, is the kind of number that invites a straightforward reading: emergency procurement under pressure, mistakes made at speed, money lost to chaos rather than design. Hallett's report doesn't really support that reading. The waste sits downstream of a specific structural choice, the VIP lane, which routed some suppliers past the ordinary scrutiny others had to clear. Chapter 13's account of what enforcement systems actually optimise for under strain describes exactly this kind of divergence between the official story and the operating one:
 
-> *Success reads upward, not outward... Enforcement gravitates toward what is manageable rather than what is meaningful. The system optimises for defensibility, not resolution.*
+> *Enforcement gravitates toward what is manageable rather than what is meaningful. The system optimises for defensibility, not resolution.*
 
 A procurement process is supposed to be the thing that makes "we spent public money responsibly" a checkable claim rather than an assertion. What the VIP lane did was create two tracks inside one process: a standard one, presumably slower and more scrutinised, and a fast one, reserved for contacts with government links, that ran with less friction. The waste figure is not a story about the system failing under pressure. It is a story about what a system produces when part of it was quietly built to bypass its own safeguards, which produced exactly the outcome you would expect: unfit product, at scale, from suppliers who had not had to clear the bar others cleared.
 

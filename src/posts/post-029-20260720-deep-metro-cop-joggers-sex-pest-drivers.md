@@ -31,7 +31,7 @@ A jogger sting is manageable. It has a clear target behaviour, a clean method of
 
 The book's discussion of what enforcement performs, separate from what it achieves, applies just as directly here:
 
-> *Enforcement also performs a symbolic function. It creates the impression of control even when underlying conditions remain unchanged. This appearance is politically valuable. It deflects responsibility, absorbs public anxiety, and postpones more difficult questions about systemic causes.*
+> *Enforcement also performs a symbolic function. Visible activity reassures the public that something is being done. Patrols, raids, court proceedings, and sentencing provide tangible demonstrations of authority. They create the impression of control even when underlying conditions remain unchanged. This appearance is politically valuable. It deflects responsibility, absorbs public anxiety, and postpones more difficult questions about systemic causes.*
 
 Inspector Warner's own language, sending "a clear message," is symbolic-function language, offered without embarrassment because the operation genuinely did produce three confirmed incidents from six attempts. But the same force that can find the resourcing for this kind of visible, camera-ready sting is, like every force in the country, simultaneously making quieter decisions about which other reported harassment does not get this kind of attention. The sting is not evidence that enforcement is now comprehensive. It is evidence that enforcement is always selective, and that this particular selection has, this time, been made visible and given a press officer.
 

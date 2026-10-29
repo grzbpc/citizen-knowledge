@@ -24,30 +24,18 @@ Metro reports that Ukraine's sporting and political leaders have condemned a pro
 
 Chapter 14's central case study is built around exactly this structure: a rule applied identically on paper while producing entirely different outcomes depending on who it lands on. The book's framing of that mechanism could be describing this story directly:
 
-<blockquote class="manuscript">
-The same notice is issued. The same legal process begins. The same enforcement language is used. Yet the practical outcome differs entirely depending upon who receives it. This matters because legitimacy depends not merely upon the existence of rules but upon public belief that those rules correspond meaningfully to the principles used to justify them.
-<span class="cite">The Performance of Obedience, Ch. 14</span>
-</blockquote>
+<blockquote class="quote--manuscript"><p>The same notice is issued. The same legal process begins. The same enforcement language is used. Yet the practical outcome differs entirely depending upon who receives it. This matters because legitimacy depends not merely upon the existence of rules but upon public belief that those rules correspond meaningfully to the principles used to justify them.</p><span class="cite">The Performance of Obedience, Ch. 14</span></blockquote>
 
 The IOC's own justification, that athletes should not pay the price for a war they didn't start, is a coherent, humane-sounding principle in isolation. But the manuscript's account of how symbolic language expands to cover institutional strain is relevant to exactly this kind of statement:
 
-<blockquote class="manuscript">
-When practical solutions are difficult, symbolic solutions become attractive&hellip; Statements become evidence of concern&hellip; Activity becomes evidence of progress. Whether the underlying problem is moving towards resolution becomes increasingly difficult to determine.
-<span class="cite">The Performance of Obedience, Ch. 14</span>
-</blockquote>
+<blockquote class="quote--manuscript"><p>Statements become evidence of concern. Targets become evidence of commitment. Consultations become evidence of engagement. Activity becomes evidence of progress. Whether the underlying problem is moving towards resolution becomes increasingly difficult to determine.</p><span class="cite">The Performance of Obedience, Ch. 14</span></blockquote>
 
 Ukraine's objection isn't really about individual athletes' guilt, and the book's own account of why selective application corrodes legitimacy, even when each individual exemption sounds reasonable, explains why:
 
-<blockquote class="manuscript">
-The issue is not whether exemptions can be justified; many can. The issue is whether the language used to describe a system remains consistent with how that system actually functions.
-<span class="cite">The Performance of Obedience, Ch. 14</span>
-</blockquote>
+<blockquote class="quote--manuscript"><p>The issue is not whether exemptions can be justified; many can. The issue is whether the language used to describe a system remains consistent with how that system actually functions.</p><span class="cite">The Performance of Obedience, Ch. 14</span></blockquote>
 
 The IOC has consistently framed Olympic neutrality as a fixed, universal principle, sport standing apart from politics. Ukraine's foreign ministry response, that the war continues under that flag, is precisely the kind of public recognition the book describes as the endpoint of a credibility pattern, not a single decision:
 
-<blockquote class="manuscript">
-Trust rarely disappears because a single promise is broken. It erodes because a pattern becomes visible. Citizens learn to distinguish between activity and progress.
-<span class="cite">The Performance of Obedience, Ch. 14</span>
-</blockquote>
+<blockquote class="quote--manuscript"><p>Trust rarely disappears because a single promise is broken. It erodes because a pattern becomes visible. Citizens learn to distinguish between activity and progress.</p><span class="cite">The Performance of Obedience, Ch. 14</span></blockquote>
 
 Whether the IOC's position is defensible is a genuinely disputed question, and the book does not resolve contested moral questions for the reader. What it does track is the mechanism: an institution insisting its rules are neutral and universal, while the actual application of those rules depends on a judgement call about which violations disqualify and which don't, made by the same body that benefits from appearing consistent regardless of the answer.

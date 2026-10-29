@@ -38,7 +38,7 @@ That asymmetry is the whole of the story. A market analyst quoted in the coverag
 
 The manuscript's account of dormant rules becoming live only once someone is forced to look applies here with unusual precision:
 
-> *Dormant rules are not benign. They sit in reserve for selective use. The longer they remain unused, the more force they carry when invoked.*
+> *Dormant rules are not benign. They sit in reserve, ready for selective use. The longer they remain unused, the more force they carry when invoked.*
 
 Insider trading enforcement against sitting presidents is, in practice, closer to dormant than active. Nothing in the reporting suggests a regulator is currently investigating Truth API. What exists instead is a public argument conducted through newspaper quotes, in which critics call the arrangement corrupt and the company's defenders call it commerce. That argument is happening in the space the manuscript describes as symbolic politics filling the gap where enforcement would otherwise sit. The rule has not been applied. The rule has not been withdrawn. It is simply not currently pointed at this case, and everyone involved knows it, which is why the argument is being conducted in public rather than in a courtroom.
 

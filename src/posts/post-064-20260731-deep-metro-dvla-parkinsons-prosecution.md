@@ -32,7 +32,7 @@ Set that against the ledger this book opens with. Foreign missions in London hav
 
 The Single Justice Procedure is where the mechanism becomes visible. The manuscript's account of why opacity matters is the load-bearing point:
 
-> *The ambiguity is useful. Clear thresholds constrain discretion; opaque ones expand it.*
+> *Clear thresholds would constrain discretion. Opaque ones expand it.*
 
 A hearing behind closed doors is opacity by design. It is defended, reasonably enough, on grounds of volume and cost, and most cases passing through it are unremarkable. But the procedure removes the one thing that most reliably disciplines a marginal prosecution, which is somebody else in the room noticing that it is absurd. The £3.34 case was not stopped at the point of charging, or at the point of listing, or at the point of conviction. It was stopped at appeal, which is to say at the first stage that was open.
 
@@ -40,7 +40,7 @@ That timing is the whole story. The discretion to drop this prosecution existed 
 
 And by the time the correction arrived, the penalty had already been paid in a currency no appeal can refund. He sold his car. For a man of 86 with Parkinson's, a car is not a possession, it is the difference between an independent life and a dependent one. The conviction was quashed. The car is gone. The manuscript's description of how this lands on the person it happens to is the closest thing to a summary this entry can offer:
 
-> *The individual penalised rarely perceives the enforcement as just. They perceive it as unlucky.*
+> *The individual who is penalised rarely perceives the enforcement as just. They perceive it as unlucky.*
 
 Unlucky is the right word, and it is also the indictment. Luck is what determines outcomes in a system that could enforce consistently and has decided not to. Somewhere in the same period, a great many people paid car tax late, or not at all, and heard nothing. The £164 million ledger sat where it always sits. The one case that produced a criminal conviction involved a man in his eighties who could not answer back, and it was reversed the moment anybody was permitted to look at it.
 

@@ -25,13 +25,13 @@ Nothing about the killing changed between the police statement on Sunday and the
 
 That gap between the act and its classification is precisely where Chapter 13 locates discretionary power. The book's account of what enforcement systems actually optimise for explains why the initial framing was so confident, and so quickly abandoned:
 
-> *Success reads upward, not outward... Enforcement gravitates toward what is manageable rather than what is meaningful. The system optimises for defensibility, not resolution.*
+> *Enforcement gravitates toward what is manageable rather than what is meaningful. The system optimises for defensibility, not resolution.*
 
 A statement ruling out political motivation, issued early and firmly, is a defensible-sounding position that closes down speculation and manages a story. It is not the same thing as a conclusion. When the classification flipped, the earlier certainty was not so much retracted as quietly superseded, and the institution that issued it moved on.
 
 The reclassification also brought with it a set of institutional responses, a Prevent review, a ministerial statement to Parliament, an acknowledgement of lessons unlearned since Amess in 2021, that would not have followed a killing categorised as anything other than terrorism. The manuscript's account of what that machinery is actually for is worth sitting with:
 
-> *Enforcement also performs a symbolic function... They create the impression of control even when underlying conditions remain unchanged. This appearance is politically valuable. It deflects responsibility, absorbs public anxiety, and postpones more difficult questions about systemic causes.*
+> *They create the impression of control even when underlying conditions remain unchanged. This appearance is politically valuable. It deflects responsibility, absorbs public anxiety, and postpones more difficult questions about systemic causes.*
 
 Mahmood's own framing makes the point without needing the book to infer it. A review has been ordered into lessons from a murder that happened five years ago, announced in response to a murder that happened last week. That the Amess lessons were still outstanding in 2026 is not a detail buried in the reporting; it is the reporting. The system's response to a failure of prevention is to commission an examination of a previous failure of prevention it has not yet completed.
 

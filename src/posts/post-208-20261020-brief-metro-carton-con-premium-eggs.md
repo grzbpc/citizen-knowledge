@@ -8,7 +8,7 @@ part: I
 partTitle: When the Law Stops Meaning What It Says
 chapter: 2
 chapterTitle: Selective Enforcement and Threshold Logic
-subheading: "Reader Question: Not Being Made an Example"
+subheading: Reader Question: Not Being Made an Example
 description: "Andrew Evans said a pack of Burford Brown eggs at £3.60 bought in a Sainsbury's in north London contained six plain white eggs, which he believes were swapped by another shopper, a trick the supermarket threatened in April to prosecute, and Sainsbury's offered a refund."
 book_reference: "This entry treats a small act of swapping that most people would describe differently from theft as an illustration of the manuscript's account of how people explain their own conduct."
 quote: "Most will not identify with the word criminal."

@@ -8,7 +8,10 @@ part: IV
 partTitle: Criminality and Control
 chapter: 13
 chapterTitle: Discretion as Power
-subheading: ""
+subheading: Success Measured Upward
+quote: "Accountability is deflected horizontally or downward, never upward."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 13"
 description: "He negotiated the £340million deal, then quit as an MP for a job at the company he'd awarded it to. Now Hungary wants to know how that happened."
 book_reference: "This entry shows scrutiny arriving on schedule, the moment its subject has already left the position it would have constrained."
 has_article_quote: true

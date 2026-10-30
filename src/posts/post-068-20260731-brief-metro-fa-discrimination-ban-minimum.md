@@ -9,6 +9,9 @@ partTitle: Criminality and Control
 chapter: 13
 chapterTitle: Discretion as Power
 subheading: The Common Thread
+quote: "People are left guessing which version of the law they will encounter, and when."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 13"
 description: "Players found guilty of discrimination face minimum ten-game bans under enhanced Football Association rules, replacing a recommended range of six to twelve games, with harsher or lesser punishments still possible where mitigating factors apply."
 book_reference: "This entry shows a tariff announced as a hardened minimum while the clause that permits departure from it survives unchanged, leaving the announced figure and the operative one distinct."
 has_article_quote: false

@@ -9,6 +9,9 @@ partTitle: When the Law Stops Meaning What It Says
 chapter: 2
 chapterTitle: Selective Enforcement and Threshold Logic
 subheading: Exposure, Not Responsibility
+quote: "The two registers of enforcement operated side by side, in public, without comment."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 2"
 description: "A book borrowed from a New South Wales library around 150 years ago has been returned after being found in a bricked-up chimney, and the library waived the £14,600 fine."
 book_reference: "This entry is published alongside the £3.34 prosecution of the same date, as the same discretionary power producing opposite outcomes according to how the case reads rather than what it is worth."
 has_article_quote: false

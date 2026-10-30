@@ -9,7 +9,7 @@ part: III
 partTitle: Moral Inversion
 chapter: 8
 chapterTitle: Work as Virtue, Poverty as Failure
-subheading: ""
+subheading: The Morality of Work
 description: "The BBC investigated, found insufficient evidence, and closed the file in 2019. The salary kept climbing until March."
 quote: "Statements become evidence of concern. Targets become evidence of commitment. Consultations become evidence of engagement. Activity becomes evidence of progress. Whether the underlying problem is moving towards resolution becomes increasingly difficult to determine."
 quote_source: "manuscript"

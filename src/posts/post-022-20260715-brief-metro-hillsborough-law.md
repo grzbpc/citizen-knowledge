@@ -9,7 +9,7 @@ part: IV
 partTitle: Criminality and Control
 chapter: 13
 chapterTitle: Discretion as Power
-subheading: ""
+subheading: The Common Thread
 description: "Andy Burnham calls the Hillsborough Law a power shift. It's also an admission of what 37 years of the existing one couldn't do."
 quote: "Trust erodes accordingly, not because officers are malicious, but because predictability disappears. Citizens cannot orient their behaviour around principles that are applied unevenly and explained after the fact."
 quote_source: "manuscript"

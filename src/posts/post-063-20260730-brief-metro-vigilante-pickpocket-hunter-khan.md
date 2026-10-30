@@ -9,6 +9,9 @@ partTitle: Criminality and Control
 chapter: 13
 chapterTitle: Discretion as Power
 subheading: Success Measured Upward
+quote: "Success reads upward, not outward."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 13"
 description: "Self-styled 'pickpocket hunter' Diego Galdino has hit back at Sadiq Khan after the London mayor said vigilantes have 'not played any role' in cutting crime, even as Khan credited the Met with a 14% drop in neighbourhood offences."
 book_reference: "This entry shows an institution accepting credit for a falling number while declining to examine what, outside its own structure, might be contributing to it."
 has_article_quote: true

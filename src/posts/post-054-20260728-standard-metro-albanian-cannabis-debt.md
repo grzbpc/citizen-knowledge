@@ -11,6 +11,7 @@ chapterTitle: Selective Enforcement and Threshold Logic
 subheading: Exposure, Not Responsibility
 description: "Two Albanian men were sentenced for growing cannabis in a Bradford loft. The court accepted they had been coerced into the crop by the people who smuggled them into the UK and threatened their families if they refused."
 book_reference: "This entry shows a court finding that coercion existed as a matter of fact and imposing the ordinary custodial sentence anyway, because the framework has a category for guilty pleas and a category for threats to family, but no category that lets the second reduce the weight of the first."
+has_article_quote: false
 ---
 
 ### The story

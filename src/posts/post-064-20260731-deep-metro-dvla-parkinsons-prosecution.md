@@ -12,6 +12,7 @@ subheading: Exposure, Not Responsibility
 description: "An 86-year-old man with Parkinson's disease was convicted by the DVLA over an unpaid car tax bill of £3.34, in a closed-door fast-track hearing, and sold his car as a result. On appeal, magistrates dropped the case."
 book_reference: "This entry shows the discretion to drop a prosecution being available throughout, exercised only once the proceedings became visible, after the penalty had already been paid in a form no reversal could return."
 deep_read: true
+has_article_quote: false
 ---
 
 ### The story

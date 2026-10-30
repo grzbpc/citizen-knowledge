@@ -14,6 +14,7 @@ description: "The same rule, applied identically on paper, producing entirely di
 book_reference: "This entry shows a body insisting its rules are neutral and universal while their actual application depends on a judgement call made by the same body that benefits from appearing consistent."
 deep_read: true
 
+has_article_quote: false
 ---
 
 ### The story

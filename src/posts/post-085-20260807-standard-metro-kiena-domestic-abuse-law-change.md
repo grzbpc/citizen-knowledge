@@ -11,7 +11,7 @@ chapterTitle: Selective Enforcement and Threshold Logic
 subheading: When Selectivity Becomes the Rule
 description: "Campaigners including Kiena Davies's mother Angela are demanding a change in the law after a sharp rise in suicides linked to domestic abuse, arguing that controlling behaviour should be treated as a recognised warning sign rather than something noticed only after it is too late."
 book_reference: "This entry treats a recognised risk factor left unactioned as an illustration of the manuscript's account of dormant rules: provisions that exist on paper, are known to relevant professionals, and sit unused until a case forces the question of why they were not applied sooner."
-has_article_quote: true
+has_article_quote: false
 ---
 
 ### The story

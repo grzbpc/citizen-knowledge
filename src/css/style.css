@@ -267,7 +267,7 @@ article p{font-size:18px;margin:0 0 20px;color:var(--body-ink);text-align:justif
   display:none;
 }
 .entry.entry--brief .stamp::before{
-  content:"Brief — Ch. " attr(data-chapter);
+  content:"Brief Entry · Ch. " attr(data-chapter);
   font-size:10px;
 }
 

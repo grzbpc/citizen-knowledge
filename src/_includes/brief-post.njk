@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ title }} &mdash; Citizen Knowledge</title>
+<title>{{ title }} | Citizen Knowledge</title>
 <meta name="description" content="{{ description or "A companion record to The Performance of Obedience." }}">
 <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 <link rel="icon" href="{{ '/favicon.ico' | url }}">
@@ -13,8 +13,8 @@
 <div class="wrap">
   <a class="backlink" href="{{ '/' | url }}">&larr; Back to the Record</a>
   <header class="post-header brief-header">
-    {% if counter %}<span class="counter-badge">Counter-Read &mdash; Boundary Case</span>{% endif %}
-    <span class="brief-tag">Brief</span>
+    {% if counter %}<span class="counter-badge">Counter-Read Entry</span>{% endif %}
+    <span class="brief-tag">Brief Entry</span>
     <div class="mapping-bar mapping-bar--brief">
       Part {{ part }}: {{ partTitle }} &rarr; Chapter {{ chapter }}: {{ chapterTitle }}{% if subheading %} &rarr; {{ subheading }}{% endif %}
     </div>
@@ -40,7 +40,7 @@
 
   {% if book_reference %}
   <div class="mapping-citation mapping-citation--brief{% if counter %} mapping-citation--counter{% endif %}">
-    <span class="label">{% if counter %}Book reference &mdash; boundary case{% else %}Book reference{% endif %}</span>
+    <span class="label">{% if counter %}Book reference: boundary case{% else %}Book reference{% endif %}</span>
     <p class="book-reference-note">{{ book_reference }}</p>
   </div>
   {% endif %}
@@ -48,7 +48,7 @@
   <footer>
     Source: {{ source }}. No images reproduced.
     {% if quote_source == "article" or has_article_quote %}Short quotations from the source article are reproduced verbatim and marked as such; all other summary is original paraphrase.{% else %}All summaries are original paraphrase.{% endif %}
-    {% if quote_source == "manuscript" %}Manuscript quotation from <em>The Performance of Obedience</em>, by Greg Lewis, reproduced as a short excerpt for analytical purposes.{% endif %}
+    {% if quote_source == "manuscript" %}Manuscript quotations from <em>The Performance of Obedience</em>, by Greg Lewis, reproduced as short excerpts for analytical purposes.{% endif %}
   </footer>
 </div>
 </body>

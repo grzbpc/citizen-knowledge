@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: The Common Thread
 description: "Players found guilty of discrimination face minimum ten-game bans under enhanced Football Association rules, replacing a recommended range of six to twelve games, with harsher or lesser punishments still possible where mitigating factors apply."
 book_reference: "This entry shows a tariff announced as a hardened minimum while the clause that permits departure from it survives unchanged, leaving the announced figure and the operative one distinct."
+has_article_quote: false
 ---
 
 ### The story

@@ -14,6 +14,7 @@ quote: "Dormant rules are not benign. They sit in reserve, ready for selective u
 quote_source: "manuscript"
 quote_cite: "The Performance of Obedience, Ch. 2"
 book_reference: "This entry shows an offence that existed but was invisible becoming actionable only because the offender made himself legible to enforcement by reporting somebody else."
+has_article_quote: false
 ---
 
 ### The story

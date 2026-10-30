@@ -6,14 +6,14 @@ eleventyExcludeFromCollections: true
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>Citizen Knowledge</title>
-  <link>{{ "/" | url | absoluteUrl(metadata.siteUrl) if metadata is defined else "https://citizenknowledge.theperformanceofobedience.co.uk/" }}</link>
-  <description>A companion record to The Performance of Obedience: ordinary news mapped against the book's argument that selective enforcement is how institutions actually operate.</description>
+  <link>https://citizenknowledge.co.uk/</link>
+  <description>Citizen Knowledge maps ordinary daily news stories against the argument of The Performance of Obedience: that selective enforcement, not consistent rule-following, is how modern institutions actually operate.</description>
   <language>en-gb</language>
   {%- for post in collections.posts %}
   <item>
     <title>{{ post.data.title }}</title>
-    <link>https://citizenknowledge.theperformanceofobedience.co.uk{{ post.url | url }}</link>
-    <guid>https://citizenknowledge.theperformanceofobedience.co.uk{{ post.url | url }}</guid>
+    <link>https://citizenknowledge.co.uk{{ post.url | url }}</link>
+    <guid>https://citizenknowledge.co.uk{{ post.url | url }}</guid>
     <pubDate>{{ post.data.date.toUTCString() }}</pubDate>
     <description>{{ post.data.description }}</description>
   </item>

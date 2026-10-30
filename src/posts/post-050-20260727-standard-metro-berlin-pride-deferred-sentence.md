@@ -11,6 +11,7 @@ chapterTitle: Selective Enforcement and Threshold Logic
 subheading: When Rules Become Instruments
 description: "The suspect in the Berlin Pride attack had already been sentenced to 22 months in May for preparing a serious act of violence endangering the state. The decision was deferred for six months."
 book_reference: "This entry shows a sentence lawfully imposed and lawfully suspended, illustrating that the existence of a penalty on the record and its activation in practice are separate decisions taken at separate times on separate grounds."
+has_article_quote: false
 ---
 
 ### The story

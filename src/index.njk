@@ -64,6 +64,7 @@
     {% endif %}
     {% if post.data.layout == "brief-post.njk" %}
     <article class="entry entry--brief">
+      {% if post.data.counter %}<span class="counter-tag">Counter-Read Entry</span>{% endif %}
       <span class="stamp" data-chapter="{{ post.data.chapter }}">
         Part {{ post.data.part }}: {{ post.data.partTitle }} &rarr; Chapter {{ post.data.chapter }}: {{ post.data.chapterTitle }}{% if post.data.subheading %} &rarr; {{ post.data.subheading }}{% endif %}
       </span>
@@ -73,10 +74,11 @@
     </article>
     {% else %}
     <article class="entry">
+      {% if post.data.counter %}<span class="counter-tag">Counter-Read Entry</span>{% endif %}
       {% if post.data.deep_read %}
-        <span class="deep-read-tag">Deep Read</span>
+        <span class="deep-read-tag">Deep Read Entry</span>
       {% else %}
-        <span class="standard-tag">Standard</span>
+        <span class="standard-tag">Standard Entry</span>
       {% endif %}
       <span class="stamp">
         <span class="label">Maps to The Performance of Obedience</span>
@@ -93,7 +95,7 @@
 <footer>
   <div class="wrap">
     <p><strong>ABOUT THIS RECORD</strong></p>
-    <p>Citizen Knowledge is a companion project to <em>The Performance of Obedience: Legitimacy, Law, and the Systems We Pretend to Believe In</em>, by Greg Lewis, currently with UK literary agents. Each entry takes one ordinary news story and maps it against the book's argument, showing which Part, Chapter, and sometimes subheading it illustrates. No images or verbatim text are reproduced from source publications; all summaries are original paraphrase, attributed by publication and date.</p>
+    <p>Citizen Knowledge is a companion project to <em>The Performance of Obedience: Legitimacy, Law, and the Systems We Pretend to Believe In</em>, by Greg Lewis, currently with UK literary agents. Each entry takes one ordinary news story and maps it against the book's argument, showing which Part, Chapter, and sometimes subheading it illustrates. No images are reproduced from source publications. All summaries are original paraphrase, attributed by publication and date; where an entry quotes the source article directly, the quotation is short, verbatim and marked as such.</p>
     <p>&copy; Greg Lewis 2026</p>
   </div>
 </footer>

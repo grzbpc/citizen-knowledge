@@ -6,7 +6,7 @@ permalink: /chapters/index.html
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Browse by Chapter &mdash; Citizen Knowledge</title>
+<title>Browse by Chapter | Citizen Knowledge</title>
 <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 <link rel="icon" href="{{ '/favicon.ico' | url }}">
 <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | url }}">
@@ -47,14 +47,14 @@ permalink: /chapters/index.html
               <a href="{{ post.url | url }}">{{ post.data.title }}</a>
    <span class="entry-date">{{ post.data.date | dateStr }}</span>
               {% if post.data.deep_read %}
-                <span class="format-tag deep-read">Deep Read</span>
+                <span class="format-tag deep-read">Deep Read Entry</span>
               {% elif post.data.layout == "brief-post.njk" %}
-                <span class="format-tag brief">Brief</span>
+                <span class="format-tag brief">Brief Entry</span>
               {% else %}
-                <span class="format-tag">Standard</span>
+                <span class="format-tag">Standard Entry</span>
               {% endif %}
               {% if post.data.counter %}
-                <span class="format-tag counter">Counter-Read</span>
+                <span class="format-tag counter">Counter-Read Entry</span>
               {% endif %}
             </div>
           </li>

@@ -11,6 +11,7 @@ chapterTitle: Discretion as Power
 subheading: The Appearance of Action
 description: "Rail trespass is a criminal offence committed more than 19,000 times last year. Network Rail says its campaign is not about criminalising anyone. British Transport Police says the same act is illegal. Both statements appear in the same article."
 book_reference: "This entry shows an offence committed at a volume that makes prosecution impossible being enforced instead by persuasion, while the criminal prohibition is retained for its signalling value rather than its application."
+has_article_quote: false
 ---
 
 ### The story

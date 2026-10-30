@@ -26,7 +26,7 @@ const {
 } = require("docx");
 
 const POSTS_DIR = path.join(__dirname, "src", "posts");
-const SITE_URL = "https://citizenknowledge.theperformanceofobedience.co.uk";
+const SITE_URL = "https://citizenknowledge.co.uk";
 
 // ---- Colours (match the site's ledger/paper scheme) ----
 const INK = "141412";
@@ -163,7 +163,7 @@ function extractSections(body, postType) {
     const citeText = citeMatch ? stripTags(citeMatch[1]).replace(/\s+/g, " ").trim() : "";
     const bodyOnly = rawHtml.replace(/<span class="cite">[\s\S]*?<\/span>/i, "");
     const quoteText = stripTags(bodyOnly).replace(/\s+/g, " ").trim();
-    return citeText ? `${quoteText} — ${citeText}` : quoteText;
+    return citeText ? `${quoteText} (${citeText})` : quoteText;
   }
 
   function pushBlocksFrom(rawText, targetArray) {
@@ -269,7 +269,7 @@ const fmtDate = (iso) =>
 
 const rangeLabel = startDate === endDate
   ? fmtDate(startDate)
-  : `${fmtDate(startDate)} — ${fmtDate(endDate)}`;
+  : `${fmtDate(startDate)} to ${fmtDate(endDate)}`;
 
 const children = [];
 
@@ -299,7 +299,7 @@ children.push(
 // --- Explainer block (once only) ---
 const explainerLines = [
   "Citizen Knowledge is a companion project to a book called The Performance of Obedience: Legitimacy, Law, and the Systems We Pretend to Believe In, by Greg Lewis, currently with UK literary agents.",
-  "The book argues that selective enforcement — not consistent rule-following — is how modern institutions actually operate: the same law, the same rule, the same process, applied differently depending on who it lands on. Citizen Knowledge takes ordinary daily news stories and maps each one against that argument, showing which part of the book's structure the story illustrates.",
+  "Citizen Knowledge maps ordinary daily news stories against the argument of The Performance of Obedience: that selective enforcement, not consistent rule-following, is how modern institutions actually operate. In practice that means the same law, the same rule, the same process, applied differently depending on who it lands on. Each entry shows which Part, Chapter, and usually subheading of the book its story illustrates.",
   "This printout gathers everything published on the site this week into one document. Several kinds of entry may appear:",
 ];
 
@@ -311,10 +311,10 @@ explainerLines.forEach((t) => {
 });
 
 const entryTypeList = [
-  ["Standard entries", "a news story mapped to the book, in full."],
-  ["Deep Read entries", "a fuller analysis that includes short excerpts from the manuscript itself, printed here in full rather than summarised."],
-  ["Briefs", "a shorter-format entry, included here in full."],
-  ["Counter-Read entries", "a story that looks like it fits the book's argument but which the reporting doesn't actually support, printed with an explanation of why it doesn't hold."]
+  ["Standard Entry", "a news story mapped to the book, in full."],
+  ["Deep Read Entry", "a fuller analysis that includes short excerpts from the manuscript itself, printed here in full rather than summarised."],
+  ["Brief Entry", "a shorter entry with a single manuscript quotation, included here in full."],
+  ["Counter-Read Entry", "a story that looks like it fits the book's argument but which the reporting does not actually support, printed with an explanation of why it does not hold."]
 ];
 entryTypeList.forEach(([label, desc]) => {
   children.push(new Paragraph({
@@ -322,7 +322,7 @@ entryTypeList.forEach(([label, desc]) => {
     indent: { left: 260 },
     children: [
       new TextRun({ text: "•  ", size: 22, font: "Georgia", color: LEDGER }),
-      new TextRun({ text: `${label} — `, bold: true, size: 22, font: "Georgia", color: INK }),
+      new TextRun({ text: `${label}: `, bold: true, size: 22, font: "Georgia", color: INK }),
       new TextRun({ text: desc, size: 22, font: "Georgia", color: BODY_INK })
     ]
   }));
@@ -370,7 +370,7 @@ children.push(
               new Paragraph({
                 spacing: { after: 0 },
                 children: [
-                  new TextRun({ text: "Type that address into any web browser (on a phone, tablet, or computer) to visit the site. If you'd like new entries sent to you by email automatically as they're published, there is a simple sign-up box on the site's homepage and About page — just enter your email address there.", size: 22, font: "Georgia", color: BODY_INK })
+                  new TextRun({ text: "Type that address into any web browser (on a phone, tablet, or computer) to visit the site. If you'd like new entries sent to you by email automatically as they're published, there is a simple sign-up box on the site's homepage and About page; just enter your email address there.", size: 22, font: "Georgia", color: BODY_INK })
                 ]
               })
             ]
@@ -392,6 +392,18 @@ function buildMappingLine(data) {
 matchingPosts.forEach((post, index) => {
   const { data, sections, postType, counter } = post;
 
+  // Brief Entries carry their single quotation in the quote: frontmatter
+  // field; the site prints it after the reframe, so the print pack does too.
+  if (postType === "brief" && data.quote) {
+    const qText = stripTags(data.quote).replace(/\s+/g, " ").trim();
+    const qFull = data.quote_cite ? `${qText} (${data.quote_cite})` : qText;
+    sections.reframeBlocks = (sections.reframeBlocks || []).concat(
+      data.quote_source === "manuscript"
+        ? [{ type: "quote", text: qFull }]
+        : [{ type: "para", text: `"${qFull}"` }]
+    );
+  }
+
   // Stamp block — colours mirror the site's scheme:
   //   Deep Read = solid black background, white text
   //   Brief     = white background, burgundy border and text
@@ -405,16 +417,16 @@ matchingPosts.forEach((post, index) => {
   let stampLabelText, stampFill, stampTextColor, stampBorderColor, stampBorderStyle, stampBorderSize;
 
   if (counter) {
-    stampLabelText = `MAPS TO THE PERFORMANCE OF OBEDIENCE — COUNTER-READ (BOUNDARY CASE)`;
+    stampLabelText = `MAPS TO THE PERFORMANCE OF OBEDIENCE · ${postType === "deep-read" ? "DEEP READ ENTRY" : postType === "brief" ? "BRIEF ENTRY" : "STANDARD ENTRY"} · COUNTER-READ ENTRY`;
     stampFill = "FFFFFF";
     stampTextColor = COUNTER;
     stampBorderColor = COUNTER;
     stampBorderStyle = BorderStyle.DASHED;
     stampBorderSize = 8;
   } else {
-    stampLabelText = postType === "deep-read" ? "MAPS TO THE PERFORMANCE OF OBEDIENCE — DEEP READ ENTRY"
-      : postType === "brief" ? "MAPS TO THE PERFORMANCE OF OBEDIENCE — BRIEF ENTRY"
-      : "MAPS TO THE PERFORMANCE OF OBEDIENCE — STANDARD ENTRY";
+    stampLabelText = postType === "deep-read" ? "MAPS TO THE PERFORMANCE OF OBEDIENCE · DEEP READ ENTRY"
+      : postType === "brief" ? "MAPS TO THE PERFORMANCE OF OBEDIENCE · BRIEF ENTRY"
+      : "MAPS TO THE PERFORMANCE OF OBEDIENCE · STANDARD ENTRY";
     stampFill = postType === "deep-read" ? INK
       : postType === "brief" ? "FFFFFF"
       : "EDEBE5";
@@ -633,7 +645,7 @@ children.push(
     new TextRun({ text: `That's everything published between ${fmtDate(startDate)} and ${fmtDate(endDate)}.`, size: 20, font: "Georgia", color: BODY_INK })
   ]}),
   new Paragraph({ spacing: { after: 0 }, children: [
-    new TextRun({ text: `${SITE_URL} — new entries most days.`, size: 18, font: "Courier New", color: LEDGER })
+    new TextRun({ text: `${SITE_URL}: new entries most days.`, size: 18, font: "Courier New", color: LEDGER })
   ]})
 );
 
@@ -652,7 +664,7 @@ const doc = new Document({
           children: [
             new Paragraph({
               alignment: AlignmentType.RIGHT,
-              children: [new TextRun({ text: "CITIZEN KNOWLEDGE — WEEKLY PRINT PACK", size: 14, font: "Courier New", color: RULE, characterSpacing: 6 })]
+              children: [new TextRun({ text: "CITIZEN KNOWLEDGE · WEEKLY PRINT PACK", size: 14, font: "Courier New", color: RULE, characterSpacing: 6 })]
             })
           ]
         })

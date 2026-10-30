@@ -14,6 +14,7 @@ quote: "Within this loop, responsibility disperses. Each participant can point t
 quote_source: "manuscript"
 quote_cite: "The Performance of Obedience, Ch. 6"
 book_reference: "This entry follows a single decision through three separate institutional clearances and asks where, in a sequence this defensible at every stage, accountability was actually supposed to sit."
+has_article_quote: false
 ---
 
 ### The story

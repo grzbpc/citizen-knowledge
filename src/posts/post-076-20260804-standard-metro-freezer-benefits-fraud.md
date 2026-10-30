@@ -11,6 +11,7 @@ chapterTitle: Selective Enforcement and Threshold Logic
 subheading: Exposure, Not Responsibility
 description: "Christopher Phillips kept his mother's body in a freezer for nearly ten years to continue claiming her pension and disability benefits, and was jailed for two years and eight months."
 book_reference: "This entry sets a single individual's years-long benefit concealment, now resolved through prosecution, against the manuscript's account of how much larger, harder-to-detect wrongdoing is more often resolved through negotiated settlement."
+has_article_quote: false
 ---
 
 ### The story

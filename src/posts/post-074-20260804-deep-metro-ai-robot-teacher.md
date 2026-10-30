@@ -12,6 +12,7 @@ subheading: The Quiet Curriculum
 description: "A Spanish state school in Salamanca introduced a humanoid robot to lead English lessons for four to twelve-year-olds, prompting parent objections, while New York State has banned AI teachers from classrooms by law."
 book_reference: "This entry sets a jurisdiction that has legislated against the practice against a school that adopted it regardless, and asks what the children in each system are actually being taught about who decides."
 deep_read: true
+has_article_quote: false
 ---
 
 ### The story

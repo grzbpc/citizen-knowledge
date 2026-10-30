@@ -12,6 +12,7 @@ chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: Selective Enforcement and Visible Equality
 description: "Deportation is a legal power. Making it actually happen required threatening a country's visa access."
 book_reference: "This entry examines what it reveals about a formal legal power when its exercise depends entirely on informal leverage applied case by case."
+has_article_quote: true
 ---
 
 ### The story

@@ -11,6 +11,7 @@ chapterTitle: Selective Enforcement and Threshold Logic
 subheading: Situational Literacy
 description: "Joshua Bonehill-Paine, convicted of racially harassing then-MP Luciana Berger and previously jailed for anti-Semitic hate crimes, has been brought in to advise the Conservatives on extremism ahead of the election."
 book_reference: "This entry treats a man's conviction and his subsequent institutional rehabilitation as the same story, not two, and asks what determined which side of that line he ended up on."
+has_article_quote: false
 ---
 
 ### The story

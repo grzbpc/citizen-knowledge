@@ -25,19 +25,19 @@ Social housing already has an allocation system. It has eligibility rules, a poi
 
 The manuscript's account of situational literacy describes exactly this kind of layering:
 
-> The required literacy is not taught formally. It is transmitted socially: through families that understand how systems operate, professional networks that share unwritten knowledge, and repeated encounters with institutions that reveal which rules bend and which do not.
+> The literacy required is not taught in any formal curriculum. It is transmitted socially: through families that understand how systems operate, through professional networks that share unwritten knowledge, through repeated encounters with institutions that teach, by example, which rules bend and which do not.
 
 A tenant who has waited years on a list, following the written criteria as published, discovers under this proposal that the written criteria were never the whole story. There is a second test, unpublished until a party conference announcement, concerning whether their weeds are under four feet and whether they are married. Nobody applying to the list today could have known to prepare for it. That is not incidental to how the policy would work. It is close to the point.
 
 Anderson's own framing gives away how this test would actually operate. He described officers who inspected gardens "on a regular basis," a phrase that assumes a body of enforcement capacity that most councils do not currently have and are not being funded to build. A rule that requires resources nobody has committed to provide is not really a maintenance standard. It is a discretionary trigger, available for use against whichever tenant a council or housing officer chooses to look at closely, and safely ignorable for everyone else.
 
-> Threshold logic follows. Behaviour below the level that attracts attention is tolerated. Once it crosses an informal boundary, the full force of the rule can be applied.
+> As long as behaviour stays below the level that attracts attention, it is tolerated. Once it crosses an informal boundary, the full force of the rule can be applied.
 
 The marriage and nationality conditions work the same way from the opposite direction, not as thresholds for removal but as thresholds for entry. A council house has always been scarce relative to demand, which means any additional qualifying condition does not create housing. It reorders the queue. Someone moves up only because someone else, who may have waited longer and needed the tenancy just as urgently, moves down. Reform's language, "prioritise," obscures that this is a zero-sum reshuffle rather than an expansion of who gets housed.
 
 What makes garden tidiness a particularly useful illustration is how selectively it would ever be checked. Nobody is proposing inspection of every tenant's garden on a fixed schedule. The manuscript's account of how such rules actually function in practice applies directly:
 
-> Those who grasp this early, through upbringing, education or proximity to power, move through institutions with relative ease. They learn which rules are symbolic, which are negotiable, and which apply only to those without protection.
+> Those who grasp this early, through upbringing, education, or proximity to power, move through institutions with relative ease. They learn which rules are symbolic, which are negotiable, and which apply only to those without protection.
 
 A rule enforced only when someone in authority decides to look is not a standard. It is a lever, and levers are pulled selectively, against tenants who are already visible to a housing officer for some other reason, whose neighbours have complained, or whose circumstances make them an easy case to act on. The written rule and the applied rule diverge exactly where the manuscript predicts they will: not at the point of drafting, but at the point someone chooses whether to enforce it.
 

@@ -25,13 +25,13 @@ A police officer describing his own job as "really important" is not, on its own
 
 The manuscript's account of how enforcement systems choose where to direct their effort applies directly here:
 
-> Enforcement is intensified, expanded, or rebranded. New units are created. New powers are granted. New metrics are introduced.
+> Instead, enforcement is intensified, expanded, or rebranded. New units are created. New powers are granted. New metrics are introduced.
 
 A police drill music expert is a new role, created because a category of evidence proved useful. That is not itself sinister. But it is a choice about where institutional attention goes, and choices about where attention goes are never neutral, even when the underlying legal principle, that a defendant's own words can be used against them, applies formally to everyone.
 
 Art Not Evidence's objection is precisely that the principle is not applied to everyone in practice. Nobody is proposing a police country music expert, or a police indie rock expert, to interpret murder ballads or songs about violence written by artists working in genres associated with different audiences. The 252 defendants identified in the report were prosecuted within a system that has built specific expertise, specific personnel, and specific institutional muscle memory around one genre. That is not a coincidence of where violent content happens to appear. It is a record of where enforcement decided to look.
 
-> Low-risk, high-visibility actions are prioritised. Complex or resource-intensive work is avoided. Enforcement gravitates toward what is manageable rather than meaningful.
+> Low-risk, high-visibility actions are prioritised. Complex or resource-intensive work is avoided. Enforcement gravitates toward what is manageable rather than what is meaningful.
 
 Lyrics are, in this sense, a low-cost form of evidence. They exist already, in the defendant's own voice, requiring no further investigation to produce, only interpretation to deploy. Det Sgt Corbin's role is that interpretive function, made institutional and permanent.
 

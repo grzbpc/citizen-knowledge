@@ -11,6 +11,7 @@ chapterTitle: Selective Enforcement and Threshold Logic
 subheading: Exposure, Not Responsibility
 description: "Analysis shows nearly £200,000 of fuel is being driven off from UK forecourts every day, with offending up 20 per cent since the Iran oil crisis began in February, while workers say a misconception about who actually owns the branding is fuelling the theft."
 book_reference: "This entry sets a stated misconception, corrected on the record by the person best placed to know, against the price rise that is the actual driver, and asks which explanation the reporting foregrounds."
+has_article_quote: false
 ---
 
 ### The story

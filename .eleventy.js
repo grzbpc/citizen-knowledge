@@ -2,7 +2,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
-  eleventyConfig.addPassthroughCopy("src/apple-touch-icon-180.png");
+  // Every page links /apple-touch-icon.png, and iPhones request that exact
+  // name by default, so the 180px source file is published under it.
+  eleventyConfig.addPassthroughCopy({ "src/apple-touch-icon-180.png": "apple-touch-icon.png" });
   eleventyConfig.addPassthroughCopy("src/js");
 
   eleventyConfig.addFilter("dateStr", function(date) {

@@ -1,4 +1,19 @@
+# Dependencies and build output
 node_modules/
 _site/
 .cache/
+
+# Secrets: never commit
 buttondown.key
+buttondown.key.txt
+*.key
+
+# Generated outputs: build locally, never commit
+daily-email-output.txt
+CitizenKnowledge_PrintPack_*.docx
+CK_Outputs_*/
+
+# Editor and OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini

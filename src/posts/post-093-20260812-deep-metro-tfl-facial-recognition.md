@@ -12,7 +12,7 @@ subheading: Behaviour Without Direct Surveillance
 description: "Transport for London is trialling facial recognition to identify sex offenders, robbers and knife users, going live at Victoria this week after a six-month trial at other stations returned 530,000 scans and no matches."
 book_reference: "This entry treats TfL's facial recognition trial as a live instance of the manuscript's argument that modern institutions no longer need to watch a person directly in order to know them; a camera scanning half a million faces without a single match is not evidence the system failed, but evidence of how the system is designed to operate."
 deep_read: true
-has_article_quote: true
+has_article_quote: false
 ---
 
 ### The story

@@ -20,14 +20,14 @@
   function formatTag(format, counter) {
     var out = "";
     if (format === "deep") {
-      out += '<span class="format-tag deep-read">Deep Read</span>';
+      out += '<span class="format-tag deep-read">Deep Read Entry</span>';
     } else if (format === "brief") {
-      out += '<span class="format-tag brief">Brief</span>';
+      out += '<span class="format-tag brief">Brief Entry</span>';
     } else {
-      out += '<span class="format-tag">Standard</span>';
+      out += '<span class="format-tag">Standard Entry</span>';
     }
     if (counter) {
-      out += '<span class="format-tag counter">Counter-Read</span>';
+      out += '<span class="format-tag counter">Counter-Read Entry</span>';
     }
     return out;
   }

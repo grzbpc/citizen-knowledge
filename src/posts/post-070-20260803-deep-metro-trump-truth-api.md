@@ -12,6 +12,7 @@ subheading: The Gap Between Law and Practice
 description: "Donald Trump's media group has launched a $100,000-a-month subscription service giving paying customers faster, real-time access to his Truth Social posts, at a time when his musings on the Iran war and trade tariffs are known to move markets."
 book_reference: "This entry sets a paid product built from presidential speech against the standards written for holders of public office, and finds the product operating in the gap the standards were meant to close."
 deep_read: true
+has_article_quote: false
 ---
 
 ### The story

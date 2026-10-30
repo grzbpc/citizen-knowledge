@@ -15,6 +15,7 @@ quote: "Statements become evidence of concern. Targets become evidence of commit
 quote_source: "manuscript"
 quote_cite: "The Performance of Obedience, Ch. 14"
 book_reference: "This entry shows a closed file and a rising salary coexisting for years without friction, until public pressure forced the two into the same sentence."
+has_article_quote: true
 ---
 
 ### The story

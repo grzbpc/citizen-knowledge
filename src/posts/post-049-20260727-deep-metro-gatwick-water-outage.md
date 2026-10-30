@@ -12,6 +12,7 @@ subheading: Failure as Administered Condition
 description: "Gatwick lost all running water on one of the busiest travel days of the year. The institutional response was not to restore the toilets but to post staff at the doors of them."
 book_reference: "This entry shows an institution with no capacity to resolve a failure retaining full capacity to manage its appearance, and a supplier whose parent company was fined for tens of thousands of illegal discharges continuing to hold the contract that failed."
 deep_read: true
+has_article_quote: false
 ---
 
 ### The story

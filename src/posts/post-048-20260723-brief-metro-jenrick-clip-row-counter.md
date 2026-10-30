@@ -12,6 +12,7 @@ chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: ""
 description: "Robert Jenrick and Reform accused each other over an edited clip about small boats. It has the shape of an institutional story. It isn't one."
 book_reference: "This entry is included as a boundary case: a political row over a misleadingly edited clip resembles the project's usual material but does not involve a rule, standard, or enforcement decision applied unevenly."
+has_article_quote: false
 ---
 
 ### The story

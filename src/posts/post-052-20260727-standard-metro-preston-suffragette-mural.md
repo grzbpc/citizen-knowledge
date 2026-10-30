@@ -11,6 +11,7 @@ chapterTitle: Selective Enforcement and Threshold Logic
 subheading: Exposure, Not Responsibility
 description: "Preston council workers washed away a mural of suffragette Edith Rigby being arrested, painted by an artist on the wall of her own studio. They deemed it graffiti, and have apologised for the error."
 book_reference: "This entry shows a discretionary classification applied by a front-line worker producing an irreversible loss for a private individual and a reversible apology for the institution, with the cost falling entirely on the party without insulation."
+has_article_quote: false
 ---
 
 ### The story

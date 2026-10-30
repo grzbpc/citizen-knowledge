@@ -11,6 +11,7 @@ chapterTitle: Symbolic Politics and the Maintenance of Appearances
 subheading: When Language Fills the Gap
 description: "MPs are calling for London-based LasLas TV to be investigated after it praised Hamas and celebrated Hezbollah's role in the 7 October attacks on Israel, while Ofcom says it will carefully consider any new evidence."
 book_reference: "This entry sets a regulator's language of ongoing consideration against a broadcaster still transmitting, and asks what distinguishes genuine process from a statement that functions as a substitute for one."
+has_article_quote: true
 ---
 
 ### The story

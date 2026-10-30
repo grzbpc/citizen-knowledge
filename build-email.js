@@ -205,7 +205,7 @@ console.log(`--- End scan report ---\n`);
 
 // ---- 6. Bail out cleanly if nothing to send ----
 if (matchingPosts.length === 0) {
-  console.log(`No posts found dated ${targetDate}. Nothing to build — no email needed today.`);
+  console.log(`No posts found dated ${targetDate}. Nothing to build, so no email is needed today.`);
   process.exit(0);
 }
 
@@ -217,27 +217,27 @@ const dateForHeading = new Date(targetDate + "T00:00:00").toLocaleDateString("en
   year: "numeric",
 });
 
-const SITE_URL = "https://citizenknowledge.theperformanceofobedience.co.uk";
+const SITE_URL = "https://citizenknowledge.co.uk";
 
-let output = `SUBJECT LINE:\nCitizen Knowledge — ${matchingPosts.length} new ${
+let output = `SUBJECT LINE:\nCitizen Knowledge: ${matchingPosts.length} new ${
   matchingPosts.length === 1 ? "entry" : "entries"
 }, ${dateForHeading}\n\n`;
 
 output += `EMAIL BODY (copy everything below this line into Buttondown):\n`;
 output += `------------------------------------------------------------\n\n`;
-output += `# Citizen Knowledge — ${dateForHeading}\n\n`;
+output += `# Citizen Knowledge, ${dateForHeading}\n\n`;
 
 // Explainer block: what this email is, the post types, where to go
 // for the full deep-read analysis, and a line about the site itself.
 // Kept short and only sent once per email, at the top.
-output += `Citizen Knowledge maps ordinary daily news against the argument of `;
+output += `Citizen Knowledge maps ordinary daily news stories against the argument of `;
 output += `*The Performance of Obedience*: that selective enforcement, not `;
 output += `consistent rule-following, is how modern institutions actually operate.\n\n`;
 output += `This email bundles everything published on the site today. Entry types appear below:\n\n`;
-output += `- **Standard entries** — a news story mapped to the book, in full.\n`;
-output += `- **Deep Read entries** — a fuller analysis that includes short excerpts from the manuscript itself, shown as indented quotes.\n`;
-output += `- **Briefs** — a shorter-format entry, included here in full.\n`;
-output += `- **Counter-Read entries** — a story that looks like it fits the book's argument but which the reporting doesn't actually support, included with an explanation of why it doesn't hold.\n\n`;
+output += `- **Standard Entry:** a news story mapped to the book, in full.\n`;
+output += `- **Deep Read Entry:** a fuller analysis that includes short excerpts from the manuscript itself, shown as indented quotes.\n`;
+output += `- **Brief Entry:** a shorter entry with a single manuscript quotation, included here in full.\n`;
+output += `- **Counter-Read Entry:** a story that looks like it fits the book's argument but which the reporting does not actually support, included with an explanation of why it does not hold.\n\n`;
 output += `Read the full archive any time at ${SITE_URL}\n\n`;
 output += `---\n\n`;
 
@@ -248,10 +248,12 @@ matchingPosts.forEach((post, index) => {
   const counter = isCounterRead(data);
 
   output += `**${data.title}**\n\n`;
-  if (counter) output += `*COUNTER-READ ENTRY*\n\n`;
-  else if (postType === "deep-read") output += `*DEEP READ ENTRY*\n\n`;
-  else if (postType === "standard") output += `*STANDARD ENTRY*\n\n`;
-  else if (postType === "brief") output += `*BRIEF ENTRY*\n\n`;
+  // Same labels as the site: the type label always shows, and a
+  // Counter-Read adds its own label alongside it, as on the post pages.
+  const typeLabel = postType === "deep-read" ? "DEEP READ ENTRY"
+    : postType === "brief" ? "BRIEF ENTRY"
+    : "STANDARD ENTRY";
+  output += counter ? `*${typeLabel} · COUNTER-READ ENTRY*\n\n` : `*${typeLabel}*\n\n`;
   output += `*Maps to: ${mappingLine}*\n\n`;
 
   if (sections.story) {
@@ -272,6 +274,16 @@ matchingPosts.forEach((post, index) => {
         output += `${block.text}\n\n`;
       }
     });
+  }
+
+  // Brief Entries carry their single quotation in the quote: frontmatter
+  // field rather than in the body; the site prints it after the reframe,
+  // so the email does the same.
+  if (postType === "brief" && data.quote) {
+    const qText = stripTags(data.quote).trim();
+    output += data.quote_source === "manuscript" ? `> *${qText}*\n` : `> "${qText}"\n`;
+    if (data.quote_cite) output += `>\n> ${data.quote_cite}\n`;
+    output += `\n`;
   }
 
   if (counter && sections.verdict) {

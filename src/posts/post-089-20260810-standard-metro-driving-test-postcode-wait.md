@@ -11,7 +11,7 @@ chapterTitle: The Performance of Work
 subheading: How Metrics Consume Their Purpose
 description: "Figures show half of learner drivers are waiting more than four months for a driving test, with the median wait between booking and taking a test at 17.3 weeks nationally, but 29.7 weeks in Forfar, Angus."
 book_reference: "This entry treats the gap between the national median and the worst local waits as an example of the manuscript's account of metrics that describe the system rather than the experience of the people inside it."
-has_article_quote: true
+has_article_quote: false
 ---
 
 ### The story

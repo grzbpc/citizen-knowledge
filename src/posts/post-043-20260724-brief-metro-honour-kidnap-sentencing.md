@@ -8,7 +8,10 @@ part: IV
 partTitle: Criminality and Control
 chapter: 13
 chapterTitle: Discretion as Power
-subheading: ""
+subheading: The Appearance of Action
+quote: "Patrols, raids, court proceedings, and sentencing provide tangible demonstrations of authority."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 13"
 description: "Four men have been jailed for a combined 30 years for an 'honour' kidnapping, torture, and a £20,000 ransom demand made directly to the victim's father."
 book_reference: "This entry shows a family responding to a threat against one of its members through its own private channel, a ransom call, rather than through any institution, and the state's role beginning only once that private process had already run its course."
 has_article_quote: true

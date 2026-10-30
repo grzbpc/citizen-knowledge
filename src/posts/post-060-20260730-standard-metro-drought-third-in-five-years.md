@@ -8,7 +8,7 @@ part: V
 partTitle: Withdrawal
 chapter: 15
 chapterTitle: Disengagement Is Not Apathy
-subheading: ""
+subheading: Disengagement Is Learned
 description: "Drought has been officially declared across more than half of England, the third in five years, with water minister Emma Hardy calling it 'the new normal' while the government points to nine new reservoirs still under construction."
 book_reference: "This entry shows an institution asking the public to absorb a recurring failure as an unavoidable condition, while its own remedy remains years away from delivering anything."
 has_article_quote: true

@@ -9,6 +9,9 @@ partTitle: Criminality and Control
 chapter: 13
 chapterTitle: Discretion as Power
 subheading: The Appearance of Action
+quote: "Enforcement also performs a symbolic function. Visible activity reassures the public that something is being done."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 13"
 description: "A British activist aboard a seized Gaza-bound aid ship has described her interrogation by Israeli special forces as terrifying, after troops took control of the vessel."
 book_reference: "This entry places an account of force exercised out of public view alongside the manuscript's observation that visible enforcement performs a reassurance function regardless of what happened before the cameras arrived."
 has_article_quote: true

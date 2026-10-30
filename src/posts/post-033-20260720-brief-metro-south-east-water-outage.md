@@ -8,7 +8,7 @@ part: IV
 partTitle: Criminality and Control
 chapter: 13
 chapterTitle: Discretion as Power
-subheading: ""
+subheading: The Cost of Enforcement
 description: "£30.5million was supposed to fix this. Days later, 7,000 properties lost water again."
 quote: "Where enforcement fails to reduce harm, the response is rarely to question the framework itself. Instead, enforcement is intensified, expanded, or rebranded. New units are created. New powers are granted. New metrics are introduced."
 quote_source: "manuscript"

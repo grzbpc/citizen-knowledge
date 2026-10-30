@@ -9,7 +9,7 @@ part: V
 partTitle: Withdrawal
 chapter: 14
 chapterTitle: Symbolic Politics and the Maintenance of Appearances
-subheading: ""
+subheading: The Politics of Announcement
 description: "The government scrapped its digital ID scheme and used the money to help fund a VAT cut. It looks like the kind of selective, discretionary trade-off this project usually covers. On the evidence reported, it is not."
 book_reference: "This entry is included as a boundary case: a policy cancellation funding a policy announcement resembles the book's usual material, but the reporting describes ordinary budget reallocation rather than discretion exercised unevenly against a stated rule."
 has_article_quote: false

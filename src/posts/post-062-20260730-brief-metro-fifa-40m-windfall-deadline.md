@@ -8,7 +8,10 @@ part: II
 partTitle: Learning the System
 chapter: 6
 chapterTitle: The Professional Loop
-subheading: ""
+subheading: Circular Legitimacy
+quote: "Legitimacy circulates without reference to outcome."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 6"
 description: "Fifa has offered England and other member associations $40million each if they sign up to Gianni Infantino's World Cup sell-off plan by 19 September, with Uefa warning there is 'significant and growing opposition' to the scheme."
 book_reference: "This entry shows the same transaction from post-057 given a compliance deadline and a per-signature price, the mechanism made explicit rather than implied."
 has_article_quote: true

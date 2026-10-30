@@ -9,7 +9,10 @@ part: V
 partTitle: Withdrawal
 chapter: 14
 chapterTitle: Symbolic Politics and the Maintenance of Appearances
-subheading: ""
+subheading: Selective Enforcement and Visible Equality
+quote: "The issue is not whether exemptions can be justified; many can. The issue is whether the language used to describe a system remains consistent with how that system actually functions."
+quote_source: "manuscript"
+quote_cite: "The Performance of Obedience, Ch. 14"
 description: "Robert Jenrick and Reform accused each other over an edited clip about small boats. It has the shape of an institutional story. It isn't one."
 book_reference: "This entry is included as a boundary case: a political row over a misleadingly edited clip resembles the project's usual material but does not involve a rule, standard, or enforcement decision applied unevenly."
 has_article_quote: false

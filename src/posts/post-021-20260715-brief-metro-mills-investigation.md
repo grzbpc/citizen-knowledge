@@ -5,11 +5,11 @@ title: A closed investigation, sitting quietly next to a pay rise
 date: 2026-07-15
 order: 6
 source: "Metro, Wednesday 15 July 2026"
-part: III
-partTitle: Moral Inversion
-chapter: 8
-chapterTitle: Work as Virtue, Poverty as Failure
-subheading: The Morality of Work
+part: V
+partTitle: Withdrawal
+chapter: 14
+chapterTitle: Symbolic Politics and the Maintenance of Appearances
+subheading: When Language Fills the Gap
 description: "The BBC investigated, found insufficient evidence, and closed the file in 2019. The salary kept climbing until March."
 quote: "Statements become evidence of concern. Targets become evidence of commitment. Consultations become evidence of engagement. Activity becomes evidence of progress. Whether the underlying problem is moving towards resolution becomes increasingly difficult to determine."
 quote_source: "manuscript"
